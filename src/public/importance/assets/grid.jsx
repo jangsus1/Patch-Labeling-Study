@@ -83,8 +83,8 @@ function Grid({ parameters, setAnswer }) {
       .attr("stroke-width", 0.5)
       .attr("cursor", "pointer")
       // .attr("fill", d => d.clicked? "transparent": "black")
-      .attr("fill", "transparent")
-      .attr("opacity", 0.90)
+      .attr("fill", "black")
+      .attr("opacity", d => d.clicked ? 0 : 0.1)
       .on("click", (event, d) => {
         // change rectangles
         const newClicked = _.cloneDeep(rectangles)
@@ -116,13 +116,13 @@ function Grid({ parameters, setAnswer }) {
       )}
       {ourDefinition ? (
         <div>
-          <h3>Please click on patches to reveal. <br /> Click on all of the patches that <u> must be revealed </u> for people to correctly answer the question below:</h3>
-          <h3>{"<"}Q: {question}{">"}</h3>
+          <h2>Please click on patches to reveal. <br /> Click on all patches that <u> must be revealed </u> for people to correctly answer the question below:</h2>
+          <h2>{"<"}Q: {question}{">"}</h2>
         </div>
       ) : (
         <div>
-          <h3>Please click on patches to reveal.  <br />  Click on all patches that are <u>important</u> for answering the question below:</h3>
-          <h3>Q: {question}</h3>
+          <h2>Please click on patches to reveal.  <br />  Click on all patches that are <u>important</u> for answering the question below:</h2>
+          <h2>Q: {question}</h2>
         </div>
       )}
 

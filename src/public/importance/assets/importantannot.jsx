@@ -220,8 +220,8 @@ function ImportantAnnots({ parameters, setAnswer }) {
                 points={currentPoints}
                 stroke="blue"
                 strokeWidth={2}
-                closed={currentPoints.length > 4}
-                fill={currentPoints.length > 4 ? "rgba(0, 0, 255, 0.3)" : null}
+                closed={currentPoints.length > 3}
+                fill={currentPoints.length > 3 ? "rgba(0, 150, 255, 0.3)" : null}
               />
             )}
             {currentPoints.length > 0 && tool === "stroke" && (
@@ -230,7 +230,7 @@ function ImportantAnnots({ parameters, setAnswer }) {
                 stroke="red"
                 strokeWidth={2}
                 closed={true}
-                fill="rgba(255, 0, 0, 0.3)"
+                fill="rgba(255, 150, 0, 0.3)"
               />
             )}
             {/* A small circle on the last point in polygon mode */}

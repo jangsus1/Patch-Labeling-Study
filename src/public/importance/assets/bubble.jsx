@@ -62,11 +62,12 @@ function bubble({ parameters, setAnswer }) {
   return (
     <div>
       {example && (
-        <h1 style={{color:"red"}}>Example Question</h1>
+        <h1 style={{ color: "red" }}>Example Question</h1>
       )}
       {question ? (
         <div>
-          <h2>Please click on regions to reveal. Try to click areas that are relevant to answering the question below:</h2>
+          <h2>Please click on regions to reveal. <br />
+            Try to click areas that are relevant to answering the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (
@@ -88,15 +89,14 @@ function bubble({ parameters, setAnswer }) {
               <rect width="100%" height="100%" fill="white" />
               {clicked.length > 0 && (
                 <circle
-                key={0}
-                cx={clicked[clicked.length - 1].x}
-                cy={clicked[clicked.length - 1].y}
-                r={radius}
-                fill="black"
-                border="black"
-              />  
+                  key={0}
+                  cx={clicked[clicked.length - 1].x}
+                  cy={clicked[clicked.length - 1].y}
+                  r={radius}
+                  fill="black"
+                />
               )}
-              
+
             </mask>
           </defs>
           <image
@@ -111,8 +111,16 @@ function bubble({ parameters, setAnswer }) {
             filter="url(#imageBlurFilter)"
             mask="url(#unblurMask)"
           />
-
-          <g id="rectangles"></g>
+          {clicked.length > 0 && (
+            <circle
+              key={0}
+              cx={clicked[clicked.length - 1].x}
+              cy={clicked[clicked.length - 1].y}
+              r={radius}
+              fill="transparent"
+              stroke="red"
+            />
+          )}
         </svg>
       </Box>
     </div>

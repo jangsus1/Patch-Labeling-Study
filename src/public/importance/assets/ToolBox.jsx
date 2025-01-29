@@ -74,7 +74,7 @@ const ToolBox = ({ tool, setTool, undo, clearAll }) => {
                     <b>Stroke Fill:</b> Draw shape by clicking and dragging.
                 </Text>
                 <Text size="md">
-                    <b>Polygon Fill:</b> Click multiple points to draw a polygon. Double click to close the polygon.
+                    <b>Polygon Fill:</b> Click multiple points to draw a polygon. <u>Double click</u> to close the polygon.
                 </Text>
             </Stack>
         </Box>
