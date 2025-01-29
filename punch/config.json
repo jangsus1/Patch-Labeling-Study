@@ -1,0 +1,758 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.5/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "punch",
+        "version": "development",
+        "authors": [
+            "The reVISit Team",
+            "The reVISit Community"
+        ],
+        "date": "2023-10-13",
+        "description": "Punch",
+        "organizations": [
+            "Georgia Institute of Technology"
+        ]
+    },
+    "uiConfig": {
+        "contactEmail": "minsuk@gatech.edu",
+        "helpTextPath": "punch/assets/help.md",
+        "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "sidebar": true
+    },
+    "baseComponents": {
+        "punch": {
+            "type": "react-component",
+            "path": "punch/assets/patch.jsx",
+            "response": [
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type":"iframe"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar",
+            "parameters": {
+                "taskid": "punch"
+            }
+        }
+    },
+    "components": {
+        "welcome": {
+            "type": "markdown",
+            "path": "punch/assets/welcome.md",
+            "response": []
+        },
+        "consent": {
+            "type": "markdown",
+            "path": "punch/assets/consent.md",
+            "nextButtonText": "I agree",
+            "response": []
+        },
+        "demographics": {
+            "type": "questionnaire",
+            "response": [
+                {
+                    "id": "age",
+                    "type": "numerical",
+                    "required": true,
+                    "prompt": "What is your age?"
+                },
+                {
+                    "id": "height",
+                    "type": "numerical",
+                    "required": true,
+                    "prompt": "What is your height in inches?"
+                }
+            ]
+        },
+        "trial_9280.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 20210?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "x": 0,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256
+                ]
+            }
+        },
+        "trial_9280.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/9280.png",
+                "question": "What's the percentage of people choosing don't know in Feb 2016?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256
+                ]
+            }
+        },
+        "trial_07082838005745.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/07082838005745.png",
+                "question": "What is the value of pink colour?",
+                "holes": [
+                    {
+                        "x": 640,
+                        "y": 128
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_07082838005745.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/07082838005745.png",
+                "question": "What is the difference between the value of pink color to purple color?",
+                "holes": [
+                    {
+                        "x": 640,
+                        "y": 128
+                    },
+                    {
+                        "x": 640,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_14155246005645.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/14155246005645.png",
+                "question": "Which color bar represents the highest value in the graph?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "x": 768,
+                        "y": 0
+                    },
+                    {
+                        "x": 0,
+                        "y": 128
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_14155246005645.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/14155246005645.png",
+                "question": "What does the green bar represent?",
+                "holes": [
+                    {
+                        "x": 768,
+                        "y": 512
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_91588531013672.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/91588531013672.png",
+                "question": "What is the average among the two contries in the share that disagree that vaccines are important?",
+                "holes": [
+                    {
+                        "x": 768,
+                        "y": 128
+                    },
+                    {
+                        "x": 768,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_91588531013672.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/91588531013672.png",
+                "question": "What country has the highest share that disagree that vaccines are important?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 128
+                    },
+                    {
+                        "x": 768,
+                        "y": 128
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_6831.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/6831.png",
+                "question": "What's the total add-up value of the last three green bars?",
+                "holes": [
+                    {
+                        "x": 512,
+                        "y": 640
+                    },
+                    {
+                        "x": 512,
+                        "y": 768
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768,
+                    896
+                ]
+            }
+        },
+        "trial_6831.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/6831.png",
+                "question": "What's the color of the rightmost bar?",
+                "holes": [
+                    {
+                        "x": 384,
+                        "y": 768
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768,
+                    896
+                ]
+            }
+        },
+        "trial_15359798001840.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/15359798001840.png",
+                "question": "What si the percentage value for personal contact?",
+                "holes": [
+                    {
+                        "x": 128,
+                        "y": 0
+                    },
+                    {
+                        "x": 640,
+                        "y": 128
+                    },
+                    {
+                        "x": 768,
+                        "y": 128
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_15359798001840.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/15359798001840.png",
+                "question": "What is the percentage difference between the adverts and agencies?",
+                "holes": [
+                    {
+                        "x": 128,
+                        "y": 384
+                    },
+                    {
+                        "x": 128,
+                        "y": 512
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_50875547003833.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/50875547003833.png",
+                "question": "In which year is the difference between Prevalence and Incidence line greatest?",
+                "holes": [
+                    {
+                        "x": 640,
+                        "y": 0
+                    },
+                    {
+                        "x": 640,
+                        "y": 128
+                    },
+                    {
+                        "x": 640,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_50875547003833.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/50875547003833.png",
+                "question": "Is the value of the red dotted line in 2000 the lowest?",
+                "holes": [
+                    {
+                        "x": 128,
+                        "y": 0
+                    },
+                    {
+                        "x": 128,
+                        "y": 128
+                    },
+                    {
+                        "x": 128,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_7285.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/7285.png",
+                "question": "Is the total percentage of Army and Coast Guard more than total percentage of Navy and Air Force?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 128
+                    },
+                    {
+                        "x": 128,
+                        "y": 128
+                    },
+                    {
+                        "x": 0,
+                        "y": 256
+                    },
+                    {
+                        "x": 128,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384
+                ]
+            }
+        },
+        "trial_7285.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/7285.png",
+                "question": "Which branch of military constitutes maximum value?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 128
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384
+                ]
+            }
+        },
+        "trial_3785.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/3785.png",
+                "question": "What do the blue bars represent?",
+                "holes": [
+                    {
+                        "x": 256,
+                        "y": 0
+                    },
+                    {
+                        "x": 256,
+                        "y": 128
+                    },
+                    {
+                        "x": 256,
+                        "y": 256
+                    },
+                    {
+                        "x": 256,
+                        "y": 384
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384
+                ]
+            }
+        },
+        "trial_3785.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/3785.png",
+                "question": "What is the average of all the more important bars, not including the MEDIAN?",
+                "holes": [
+                    {
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "x": 0,
+                        "y": 128
+                    },
+                    {
+                        "x": 0,
+                        "y": 256
+                    },
+                    {
+                        "x": 0,
+                        "y": 384
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384
+                ]
+            }
+        },
+        "trial_multi_col_20125.png_Q0": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/multi_col_20125.png",
+                "question": "What was the total population of women in 2018?",
+                "holes": [
+                    {
+                        "x": 640,
+                        "y": 0
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        },
+        "trial_multi_col_20125.png_Q1": {
+            "baseComponent": "punch",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/grid_img/multi_col_20125.png",
+                "question": "How many more men were there than women in 2018?",
+                "holes": [
+                    {
+                        "x": 640,
+                        "y": 0
+                    },
+                    {
+                        "x": 640,
+                        "y": 128
+                    },
+                    {
+                        "x": 640,
+                        "y": 256
+                    }
+                ],
+                "x_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512,
+                    640,
+                    768
+                ],
+                "y_grids": [
+                    0,
+                    128,
+                    256,
+                    384,
+                    512
+                ]
+            }
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "welcome",
+            "consent",
+            {
+                "order": "random",
+                "numSamples": 10,
+                "components": [
+                    "trial_9280.png_Q0",
+                    "trial_9280.png_Q1",
+                    "trial_07082838005745.png_Q0",
+                    "trial_07082838005745.png_Q1",
+                    "trial_14155246005645.png_Q0",
+                    "trial_14155246005645.png_Q1",
+                    "trial_91588531013672.png_Q0",
+                    "trial_91588531013672.png_Q1",
+                    "trial_6831.png_Q0",
+                    "trial_6831.png_Q1",
+                    "trial_15359798001840.png_Q0",
+                    "trial_15359798001840.png_Q1",
+                    "trial_50875547003833.png_Q0",
+                    "trial_50875547003833.png_Q1",
+                    "trial_7285.png_Q0",
+                    "trial_7285.png_Q1",
+                    "trial_3785.png_Q0",
+                    "trial_3785.png_Q1",
+                    "trial_multi_col_20125.png_Q0",
+                    "trial_multi_col_20125.png_Q1"
+                ]
+            },
+            "demographics"
+        ]
+    }
+}

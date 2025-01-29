@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Pure HTML/JS Punch Example with ReVISit</title>
+  <style>
+    .ImageWrapper {
+      width: 100%;
+    }
+  </style>
+  <!-- Use d3 v7 to match the reVISit example -->
+  <script src="https://d3js.org/d3.v7.js"></script>
+  <!-- Load reVISit-communicate to be able to send/receive data -->
+  <script src="../../revisitUtilities/revisit-communicate.js"></script>
+</head>
+
+<body>
+  <!-- A place to show the question text -->
+  <h2 id="question"></h2>
+
+  <!-- Replaces the original <Box> with a simple <div> container -->
+  <div class="ImageWrapper">
+    <svg id="svg" width="800" height="800">
+      <image id="punchImage"></image>
+    </svg>
+  </div>
+</body>
+
+<script>
+  Revisit.onDataReceive((data) => {
+    // Extract the parameters or set some defaults if not provided
+    const params = data || {
+      question: "Click on the areas you want to punch:",
+      image: "https://via.placeholder.com/800",
+      holes: [{ x: 100, y: 100 }],
+      x_grids: [0, 200, 400, 600],
+      y_grids: [0, 200, 400, 600],
+    };
+
+    // Call the main setup function
+    punch(params);
+  });
+
+  // Utility function to check if {x, y} is in a list
+  function isObjectInList(obj, list) {
+    return list.some((item) =>
+      Object.keys(obj).every((key) => obj[key] === item[key])
+    );
+  }
+
+  // This function mimics the "punch" component logic from React
+  function punch(parameters) {
+    // Display the question
+    document.getElementById("question").textContent = parameters.question;
+    // Update the <image> tag with the correct source
+    document.getElementById("punchImage").setAttribute("href", parameters.image);
+
+    // We'll keep track of which rectangles were clicked
+    let clicked = [];
+    let rectangles = [];
+
+    // Create an <img> to measure the loaded image's width & height
+    const img = new Image();
+    img.src = parameters.image;
+    img.onload = () => {
+      // Build each rectangle from the grid definitions
+      const rects = [];
+      for (let i = 0; i < parameters.x_grids.length; i++) {
+        for (let j = 0; j < parameters.y_grids.length; j++) {
+          // If it's the last grid cell, stretch to the edge
+          if (
+            i + 1 === parameters.x_grids.length ||
+            j + 1 === parameters.y_grids.length
+          ) {
+            rects.push({
+              x: parameters.x_grids[i],
+              y: parameters.y_grids[j],
+              width: img.width - parameters.x_grids[i],
+              height: img.height - parameters.y_grids[j],
+            });
+          } else {
+            rects.push({
+              x: parameters.x_grids[i],
+              y: parameters.y_grids[j],
+              width:
+                parameters.x_grids[i + 1] - parameters.x_grids[i],
+              height:
+                parameters.y_grids[j + 1] - parameters.y_grids[j],
+            });
+          }
+        }
+      }
+      rectangles = rects;
+      // Now that we have rectangles, draw them
+      drawRectangles();
+    };
+
+    // When the user chooses an answer, post it to reVISit
+
+    // The main drawing / updating function
+    function drawRectangles() {
+      const svg = d3.select("#svg");
+      const filled = [...parameters.holes, ...clicked];
+
+      svg
+        .selectAll("rect")
+        .data(rectangles)
+        .join("rect")
+        .attr("x", (d) => d.x)
+        .attr("y", (d) => d.y)
+        .attr("width", (d) => d.width)
+        .attr("height", (d) => d.height)
+        .attr("fill", (d) =>
+          isObjectInList({ x: d.x, y: d.y }, filled)
+            ? "none" // transparent if "punched"
+            : "black"
+        )
+        .on("click", (event, d) => {
+          const rectKey = { x: d.x, y: d.y };
+          // Toggle the clicked state
+          if (isObjectInList(rectKey, clicked)) {
+            clicked = clicked.filter(
+              (item) => item.x !== rectKey.x || item.y !== rectKey.y
+            );
+          } else {
+            clicked.push(rectKey);
+          }
+          // Build the answer object in the same style as the original code
+          const imageName = parameters.image.split("/").pop();
+          const returnable = clicked
+            .map((item) => `[${item.x},${item.y}]`)
+            .join(",");
+          Revisit.postAnswers({ patch: returnable })
+          console.log("Clicked:", returnable);
+          // Redraw with updated data
+          drawRectangles();
+        });
+    }
+  }
+</script>
+
+</html>

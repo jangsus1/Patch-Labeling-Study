@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>D3 Image with Blurred Squares</title>
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <!-- Load revisit-communicate to be able to send data to reVISit -->
+    <script src="../../revisitUtilities/revisit-communicate.js"></script>
+  </head>
+
+  <body>
+    <svg></svg>
+  </body>
+
+  <script>
+    // Get data from the config file
+    Revisit.onDataReceive((data) => {
+      const imageLink = data['image'];
+      const coordinates = data['coordinates']; // array of objects with x1, y1, x2, y2
+      const imgWidth = data['imgWidth'];
+      const imgHeight = data['imgHeight'];
+
+      const height = 400;
+      const width = 750;
+      const padding = 25;
+      const svg = d3.select('svg');
+      svg
+        .attr('width', width + 2 * padding)
+        .attr('height', height + 2 * padding);
+
+      const xScale = d3.scaleLinear().domain([0, imgWidth]).range([0, width]);
+      const yScale = d3.scaleLinear().domain([0, imgHeight]).range([0, height]);
+
+      // Display the image
+      svg
+        .append('image')
+        .attr('xlink:href', imageLink)
+        .attr('width', width)
+        .attr('height', height)
+        .attr('x', padding)
+        .attr('y', padding);
+
+      // Define the blur filter
+      svg
+        .append('defs')
+        .append('filter')
+        .attr('id', 'blur')
+        .append('feGaussianBlur')
+        .attr('stdDeviation', 5);
+
+      // Draw blurred squares based on the coordinates
+      svg
+        .selectAll('.blurredRect')
+        .data(coordinates)
+        .join('rect')
+        .classed('blurredRect', true)
+        .attr('transform', 'translate(' + padding + ',' + padding + ')')
+        .attr('x', (d) => xScale(d.x1))
+        .attr('y', (d) => yScale(d.y1))
+        .attr('width', (d) => xScale(d.x2) - xScale(d.x1))
+        .attr('height', (d) => yScale(d.y2) - yScale(d.y1))
+        .style('fill', 'white')
+        .style('filter', 'url(#blur)');
+    });
+  </script>
+</html>
