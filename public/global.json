@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/GlobalConfigSchema.json",
+  "configsList": [
+    "importance"
+  ],
+  "configs": {
+    "importance": {
+      "path": "importance/config.json"
+    }
+  }
+} 

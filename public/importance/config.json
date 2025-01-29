@@ -1,0 +1,1499 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "Tool Comparison - Experts",
+        "version": "dev",
+        "authors": [
+            "Minsuk Chang"
+        ],
+        "date": "2025-01-23",
+        "description": "Comparing Tools for Importance Annotation",
+        "organizations": [
+            "Georgia Institute of Technology"
+        ]
+    },
+    "uiConfig": {
+        "contactEmail": "minsuk@gatech.edu",
+        "helpTextPath": "importance/assets/help.md",
+        "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "sidebar": true
+    },
+    "baseComponents": {
+        "grid": {
+            "type": "react-component",
+            "path": "importance/assets/grid.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type":"shortText"
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type":"reactive"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        },
+        "bubble": {
+            "type": "react-component",
+            "path": "importance/assets/bubble.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "circles",
+                    "prompt": "Selected circles:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "parameters": {
+                "radius_count": 10
+            },
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        },
+        "important_annot": {
+            "type": "react-component",
+            "path": "importance/assets/importantannot.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "annotations",
+                    "prompt": "Annotated Area:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        }
+    },
+    "components": {
+        "welcome": {
+            "type": "markdown",
+            "path": "importance/assets/welcome.md",
+            "response": []
+        },
+        "consent": {
+            "type": "markdown",
+            "path": "importance/assets/consent.md",
+            "nextButtonText": "I agree",
+            "response": []
+        },
+        "example_start": {
+            "type": "markdown",
+            "path": "importance/assets/example_start.md",
+            "response": []
+        },
+        "main_start": {
+            "type": "markdown",
+            "path": "importance/assets/main_start.md",
+            "response": []
+        },
+        "static_chartqa_text_bar_05411753006467.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "x_grids": [
+                    78,
+                    156,
+                    234,
+                    312,
+                    390,
+                    468,
+                    546,
+                    624,
+                    702,
+                    780
+                ],
+                "y_grids": [
+                    55,
+                    110,
+                    165,
+                    220,
+                    275,
+                    330,
+                    385,
+                    440,
+                    495,
+                    550
+                ],
+                "chart_type": "text_bar",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_text_bar_05411753006467.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "x_grids": [
+                    78,
+                    156,
+                    234,
+                    312,
+                    390,
+                    468,
+                    546,
+                    624,
+                    702,
+                    780
+                ],
+                "y_grids": [
+                    55,
+                    110,
+                    165,
+                    220,
+                    275,
+                    330,
+                    385,
+                    440,
+                    495,
+                    550
+                ],
+                "chart_type": "text_bar",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_text_bar_05411753006467.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "chart_type": "text_bar"
+            }
+        },
+        "importAnnot_chartqa_text_bar_05411753006467.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "chart_type": "text_bar"
+            }
+        },
+        "static_chartqa_text_stacked_bar_9280.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 20210?",
+                "x_grids": [
+                    29,
+                    58,
+                    87,
+                    116,
+                    145,
+                    174,
+                    203,
+                    232,
+                    261,
+                    290
+                ],
+                "y_grids": [
+                    28,
+                    56,
+                    84,
+                    112,
+                    140,
+                    168,
+                    196,
+                    224,
+                    252,
+                    280
+                ],
+                "chart_type": "text_stacked_bar",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_text_stacked_bar_9280.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 20210?",
+                "x_grids": [
+                    29,
+                    58,
+                    87,
+                    116,
+                    145,
+                    174,
+                    203,
+                    232,
+                    261,
+                    290
+                ],
+                "y_grids": [
+                    28,
+                    56,
+                    84,
+                    112,
+                    140,
+                    168,
+                    196,
+                    224,
+                    252,
+                    280
+                ],
+                "chart_type": "text_stacked_bar",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_text_stacked_bar_9280.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 20210?",
+                "chart_type": "text_stacked_bar"
+            }
+        },
+        "importAnnot_chartqa_text_stacked_bar_9280.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 20210?",
+                "chart_type": "text_stacked_bar"
+            }
+        },
+        "static_chartqa_text_pie_43.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "question": "What's the ratio of people use and do not use Latinx?",
+                "x_grids": [
+                    57,
+                    114,
+                    171,
+                    228,
+                    285,
+                    342,
+                    399,
+                    456,
+                    513,
+                    570
+                ],
+                "y_grids": [
+                    80,
+                    160,
+                    240,
+                    320,
+                    400,
+                    480,
+                    560,
+                    640,
+                    720,
+                    800
+                ],
+                "chart_type": "text_pie",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_text_pie_43.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "question": "What's the ratio of people use and do not use Latinx?",
+                "x_grids": [
+                    57,
+                    114,
+                    171,
+                    228,
+                    285,
+                    342,
+                    399,
+                    456,
+                    513,
+                    570
+                ],
+                "y_grids": [
+                    80,
+                    160,
+                    240,
+                    320,
+                    400,
+                    480,
+                    560,
+                    640,
+                    720,
+                    800
+                ],
+                "chart_type": "text_pie",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_text_pie_43.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "question": "What's the ratio of people use and do not use Latinx?",
+                "chart_type": "text_pie"
+            }
+        },
+        "importAnnot_chartqa_text_pie_43.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "question": "What's the ratio of people use and do not use Latinx?",
+                "chart_type": "text_pie"
+            }
+        },
+        "static_chartqa_text_line_19371621021871.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "x_grids": [
+                    78,
+                    156,
+                    234,
+                    312,
+                    390,
+                    468,
+                    546,
+                    624,
+                    702,
+                    780
+                ],
+                "y_grids": [
+                    55,
+                    110,
+                    165,
+                    220,
+                    275,
+                    330,
+                    385,
+                    440,
+                    495,
+                    550
+                ],
+                "chart_type": "text_line",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_text_line_19371621021871.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "x_grids": [
+                    78,
+                    156,
+                    234,
+                    312,
+                    390,
+                    468,
+                    546,
+                    624,
+                    702,
+                    780
+                ],
+                "y_grids": [
+                    55,
+                    110,
+                    165,
+                    220,
+                    275,
+                    330,
+                    385,
+                    440,
+                    495,
+                    550
+                ],
+                "chart_type": "text_line",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_text_line_19371621021871.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "chart_type": "text_line"
+            }
+        },
+        "importAnnot_chartqa_text_line_19371621021871.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "chart_type": "text_line"
+            }
+        },
+        "static_chartqa_notext_line_two_col_4524.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_line",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_notext_line_two_col_4524.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_line",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_notext_line_two_col_4524.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "chart_type": "notext_line"
+            }
+        },
+        "importAnnot_chartqa_notext_line_two_col_4524.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "chart_type": "notext_line"
+            }
+        },
+        "static_chartqa_notext_pie_two_col_61107.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_pie",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_notext_pie_two_col_61107.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_pie",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_notext_pie_two_col_61107.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "chart_type": "notext_pie"
+            }
+        },
+        "importAnnot_chartqa_notext_pie_two_col_61107.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "chart_type": "notext_pie"
+            }
+        },
+        "static_chartqa_notext_bar_two_col_40186.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_bar",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_notext_bar_two_col_40186.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_bar",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_notext_bar_two_col_40186.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "chart_type": "notext_bar"
+            }
+        },
+        "importAnnot_chartqa_notext_bar_two_col_40186.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "chart_type": "notext_bar"
+            }
+        },
+        "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_stacked_bar",
+                "grid": "static-10"
+            }
+        },
+        "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_stacked_bar",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_chartqa_notext_stacked_bar_multi_col_60949.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "chart_type": "notext_stacked_bar"
+            }
+        },
+        "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "chart_type": "notext_stacked_bar"
+            }
+        },
+        "static_charxiv_scatterplot_17.jpg_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    62,
+                    124,
+                    186,
+                    248,
+                    310,
+                    372,
+                    434,
+                    496,
+                    558,
+                    620
+                ],
+                "chart_type": "scatterplot",
+                "grid": "static-10"
+            }
+        },
+        "static_charxiv_scatterplot_17.jpg_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    62,
+                    124,
+                    186,
+                    248,
+                    310,
+                    372,
+                    434,
+                    496,
+                    558,
+                    620
+                ],
+                "chart_type": "scatterplot",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_charxiv_scatterplot_17.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "importAnnot_charxiv_scatterplot_17.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "static_charxiv_hist_20.jpg_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    63,
+                    126,
+                    189,
+                    252,
+                    315,
+                    378,
+                    441,
+                    504,
+                    567,
+                    630
+                ],
+                "chart_type": "hist",
+                "grid": "static-10"
+            }
+        },
+        "static_charxiv_hist_20.jpg_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    63,
+                    126,
+                    189,
+                    252,
+                    315,
+                    378,
+                    441,
+                    504,
+                    567,
+                    630
+                ],
+                "chart_type": "hist",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_charxiv_hist_20.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "chart_type": "hist"
+            }
+        },
+        "importAnnot_charxiv_hist_20.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "chart_type": "hist"
+            }
+        },
+        "static_charxiv_contour_954.jpg_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747,
+                    830
+                ],
+                "chart_type": "contour",
+                "grid": "static-10"
+            }
+        },
+        "static_charxiv_contour_954.jpg_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747,
+                    830
+                ],
+                "chart_type": "contour",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_charxiv_contour_954.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "chart_type": "contour"
+            }
+        },
+        "importAnnot_charxiv_contour_954.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "chart_type": "contour"
+            }
+        },
+        "static_charxiv_3d_1314.jpg_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747,
+                    830
+                ],
+                "chart_type": "3d",
+                "grid": "static-10"
+            }
+        },
+        "static_charxiv_3d_1314.jpg_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747,
+                    830
+                ],
+                "chart_type": "3d",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_charxiv_3d_1314.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "chart_type": "3d"
+            }
+        },
+        "importAnnot_charxiv_3d_1314.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "chart_type": "3d"
+            }
+        },
+        "static_charxiv_heatmap_568.jpg_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "chart_type": "heatmap",
+                "grid": "static-10"
+            }
+        },
+        "static_charxiv_heatmap_568.jpg_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "chart_type": "heatmap",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_charxiv_heatmap_568.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "chart_type": "heatmap"
+            }
+        },
+        "importAnnot_charxiv_heatmap_568.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "chart_type": "heatmap"
+            }
+        },
+        "static_charxiv_geo_433.jpg_10_false": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    54,
+                    108,
+                    162,
+                    216,
+                    270,
+                    324,
+                    378,
+                    432,
+                    486,
+                    540
+                ],
+                "chart_type": "geo",
+                "grid": "static-10"
+            }
+        },
+        "static_charxiv_geo_433.jpg_10_true": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    54,
+                    108,
+                    162,
+                    216,
+                    270,
+                    324,
+                    378,
+                    432,
+                    486,
+                    540
+                ],
+                "chart_type": "geo",
+                "grid": "static-10",
+                "ourDefinition": true
+            }
+        },
+        "bubble_charxiv_geo_433.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "chart_type": "geo"
+            }
+        },
+        "importAnnot_charxiv_geo_433.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "chart_type": "geo"
+            }
+        },
+        "grid_example": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "question": "How many lines are there?",
+                "x_grids": [
+                    57,
+                    114,
+                    171,
+                    228,
+                    285,
+                    342,
+                    399,
+                    456,
+                    513,
+                    570
+                ],
+                "y_grids": [
+                    80,
+                    160,
+                    240,
+                    320,
+                    400,
+                    480,
+                    560,
+                    640,
+                    720,
+                    800
+                ],
+                "example": true
+            }
+        },
+        "bubble_example": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "question": "How many lines are there?",
+                "example": true
+            }
+        },
+        "importAnnot_example": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "question": "How many lines are there?",
+                "example": true
+            }
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "welcome",
+            "consent",
+            "example_start",
+            "grid_example",
+            "bubble_example",
+            "importAnnot_example",
+            "main_start",
+            {
+                "id": "images",
+                "order": "random",
+                "components": [
+                    {
+                        "id": "05411753006467.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_text_bar_05411753006467.png_10_false",
+                            "static_chartqa_text_bar_05411753006467.png_10_true",
+                            "bubble_chartqa_text_bar_05411753006467.png",
+                            "importAnnot_chartqa_text_bar_05411753006467.png"
+                        ]
+                    },
+                    {
+                        "id": "9280.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_text_stacked_bar_9280.png_10_false",
+                            "static_chartqa_text_stacked_bar_9280.png_10_true",
+                            "bubble_chartqa_text_stacked_bar_9280.png",
+                            "importAnnot_chartqa_text_stacked_bar_9280.png"
+                        ]
+                    },
+                    {
+                        "id": "43.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_text_pie_43.png_10_false",
+                            "static_chartqa_text_pie_43.png_10_true",
+                            "bubble_chartqa_text_pie_43.png",
+                            "importAnnot_chartqa_text_pie_43.png"
+                        ]
+                    },
+                    {
+                        "id": "19371621021871.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_text_line_19371621021871.png_10_false",
+                            "static_chartqa_text_line_19371621021871.png_10_true",
+                            "bubble_chartqa_text_line_19371621021871.png",
+                            "importAnnot_chartqa_text_line_19371621021871.png"
+                        ]
+                    },
+                    {
+                        "id": "two_col_4524.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_notext_line_two_col_4524.png_10_false",
+                            "static_chartqa_notext_line_two_col_4524.png_10_true",
+                            "bubble_chartqa_notext_line_two_col_4524.png",
+                            "importAnnot_chartqa_notext_line_two_col_4524.png"
+                        ]
+                    },
+                    {
+                        "id": "two_col_61107.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_notext_pie_two_col_61107.png_10_false",
+                            "static_chartqa_notext_pie_two_col_61107.png_10_true",
+                            "bubble_chartqa_notext_pie_two_col_61107.png",
+                            "importAnnot_chartqa_notext_pie_two_col_61107.png"
+                        ]
+                    },
+                    {
+                        "id": "two_col_40186.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_notext_bar_two_col_40186.png_10_false",
+                            "static_chartqa_notext_bar_two_col_40186.png_10_true",
+                            "bubble_chartqa_notext_bar_two_col_40186.png",
+                            "importAnnot_chartqa_notext_bar_two_col_40186.png"
+                        ]
+                    },
+                    {
+                        "id": "multi_col_60949.png",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_false",
+                            "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_true",
+                            "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                            "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png"
+                        ]
+                    },
+                    {
+                        "id": "17.jpg",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_charxiv_scatterplot_17.jpg_10_false",
+                            "static_charxiv_scatterplot_17.jpg_10_true",
+                            "bubble_charxiv_scatterplot_17.jpg",
+                            "importAnnot_charxiv_scatterplot_17.jpg"
+                        ]
+                    },
+                    {
+                        "id": "20.jpg",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_charxiv_hist_20.jpg_10_false",
+                            "static_charxiv_hist_20.jpg_10_true",
+                            "bubble_charxiv_hist_20.jpg",
+                            "importAnnot_charxiv_hist_20.jpg"
+                        ]
+                    },
+                    {
+                        "id": "954.jpg",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_charxiv_contour_954.jpg_10_false",
+                            "static_charxiv_contour_954.jpg_10_true",
+                            "bubble_charxiv_contour_954.jpg",
+                            "importAnnot_charxiv_contour_954.jpg"
+                        ]
+                    },
+                    {
+                        "id": "1314.jpg",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_charxiv_3d_1314.jpg_10_false",
+                            "static_charxiv_3d_1314.jpg_10_true",
+                            "bubble_charxiv_3d_1314.jpg",
+                            "importAnnot_charxiv_3d_1314.jpg"
+                        ]
+                    },
+                    {
+                        "id": "568.jpg",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_charxiv_heatmap_568.jpg_10_false",
+                            "static_charxiv_heatmap_568.jpg_10_true",
+                            "bubble_charxiv_heatmap_568.jpg",
+                            "importAnnot_charxiv_heatmap_568.jpg"
+                        ]
+                    },
+                    {
+                        "id": "433.jpg",
+                        "order": "latinSquare",
+                        "numSamples": 1,
+                        "components": [
+                            "static_charxiv_geo_433.jpg_10_false",
+                            "static_charxiv_geo_433.jpg_10_true",
+                            "bubble_charxiv_geo_433.jpg",
+                            "importAnnot_charxiv_geo_433.jpg"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
