@@ -200,7 +200,7 @@
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
-                "question": "What's the difference of people choosing very important between 2016 and 20210?",
+                "question": "What's the difference of people choosing very important between 2016 and 2021?",
                 "x_grids": [
                     29,
                     58,
@@ -283,7 +283,7 @@
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
-                "question": "What's the ratio of people use and do not use Latinx?",
+                "question": "What's the ratio of people who 'use Latinx' versus who 'do not use Latinx'?",
                 "x_grids": [
                     57,
                     114,
@@ -316,7 +316,7 @@
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
-                "question": "What's the ratio of people use and do not use Latinx?",
+                "question": "What's the ratio of people who 'use Latinx' versus who 'do not use Latinx'?",
                 "x_grids": [
                     57,
                     114,
@@ -350,7 +350,7 @@
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
-                "question": "What's the ratio of people use and do not use Latinx?",
+                "question": "What's the ratio of people who 'use Latinx' versus who 'do not use Latinx'?",
                 "chart_type": "text_pie"
             }
         },
@@ -358,7 +358,7 @@
             "baseComponent": "important_annot",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
-                "question": "What's the ratio of people use and do not use Latinx?",
+                "question": "What's the ratio of people who 'use Latinx' versus who 'do not use Latinx'?",
                 "chart_type": "text_pie"
             }
         },
@@ -1279,7 +1279,7 @@
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
-                "question": "How many lines are there?",
+                "question": "How many color of lines are there?",
                 "x_grids": [
                     57,
                     114,
@@ -1311,7 +1311,7 @@
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
-                "question": "How many lines are there?",
+                "question": "How many color of lines are there?",
                 "example": true
             }
         },
@@ -1319,7 +1319,7 @@
             "baseComponent": "important_annot",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
-                "question": "How many lines are there?",
+                "question": "How many color of lines are there?",
                 "example": true
             }
         }
