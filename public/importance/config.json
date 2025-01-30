@@ -1030,7 +1030,7 @@
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
-                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
                 "x_grids": [
                     94,
                     188,
@@ -1063,7 +1063,7 @@
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
-                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
                 "x_grids": [
                     94,
                     188,
@@ -1097,7 +1097,7 @@
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
-                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
                 "chart_type": "3d"
             }
         },
@@ -1105,7 +1105,7 @@
             "baseComponent": "important_annot",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
-                "question": "Compare the infidelity extents between the two methods along \\( \\epsilon_1 = 0.2 \\). Which method demonstrates a wider range of infidelity values?",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
                 "chart_type": "3d"
             }
         },

@@ -51,6 +51,7 @@
     "react-dom": "^18.3.1",
     "react-konva": "18",
     "react-markdown": "^9.0.3",
+    "react-mathjax2": "^0.0.2",
     "react-redux": "^9.2.0",
     "react-router": "^7.1.2",
     "react-timer-hook": "^3.0.8",

@@ -7,7 +7,8 @@ import useImage from "use-image"
 import { Stage, Layer, Line, Circle } from "react-konva"
 import { Image as KonvaImage } from "react-konva"
 import ToolBox from "./ToolBox"
-import { use } from "react"
+import { MathJax, MathJaxContext } from "react-mathjax";
+
 
 function ImportantAnnots({ parameters, setAnswer }) {
   const { image, question, example, ourDefinition } = parameters
