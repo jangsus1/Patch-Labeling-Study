@@ -116,7 +116,7 @@
         "static_chartqa_text_bar_05411753006467.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/05411753006467.png",
                 "question": "What is the highest value in the chart?",
                 "x_grids": [
                     78,
@@ -149,7 +149,7 @@
         "static_chartqa_text_bar_05411753006467.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/05411753006467.png",
                 "question": "What is the highest value in the chart?",
                 "x_grids": [
                     78,
@@ -183,7 +183,7 @@
         "bubble_chartqa_text_bar_05411753006467.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/05411753006467.png",
                 "question": "What is the highest value in the chart?",
                 "chart_type": "text_bar"
             }
@@ -191,7 +191,7 @@
         "importAnnot_chartqa_text_bar_05411753006467.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/05411753006467.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/05411753006467.png",
                 "question": "What is the highest value in the chart?",
                 "chart_type": "text_bar"
             }
@@ -199,7 +199,7 @@
         "static_chartqa_text_stacked_bar_9280.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/9280.png",
                 "question": "What's the difference of people choosing very important between 2016 and 2010?",
                 "x_grids": [
                     29,
@@ -232,7 +232,7 @@
         "static_chartqa_text_stacked_bar_9280.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/9280.png",
                 "question": "What's the difference of people choosing very important between 2016 and 2010?",
                 "x_grids": [
                     29,
@@ -266,7 +266,7 @@
         "bubble_chartqa_text_stacked_bar_9280.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/9280.png",
                 "question": "What's the difference of people choosing very important between 2016 and 2010?",
                 "chart_type": "text_stacked_bar"
             }
@@ -274,7 +274,7 @@
         "importAnnot_chartqa_text_stacked_bar_9280.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/9280.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/9280.png",
                 "question": "What's the difference of people choosing very important between 2016 and 2010?",
                 "chart_type": "text_stacked_bar"
             }
@@ -282,7 +282,7 @@
         "static_chartqa_text_pie_43.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/43.png",
                 "question": "What's the ratio of people use and do not use Latinx?",
                 "x_grids": [
                     57,
@@ -315,7 +315,7 @@
         "static_chartqa_text_pie_43.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/43.png",
                 "question": "What's the ratio of people use and do not use Latinx?",
                 "x_grids": [
                     57,
@@ -349,7 +349,7 @@
         "bubble_chartqa_text_pie_43.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/43.png",
                 "question": "What's the ratio of people use and do not use Latinx?",
                 "chart_type": "text_pie"
             }
@@ -357,7 +357,7 @@
         "importAnnot_chartqa_text_pie_43.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/43.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/43.png",
                 "question": "What's the ratio of people use and do not use Latinx?",
                 "chart_type": "text_pie"
             }
@@ -365,7 +365,7 @@
         "static_chartqa_text_line_19371621021871.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/19371621021871.png",
                 "question": "Between which two years was the public trust in government least?",
                 "x_grids": [
                     78,
@@ -398,7 +398,7 @@
         "static_chartqa_text_line_19371621021871.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/19371621021871.png",
                 "question": "Between which two years was the public trust in government least?",
                 "x_grids": [
                     78,
@@ -432,7 +432,7 @@
         "bubble_chartqa_text_line_19371621021871.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/19371621021871.png",
                 "question": "Between which two years was the public trust in government least?",
                 "chart_type": "text_line"
             }
@@ -440,7 +440,7 @@
         "importAnnot_chartqa_text_line_19371621021871.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/19371621021871.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/19371621021871.png",
                 "question": "Between which two years was the public trust in government least?",
                 "chart_type": "text_line"
             }
@@ -448,7 +448,7 @@
         "static_chartqa_notext_line_two_col_4524.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_4524.png",
                 "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
                 "x_grids": [
                     73,
@@ -481,7 +481,7 @@
         "static_chartqa_notext_line_two_col_4524.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_4524.png",
                 "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
                 "x_grids": [
                     73,
@@ -515,7 +515,7 @@
         "bubble_chartqa_notext_line_two_col_4524.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_4524.png",
                 "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
                 "chart_type": "notext_line"
             }
@@ -523,7 +523,7 @@
         "importAnnot_chartqa_notext_line_two_col_4524.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_4524.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_4524.png",
                 "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
                 "chart_type": "notext_line"
             }
@@ -531,7 +531,7 @@
         "static_chartqa_notext_pie_two_col_61107.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_61107.png",
                 "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
                 "x_grids": [
                     73,
@@ -564,7 +564,7 @@
         "static_chartqa_notext_pie_two_col_61107.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_61107.png",
                 "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
                 "x_grids": [
                     73,
@@ -598,7 +598,7 @@
         "bubble_chartqa_notext_pie_two_col_61107.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_61107.png",
                 "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
                 "chart_type": "notext_pie"
             }
@@ -606,7 +606,7 @@
         "importAnnot_chartqa_notext_pie_two_col_61107.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_61107.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_61107.png",
                 "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
                 "chart_type": "notext_pie"
             }
@@ -614,7 +614,7 @@
         "static_chartqa_notext_bar_two_col_40186.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_40186.png",
                 "question": "What is the value shows in cocaine ?",
                 "x_grids": [
                     73,
@@ -647,7 +647,7 @@
         "static_chartqa_notext_bar_two_col_40186.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_40186.png",
                 "question": "What is the value shows in cocaine ?",
                 "x_grids": [
                     73,
@@ -681,7 +681,7 @@
         "bubble_chartqa_notext_bar_two_col_40186.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_40186.png",
                 "question": "What is the value shows in cocaine ?",
                 "chart_type": "notext_bar"
             }
@@ -689,7 +689,7 @@
         "importAnnot_chartqa_notext_bar_two_col_40186.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/two_col_40186.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_40186.png",
                 "question": "What is the value shows in cocaine ?",
                 "chart_type": "notext_bar"
             }
@@ -697,7 +697,7 @@
         "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_false": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/multi_col_60949.png",
                 "question": "How many bars in the chart is above 750000 mark?",
                 "x_grids": [
                     73,
@@ -730,7 +730,7 @@
         "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_true": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/multi_col_60949.png",
                 "question": "How many bars in the chart is above 750000 mark?",
                 "x_grids": [
                     73,
@@ -764,7 +764,7 @@
         "bubble_chartqa_notext_stacked_bar_multi_col_60949.png": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/multi_col_60949.png",
                 "question": "How many bars in the chart is above 750000 mark?",
                 "chart_type": "notext_stacked_bar"
             }
@@ -772,7 +772,7 @@
         "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/multi_col_60949.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/multi_col_60949.png",
                 "question": "How many bars in the chart is above 750000 mark?",
                 "chart_type": "notext_stacked_bar"
             }
@@ -1278,7 +1278,7 @@
         "grid_example": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/34.png",
                 "question": "What is the highest number for the brown line?",
                 "x_grids": [
                     57,
@@ -1310,7 +1310,7 @@
         "grid_example2": {
             "baseComponent": "grid",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/34.png",
                 "question": "How many color of lines are there?",
                 "x_grids": [
                     57,
@@ -1343,7 +1343,7 @@
         "bubble_example": {
             "baseComponent": "bubble",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/34.png",
                 "question": "Do the two lines meet?",
                 "example": true
             }
@@ -1351,7 +1351,7 @@
         "importAnnot_example": {
             "baseComponent": "important_annot",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/raw_img/34.png",
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/34.png",
                 "question": "How many years are the graph?",
                 "example": true
             }
