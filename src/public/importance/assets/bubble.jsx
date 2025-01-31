@@ -4,13 +4,6 @@ import { Box } from "@mantine/core"
 import React from "react"
 import _ from "lodash";
 
-const isObjectInList = (obj, list) => {
-  return list.some(item =>
-    Object.keys(obj).every(key => obj[key] === item[key])
-  );
-};
-
-
 function bubble({ parameters, setAnswer }) {
   const ref = useRef(null)
   const { image, question, radius_count, example } = parameters

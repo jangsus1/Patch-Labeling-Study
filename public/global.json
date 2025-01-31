@@ -1,11 +1,23 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
-    "importance"
+    "importance",
+    "punch",
+    "phase1",
+    "phase2"
   ],
   "configs": {
     "importance": {
       "path": "importance/config.json"
+    },
+    "punch": {
+      "path": "punch/config.json"
+    },
+    "phase1": {
+      "path": "phase1/config.json"
+    },
+    "phase2": {
+      "path": "phase2/config.json"
     }
   }
 } 
