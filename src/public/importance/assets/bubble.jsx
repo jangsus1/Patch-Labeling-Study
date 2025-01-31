@@ -11,6 +11,15 @@ function bubble({ parameters, setAnswer }) {
   const [size, setSize] = useState({ width: 0, height: 0 })
   const containerRef = useRef(null);
   const [radius, setRadius] = useState(0)
+  const [view, setView] = useState(false)
+  
+    // 2 sec timer
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setView(true)
+      }, 1500);
+      return () => clearTimeout(timer);
+    }, []);
 
 
   useEffect(() => {
@@ -57,10 +66,10 @@ function bubble({ parameters, setAnswer }) {
       {example && (
         <h1 style={{ color: "red" }}>Example Question</h1>
       )}
+      <h1>Bubble View</h1>
       {question ? (
         <div>
-          <h2>Please click on regions to reveal. <br />
-            Try to click areas that are relevant to answering the question below:</h2>
+          <h2>Please click on regions to reveal. Try to click areas that are <span style={{color: "red"}} >relevant</span> to answering the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (
@@ -71,7 +80,7 @@ function bubble({ parameters, setAnswer }) {
           </h2>
         </div>
       )}
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%" }}>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex": "none" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback}>
           <defs>
             <filter id="imageBlurFilter">

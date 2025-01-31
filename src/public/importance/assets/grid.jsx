@@ -17,6 +17,15 @@ function Grid({ parameters, setAnswer }) {
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [rectangles, setRectangles] = useState([])
   const containerRef = useRef(null);
+  const [view, setView] = useState(false)
+
+  // 2 sec timer
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setView(true)
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const img = new Image();
@@ -114,19 +123,20 @@ function Grid({ parameters, setAnswer }) {
       {example && (
         <h1 style={{ color: "red" }}>Example Question</h1>
       )}
+      <h1>Grid Boxes</h1>
       {ourDefinition ? (
         <div>
-          <h2>Please click on patches to reveal. <br /> Click on all patches that <u> must be revealed </u> for people to correctly answer the question below:</h2>
-          <h2>{"<"}Q: {question}{">"}</h2>
+          <h2>Click on <u>all patches</u> that <span style={{color: "red"}} > must be revealed </span> for people to correctly answer the question below:</h2>
+          <h2>Q: {question}</h2>
         </div>
       ) : (
         <div>
-          <h2>Please click on patches to reveal.  <br />  Click on all patches that are <u>important</u> for answering the question below:</h2>
+          <h2>Click on <u>all patches</u> that are <span style={{color: "red"}} >important</span> for answering the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       )}
 
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%" }}>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex": "none" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} >
           <defs>
             <filter id="imageBlurFilter" >

@@ -25,8 +25,16 @@ function ImportantAnnots({ parameters, setAnswer }) {
   // Track if user is actively drawing a freehand stroke (lasso)
   const [isDrawing, setIsDrawing] = useState(false)
   const stageRef = useRef(null)
-
   const [backgroundImage] = useImage(image)
+  const [view, setView] = useState(false)
+  
+    // 2 sec timer
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setView(true)
+      }, 1500);
+      return () => clearTimeout(timer);
+    }, []);
 
   const finish = useCallback((shapes) => {
     setAnswer({
@@ -149,9 +157,10 @@ function ImportantAnnots({ parameters, setAnswer }) {
       {example && (
         <h1 style={{ color: "red" }}>Example Question</h1>
       )}
+      <h1>Annotation Tools</h1>
       {question ? (
         <div>
-          <h2>Please identify and annotate the regions that are critical to answering the question below:</h2>
+          <h2>Please identify and annotate the regions that are <span style={{color: "red"}}>important</span> for answering the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (
@@ -162,7 +171,7 @@ function ImportantAnnots({ parameters, setAnswer }) {
           </h2>
         </div>
       )}
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "flex" }}>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex": "none" }}>
         <Box
           style={{
             width: "250px",
