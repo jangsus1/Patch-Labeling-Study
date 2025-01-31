@@ -96,16 +96,19 @@ function Grid({ parameters, setAnswer }) {
       .attr("opacity", d => d.clicked ? 0 : ourDefinition ? 1 : 0.2)
       .on("click", (event, d) => {
         // change rectangles
-        const newClicked = _.cloneDeep(rectangles)
-        const index = newClicked.findIndex(item => item.x === d.x && item.y === d.y)
-        newClicked[index].clicked = !newClicked[index].clicked
-        setRectangles(newClicked)
+        const newRectangles = _.cloneDeep(rectangles)
+        const index = newRectangles.findIndex(item => item.x === d.x && item.y === d.y)
+        newRectangles[index].clicked = !newRectangles[index].clicked
+        setRectangles(newRectangles)
 
-        // const returnable = newClicked.map(item => `[${item.x},${item.y}]`).join("\n")
         setAnswer({
           status: true,
           answers: {
-            patches: JSON.stringify(newClicked.filter(item => item.clicked)),
+            patches: JSON.stringify({
+              patches: newRectangles.filter(item => item.clicked),
+              multiplier: size.multiplier,
+              question: question
+            })
           }
         })
       })
@@ -121,22 +124,31 @@ function Grid({ parameters, setAnswer }) {
   return (
     <div>
       {example && (
-        <h1 style={{ color: "red" }}>Example Question</h1>
+        <h1 style={{
+          color: "red",
+          position: "fixed",
+          top: "50px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          background: "white",
+          padding: "10px",
+          zIndex: 1000
+        }}>Example Question</h1>
       )}
       <h1>Grid Boxes</h1>
       {ourDefinition ? (
         <div>
-          <h2>Click on <u>all patches</u> that <span style={{color: "red"}} > must be revealed </span> for people to <span style={{color: "red"}} >correctly answer</span>  the question below:</h2>
+          <h2>Click on <u>all patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >correctly answer</span>  the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (
         <div>
-          <h2>Click on <u>all patches</u> that are <span style={{color: "red"}} >important</span> for answering the question below:</h2>
+          <h2>Click on <u>all patches</u> that are <span style={{ color: "red" }} >important</span> for answering the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       )}
 
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex": "none" }}>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex" : "none" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} >
           <defs>
             <filter id="imageBlurFilter" >

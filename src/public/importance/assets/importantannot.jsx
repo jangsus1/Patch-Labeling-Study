@@ -11,7 +11,7 @@ import { MathJax, MathJaxContext } from "react-mathjax";
 
 
 function ImportantAnnots({ parameters, setAnswer }) {
-  const { image, question, example, ourDefinition } = parameters
+  const { image, question, example } = parameters
   const [tool, setTool] = useState("stroke")
   const [size, setSize] = useState({ width: 0, height: 0 })
   const containerRef = useRef(null)
@@ -36,18 +36,22 @@ function ImportantAnnots({ parameters, setAnswer }) {
     return () => clearTimeout(timer);
   }, []);
 
-  const finish = useCallback((shapes) => {
-    const resizedShapes = shapes.map(shape => ({
+  const finish = useCallback((shps) => {
+    const resizedShapes = shps.map(shape => ({
       ...shape,
-      points: shape.points.map((point, i) => point / size.multiplier)
+      points: shape.points.map(p => parseInt(p / size.multiplier))
     }))
     setAnswer({
       status: true,
       answers: {
-        annotations: JSON.stringify(resizedShapes)
+        annotations: JSON.stringify({
+          annotations: resizedShapes,
+          multiplier: size.multiplier,
+          question: question
+        })
       }
     })
-  }, [setAnswer, shapes])
+  }, [setAnswer, shapes, size])
 
   const changeTool = (newTool) => {
     // If switching tools, clear all drawn shapes & in-progress shape
@@ -161,7 +165,16 @@ function ImportantAnnots({ parameters, setAnswer }) {
   return (
     <div>
       {example && (
-        <h1 style={{ color: "red" }}>Example Question</h1>
+        <h1 style={{
+          color: "red",
+          position: "fixed",
+          top: "50px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          background: "white",
+          padding: "10px",
+          zIndex: 1000
+        }}>Example Question</h1>
       )}
       <h1>Annotation Tools</h1>
       {question ? (
