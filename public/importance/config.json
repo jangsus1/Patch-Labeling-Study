@@ -56,13 +56,12 @@
                 },
                 {
                     "id": "is_answerable",
-                    "prompt": "Do you think that people can answer the question based on only the revealed patches?",
+                    "prompt": "Make sure that the revealed patches contain sufficient information for people to confidently answer the question.",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "Yes",
-                        "No"
+                        "Yes"
                     ]
                 },
                 {
@@ -1340,6 +1339,22 @@
                 "example": true
             }
         },
+        "bubble_example": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
+                "question": "Do the two lines meet?",
+                "example": true
+            }
+        },
+        "importAnnot_example": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
+                "question": "How many years are the graph?",
+                "example": true
+            }
+        },
         "grid_example2": {
             "baseComponent": "grid_ourdef",
             "parameters": {
@@ -1372,22 +1387,6 @@
                 "example": true,
                 "ourDefinition": true
             }
-        },
-        "bubble_example": {
-            "baseComponent": "bubble",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
-                "question": "Do the two lines meet?",
-                "example": true
-            }
-        },
-        "importAnnot_example": {
-            "baseComponent": "important_annot",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
-                "question": "How many years are the graph?",
-                "example": true
-            }
         }
     },
     "sequence": {
@@ -1397,9 +1396,9 @@
             "consent",
             "example_start",
             "grid_example",
-            "grid_example2",
             "bubble_example",
             "importAnnot_example",
+            "grid_example2",
             "main_start",
             {
                 "id": "images",

@@ -135,10 +135,10 @@ function Grid({ parameters, setAnswer }) {
           zIndex: 1000
         }}>Example Question</h1>
       )}
-      <h1>Grid Boxes</h1>
+      <h1>Grids - {ourDefinition ? "Minimum area" : "Importance"}</h1>
       {ourDefinition ? (
         <div>
-          <h2>Click on <u>all patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >correctly answer</span>  the question below:</h2>
+          <h2>Click on <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (
