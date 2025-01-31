@@ -27,20 +27,24 @@ function ImportantAnnots({ parameters, setAnswer }) {
   const stageRef = useRef(null)
   const [backgroundImage] = useImage(image)
   const [view, setView] = useState(false)
-  
-    // 2 sec timer
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setView(true)
-      }, 1500);
-      return () => clearTimeout(timer);
-    }, []);
+
+  // 2 sec timer
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setView(true)
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const finish = useCallback((shapes) => {
+    const resizedShapes = shapes.map(shape => ({
+      ...shape,
+      points: shape.points.map((point, i) => point / size.multiplier)
+    }))
     setAnswer({
       status: true,
       answers: {
-        annotations: JSON.stringify(shapes)
+        annotations: JSON.stringify(resizedShapes)
       }
     })
   }, [setAnswer, shapes])
@@ -138,6 +142,7 @@ function ImportantAnnots({ parameters, setAnswer }) {
       const availableWidth = window.innerWidth - parent.getBoundingClientRect().left
       const aspectRatio = img.width / img.height
 
+
       let scaledWidth, scaledHeight
       if (availableHeight * aspectRatio <= availableWidth) {
         // Fit height first
@@ -148,7 +153,8 @@ function ImportantAnnots({ parameters, setAnswer }) {
         scaledWidth = availableWidth
         scaledHeight = availableWidth / aspectRatio
       }
-      setSize({ width: scaledWidth, height: scaledHeight })
+      const multiplier = scaledWidth / img.width
+      setSize({ width: scaledWidth, height: scaledHeight, multiplier: multiplier })
     }
   }, [image])
 
@@ -160,7 +166,7 @@ function ImportantAnnots({ parameters, setAnswer }) {
       <h1>Annotation Tools</h1>
       {question ? (
         <div>
-          <h2>Please identify and annotate the regions that are <span style={{color: "red"}}>important</span> for answering the question below:</h2>
+          <h2>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (
@@ -171,7 +177,7 @@ function ImportantAnnots({ parameters, setAnswer }) {
           </h2>
         </div>
       )}
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex": "none" }}>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex" : "none" }}>
         <Box
           style={{
             width: "250px",

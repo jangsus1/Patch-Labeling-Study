@@ -92,8 +92,8 @@ function Grid({ parameters, setAnswer }) {
       .attr("stroke-width", 0.5)
       .attr("cursor", "pointer")
       // .attr("fill", d => d.clicked? "transparent": "black")
-      .attr("fill", "black")
-      .attr("opacity", d => d.clicked ? 0 : 0.1)
+      .attr("fill", "#e6e6e6")
+      .attr("opacity", d => d.clicked ? 0 : ourDefinition ? 1 : 0.2)
       .on("click", (event, d) => {
         // change rectangles
         const newClicked = _.cloneDeep(rectangles)
@@ -126,7 +126,7 @@ function Grid({ parameters, setAnswer }) {
       <h1>Grid Boxes</h1>
       {ourDefinition ? (
         <div>
-          <h2>Click on <u>all patches</u> that <span style={{color: "red"}} > must be revealed </span> for people to correctly answer the question below:</h2>
+          <h2>Click on <u>all patches</u> that <span style={{color: "red"}} > must be revealed </span> for people to <span style={{color: "red"}} >correctly answer</span>  the question below:</h2>
           <h2>Q: {question}</h2>
         </div>
       ) : (

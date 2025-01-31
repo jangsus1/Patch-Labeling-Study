@@ -43,6 +43,39 @@
             "instructionLocation": "aboveStimulus",
             "nextButtonLocation": "sidebar"
         },
+        "grid_ourdef": {
+            "type": "react-component",
+            "path": "importance/assets/grid.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "is_answerable",
+                    "prompt": "Do you think that people can answer the question based on only the revealed patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        },
         "bubble": {
             "type": "react-component",
             "path": "importance/assets/bubble.jsx",
@@ -147,7 +180,7 @@
             }
         },
         "static_chartqa_text_bar_05411753006467.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/05411753006467.png",
                 "question": "What is the highest value in the chart?",
@@ -230,7 +263,7 @@
             }
         },
         "static_chartqa_text_stacked_bar_9280.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/9280.png",
                 "question": "What's the difference of people choosing very important between 2016 and 2010?",
@@ -313,7 +346,7 @@
             }
         },
         "static_chartqa_text_pie_43.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/43.png",
                 "question": "What's the ratio of people use and do not use Latinx?",
@@ -396,7 +429,7 @@
             }
         },
         "static_chartqa_text_line_19371621021871.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/19371621021871.png",
                 "question": "Between which two years was the public trust in government least?",
@@ -479,7 +512,7 @@
             }
         },
         "static_chartqa_notext_line_two_col_4524.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_4524.png",
                 "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
@@ -562,7 +595,7 @@
             }
         },
         "static_chartqa_notext_pie_two_col_61107.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_61107.png",
                 "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
@@ -645,7 +678,7 @@
             }
         },
         "static_chartqa_notext_bar_two_col_40186.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/two_col_40186.png",
                 "question": "What is the value shows in cocaine ?",
@@ -728,7 +761,7 @@
             }
         },
         "static_chartqa_notext_stacked_bar_multi_col_60949.png_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/multi_col_60949.png",
                 "question": "How many bars in the chart is above 750000 mark?",
@@ -811,7 +844,7 @@
             }
         },
         "static_charxiv_scatterplot_17.jpg_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/17.jpg",
                 "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
@@ -894,7 +927,7 @@
             }
         },
         "static_charxiv_hist_20.jpg_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/20.jpg",
                 "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
@@ -977,7 +1010,7 @@
             }
         },
         "static_charxiv_contour_954.jpg_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/954.jpg",
                 "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
@@ -1060,7 +1093,7 @@
             }
         },
         "static_charxiv_3d_1314.jpg_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/1314.jpg",
                 "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
@@ -1143,7 +1176,7 @@
             }
         },
         "static_charxiv_heatmap_568.jpg_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/568.jpg",
                 "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
@@ -1226,7 +1259,7 @@
             }
         },
         "static_charxiv_geo_433.jpg_10_true": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/charxiv/433.jpg",
                 "question": "Does Australia display more variation in shade than South America?",
@@ -1308,7 +1341,7 @@
             }
         },
         "grid_example2": {
-            "baseComponent": "grid",
+            "baseComponent": "grid_ourdef",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/chartqa/34.png",
                 "question": "How many color of lines are there?",
