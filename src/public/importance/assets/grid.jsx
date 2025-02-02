@@ -130,7 +130,7 @@ function Grid({ parameters, setAnswer }) {
           top: "50px",
           left: "50%",
           transform: "translateX(-50%)",
-          background: "white",
+          background: "transparent",
           padding: "10px",
           zIndex: 1000
         }}>Example Question</h1>
