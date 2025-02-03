@@ -1,0 +1,1664 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "Tool Comparison",
+        "version": "dev",
+        "authors": [
+            "Minsuk Chang"
+        ],
+        "date": "2025-01-23",
+        "description": "Comparing Tools for Importance Annotation",
+        "organizations": [
+            "Georgia Institute of Technology"
+        ]
+    },
+    "uiConfig": {
+        "contactEmail": "minsuk@gatech.edu",
+        "helpTextPath": "tools/assets/welcome.md",
+        "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "sidebar": true
+    },
+    "baseComponents": {
+        "grid": {
+            "type": "react-component",
+            "path": "tools/assets/grid.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        },
+        "bubble": {
+            "type": "react-component",
+            "path": "tools/assets/bubble.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "circles",
+                    "prompt": "Selected circles:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "parameters": {
+                "radius_count": 10
+            },
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        },
+        "important_annot": {
+            "type": "react-component",
+            "path": "tools/assets/importantannot.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "annotations",
+                    "prompt": "Annotated Area:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        }
+    },
+    "components": {
+        "welcome": {
+            "type": "markdown",
+            "path": "tools/assets/welcome.md",
+            "response": []
+        },
+        "consent": {
+            "type": "markdown",
+            "path": "tools/assets/consent.md",
+            "nextButtonText": "I agree",
+            "response": []
+        },
+        "intro_grid": {
+            "type": "markdown",
+            "path": "tools/assets/intro_grid.md",
+            "response": []
+        },
+        "intro_bubble": {
+            "type": "markdown",
+            "path": "tools/assets/intro_bubble.md",
+            "response": []
+        },
+        "intro_importAnnot": {
+            "type": "markdown",
+            "path": "tools/assets/intro_importAnnot.md",
+            "response": []
+        },
+        "grid_chartqa_text_bar_05411753006467.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "x_grids": [
+                    78,
+                    156,
+                    234,
+                    312,
+                    390,
+                    468,
+                    546,
+                    624,
+                    702,
+                    780
+                ],
+                "y_grids": [
+                    55,
+                    110,
+                    165,
+                    220,
+                    275,
+                    330,
+                    385,
+                    440,
+                    495,
+                    550
+                ],
+                "chart_type": "text_bar",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_text_bar_05411753006467.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "chart_type": "text_bar"
+            }
+        },
+        "importAnnot_chartqa_text_bar_05411753006467.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "chart_type": "text_bar"
+            }
+        },
+        "grid_chartqa_text_stacked_bar_9280.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 2010?",
+                "x_grids": [
+                    29,
+                    58,
+                    87,
+                    116,
+                    145,
+                    174,
+                    203,
+                    232,
+                    261,
+                    290
+                ],
+                "y_grids": [
+                    28,
+                    56,
+                    84,
+                    112,
+                    140,
+                    168,
+                    196,
+                    224,
+                    252,
+                    280
+                ],
+                "chart_type": "text_stacked_bar",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_text_stacked_bar_9280.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 2010?",
+                "chart_type": "text_stacked_bar"
+            }
+        },
+        "importAnnot_chartqa_text_stacked_bar_9280.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 2010?",
+                "chart_type": "text_stacked_bar"
+            }
+        },
+        "grid_chartqa_text_pie_43.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
+                "question": "What's the ratio of people who use Latinx versus people who don't?",
+                "x_grids": [
+                    57,
+                    114,
+                    171,
+                    228,
+                    285,
+                    342,
+                    399,
+                    456,
+                    513,
+                    570
+                ],
+                "y_grids": [
+                    80,
+                    160,
+                    240,
+                    320,
+                    400,
+                    480,
+                    560,
+                    640,
+                    720,
+                    800
+                ],
+                "chart_type": "text_pie",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_text_pie_43.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
+                "question": "What's the ratio of people who use Latinx versus people who don't?",
+                "chart_type": "text_pie"
+            }
+        },
+        "importAnnot_chartqa_text_pie_43.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
+                "question": "What's the ratio of people who use Latinx versus people who don't?",
+                "chart_type": "text_pie"
+            }
+        },
+        "grid_chartqa_text_line_19371621021871.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "x_grids": [
+                    78,
+                    156,
+                    234,
+                    312,
+                    390,
+                    468,
+                    546,
+                    624,
+                    702,
+                    780
+                ],
+                "y_grids": [
+                    55,
+                    110,
+                    165,
+                    220,
+                    275,
+                    330,
+                    385,
+                    440,
+                    495,
+                    550
+                ],
+                "chart_type": "text_line",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_text_line_19371621021871.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "chart_type": "text_line"
+            }
+        },
+        "importAnnot_chartqa_text_line_19371621021871.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "chart_type": "text_line"
+            }
+        },
+        "grid_chartqa_notext_line_two_col_4524.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_line",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_notext_line_two_col_4524.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "chart_type": "notext_line"
+            }
+        },
+        "importAnnot_chartqa_notext_line_two_col_4524.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "chart_type": "notext_line"
+            }
+        },
+        "grid_chartqa_notext_pie_two_col_61107.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_pie",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_notext_pie_two_col_61107.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "chart_type": "notext_pie"
+            }
+        },
+        "importAnnot_chartqa_notext_pie_two_col_61107.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "chart_type": "notext_pie"
+            }
+        },
+        "grid_chartqa_notext_bar_two_col_40186.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_bar",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_notext_bar_two_col_40186.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "chart_type": "notext_bar"
+            }
+        },
+        "importAnnot_chartqa_notext_bar_two_col_40186.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
+                "question": "What is the value shows in cocaine ?",
+                "chart_type": "notext_bar"
+            }
+        },
+        "grid_chartqa_notext_stacked_bar_multi_col_60949.png": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    51,
+                    102,
+                    153,
+                    204,
+                    255,
+                    306,
+                    357,
+                    408,
+                    459,
+                    510
+                ],
+                "chart_type": "notext_stacked_bar",
+                "grid": "static-10"
+            }
+        },
+        "bubble_chartqa_notext_stacked_bar_multi_col_60949.png": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "chart_type": "notext_stacked_bar"
+            }
+        },
+        "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
+                "question": "How many bars in the chart is above 750000 mark?",
+                "chart_type": "notext_stacked_bar"
+            }
+        },
+        "grid_charxiv_scatterplot_17.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    62,
+                    124,
+                    186,
+                    248,
+                    310,
+                    372,
+                    434,
+                    496,
+                    558,
+                    620
+                ],
+                "chart_type": "scatterplot",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_scatterplot_17.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "importAnnot_charxiv_scatterplot_17.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "grid_charxiv_scatterplot_617.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
+                "question": "How many Serviced K users which have meters value less than 5?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    75,
+                    150,
+                    225,
+                    300,
+                    375,
+                    450,
+                    525,
+                    600,
+                    675,
+                    750
+                ],
+                "chart_type": "scatterplot",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_scatterplot_617.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
+                "question": "How many Serviced K users which have meters value less than 5?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "importAnnot_charxiv_scatterplot_617.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
+                "question": "How many Serviced K users which have meters value less than 5?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "grid_charxiv_hist_20.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    63,
+                    126,
+                    189,
+                    252,
+                    315,
+                    378,
+                    441,
+                    504,
+                    567,
+                    630
+                ],
+                "chart_type": "hist",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_hist_20.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "chart_type": "hist"
+            }
+        },
+        "importAnnot_charxiv_hist_20.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "chart_type": "hist"
+            }
+        },
+        "grid_charxiv_hist_81.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
+                "question": "What is the most frequent caption length in terms of number of words for MS COCO based on the chart?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    70,
+                    140,
+                    210,
+                    280,
+                    350,
+                    420,
+                    490,
+                    560,
+                    630,
+                    700
+                ],
+                "chart_type": "hist",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_hist_81.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
+                "question": "What is the most frequent caption length in terms of number of words for MS COCO based on the chart?",
+                "chart_type": "hist"
+            }
+        },
+        "importAnnot_charxiv_hist_81.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
+                "question": "What is the most frequent caption length in terms of number of words for MS COCO based on the chart?",
+                "chart_type": "hist"
+            }
+        },
+        "grid_charxiv_contour_954.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747,
+                    830
+                ],
+                "chart_type": "contour",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_contour_954.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "chart_type": "contour"
+            }
+        },
+        "importAnnot_charxiv_contour_954.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "chart_type": "contour"
+            }
+        },
+        "grid_charxiv_contour_1248.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
+                "question": "Does the lowest PB value occur above or below 17,000K?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    82,
+                    164,
+                    246,
+                    328,
+                    410,
+                    492,
+                    574,
+                    656,
+                    738,
+                    820
+                ],
+                "chart_type": "contour",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_contour_1248.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
+                "question": "Does the lowest PB value occur above or below 17,000K?",
+                "chart_type": "contour"
+            }
+        },
+        "importAnnot_charxiv_contour_1248.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
+                "question": "Does the lowest PB value occur above or below 17,000K?",
+                "chart_type": "contour"
+            }
+        },
+        "grid_charxiv_3d_1314.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747,
+                    830
+                ],
+                "chart_type": "3d",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_3d_1314.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
+                "chart_type": "3d"
+            }
+        },
+        "importAnnot_charxiv_3d_1314.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1314.jpg",
+                "question": "Compare the infidelity extents between the two methods along ( epsilon_1 = 0.2 ). Which method demonstrates a wider range of infidelity values?",
+                "chart_type": "3d"
+            }
+        },
+        "grid_charxiv_3d_1186.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1186.jpg",
+                "question": "What is the difference between the range of z axis and x1 axis?",
+                "x_grids": [
+                    73,
+                    146,
+                    219,
+                    292,
+                    365,
+                    438,
+                    511,
+                    584,
+                    657,
+                    730
+                ],
+                "y_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "chart_type": "3d",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_3d_1186.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1186.jpg",
+                "question": "What is the difference between the range of z axis and x1 axis?",
+                "chart_type": "3d"
+            }
+        },
+        "importAnnot_charxiv_3d_1186.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1186.jpg",
+                "question": "What is the difference between the range of z axis and x1 axis?",
+                "chart_type": "3d"
+            }
+        },
+        "grid_charxiv_heatmap_568.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "chart_type": "heatmap",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_heatmap_568.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "chart_type": "heatmap"
+            }
+        },
+        "importAnnot_charxiv_heatmap_568.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "chart_type": "heatmap"
+            }
+        },
+        "grid_charxiv_heatmap_446.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
+                "question": "Adding up all numbers in each individual column, which column achieves the smallest total value?",
+                "x_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "y_grids": [
+                    34,
+                    68,
+                    102,
+                    136,
+                    170,
+                    204,
+                    238,
+                    272,
+                    306,
+                    340
+                ],
+                "chart_type": "heatmap",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_heatmap_446.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
+                "question": "Adding up all numbers in each individual column, which column achieves the smallest total value?",
+                "chart_type": "heatmap"
+            }
+        },
+        "importAnnot_charxiv_heatmap_446.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
+                "question": "Adding up all numbers in each individual column, which column achieves the smallest total value?",
+                "chart_type": "heatmap"
+            }
+        },
+        "grid_charxiv_geo_433.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "x_grids": [
+                    93,
+                    186,
+                    279,
+                    372,
+                    465,
+                    558,
+                    651,
+                    744,
+                    837,
+                    930
+                ],
+                "y_grids": [
+                    54,
+                    108,
+                    162,
+                    216,
+                    270,
+                    324,
+                    378,
+                    432,
+                    486,
+                    540
+                ],
+                "chart_type": "geo",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_geo_433.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "chart_type": "geo"
+            }
+        },
+        "importAnnot_charxiv_geo_433.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "chart_type": "geo"
+            }
+        },
+        "grid_charxiv_geo_550.jpg": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
+                "question": "Is there any region with a positive value according to the scale provided?",
+                "x_grids": [
+                    87,
+                    174,
+                    261,
+                    348,
+                    435,
+                    522,
+                    609,
+                    696,
+                    783,
+                    870
+                ],
+                "y_grids": [
+                    94,
+                    188,
+                    282,
+                    376,
+                    470,
+                    564,
+                    658,
+                    752,
+                    846,
+                    940
+                ],
+                "chart_type": "geo",
+                "grid": "static-10"
+            }
+        },
+        "bubble_charxiv_geo_550.jpg": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
+                "question": "Is there any region with a positive value according to the scale provided?",
+                "chart_type": "geo"
+            }
+        },
+        "importAnnot_charxiv_geo_550.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
+                "question": "Is there any region with a positive value according to the scale provided?",
+                "chart_type": "geo"
+            }
+        },
+        "grid_example": {
+            "baseComponent": "grid",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
+                "question": "What is the highest number for the brown line?",
+                "x_grids": [
+                    57,
+                    114,
+                    171,
+                    228,
+                    285,
+                    342,
+                    399,
+                    456,
+                    513,
+                    570
+                ],
+                "y_grids": [
+                    80,
+                    160,
+                    240,
+                    320,
+                    400,
+                    480,
+                    560,
+                    640,
+                    720,
+                    800
+                ],
+                "example": true
+            }
+        },
+        "bubble_example": {
+            "baseComponent": "bubble",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
+                "question": "Do the two lines meet?",
+                "example": true
+            }
+        },
+        "importAnnot_example": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/34.png",
+                "question": "How many years are the graph?",
+                "example": true
+            }
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "welcome",
+            "consent",
+            {
+                "id": "splits",
+                "order": "latinSquare",
+                "numSamples": 1,
+                "components": [
+                    {
+                        "id": "split_0",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_contour_954.jpg",
+                                    "grid_charxiv_contour_1248.jpg",
+                                    "grid_chartqa_notext_line_two_col_4524.png",
+                                    "grid_chartqa_text_line_19371621021871.png",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_charxiv_hist_20.jpg"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_charxiv_hist_81.jpg",
+                                    "bubble_chartqa_text_bar_05411753006467.png",
+                                    "bubble_charxiv_3d_1186.jpg",
+                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_chartqa_notext_bar_two_col_40186.png",
+                                    "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_scatterplot_617.jpg",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_1",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_chartqa_notext_bar_two_col_40186.png",
+                                    "grid_chartqa_text_bar_05411753006467.png",
+                                    "grid_chartqa_text_pie_43.png",
+                                    "grid_charxiv_contour_954.jpg",
+                                    "grid_charxiv_contour_1248.jpg",
+                                    "grid_charxiv_geo_433.jpg",
+                                    "grid_charxiv_scatterplot_617.jpg"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_charxiv_hist_81.jpg",
+                                    "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_charxiv_geo_550.jpg",
+                                    "bubble_charxiv_3d_1186.jpg",
+                                    "bubble_charxiv_heatmap_568.jpg",
+                                    "bubble_charxiv_scatterplot_17.jpg"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_chartqa_notext_line_two_col_4524.png",
+                                    "importAnnot_charxiv_heatmap_446.jpg",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_2",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_chartqa_text_stacked_bar_9280.png",
+                                    "grid_chartqa_notext_pie_two_col_61107.png",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_charxiv_heatmap_446.jpg",
+                                    "grid_chartqa_notext_line_two_col_4524.png",
+                                    "grid_charxiv_hist_20.jpg"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_charxiv_geo_433.jpg",
+                                    "bubble_charxiv_contour_1248.jpg",
+                                    "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_chartqa_text_pie_43.png",
+                                    "bubble_charxiv_scatterplot_617.jpg",
+                                    "bubble_chartqa_text_bar_05411753006467.png",
+                                    "bubble_charxiv_geo_550.jpg"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_hist_81.jpg",
+                                    "importAnnot_charxiv_contour_954.jpg",
+                                    "importAnnot_charxiv_3d_1186.jpg",
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_chartqa_notext_bar_two_col_40186.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_3",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_chartqa_text_bar_05411753006467.png",
+                                    "grid_charxiv_geo_433.jpg",
+                                    "grid_chartqa_text_stacked_bar_9280.png",
+                                    "grid_chartqa_notext_bar_two_col_40186.png",
+                                    "grid_charxiv_scatterplot_17.jpg",
+                                    "grid_chartqa_notext_line_two_col_4524.png"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_charxiv_hist_81.jpg",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_charxiv_3d_1186.jpg",
+                                    "bubble_charxiv_contour_954.jpg",
+                                    "bubble_charxiv_heatmap_568.jpg",
+                                    "bubble_chartqa_text_line_19371621021871.png"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_charxiv_contour_1248.jpg",
+                                    "importAnnot_charxiv_scatterplot_617.jpg",
+                                    "importAnnot_charxiv_heatmap_446.jpg",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_3d_1314.jpg"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_4",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_chartqa_text_pie_43.png",
+                                    "grid_charxiv_hist_81.jpg",
+                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_chartqa_notext_pie_two_col_61107.png",
+                                    "grid_chartqa_notext_bar_two_col_40186.png",
+                                    "grid_chartqa_text_line_19371621021871.png"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_chartqa_text_bar_05411753006467.png",
+                                    "bubble_charxiv_scatterplot_617.jpg",
+                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_chartqa_notext_line_two_col_4524.png",
+                                    "bubble_charxiv_scatterplot_17.jpg",
+                                    "bubble_chartqa_text_stacked_bar_9280.png"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_contour_954.jpg",
+                                    "importAnnot_charxiv_contour_1248.jpg",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_charxiv_3d_1314.jpg",
+                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_charxiv_heatmap_568.jpg",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_5",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_scatterplot_617.jpg",
+                                    "grid_charxiv_contour_954.jpg",
+                                    "grid_charxiv_hist_20.jpg",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_chartqa_text_stacked_bar_9280.png",
+                                    "grid_chartqa_text_line_19371621021871.png"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_charxiv_hist_81.jpg",
+                                    "bubble_charxiv_geo_433.jpg",
+                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_chartqa_notext_bar_two_col_40186.png",
+                                    "bubble_charxiv_3d_1186.jpg",
+                                    "bubble_charxiv_3d_1314.jpg"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_charxiv_contour_1248.jpg",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_heatmap_446.jpg",
+                                    "importAnnot_charxiv_geo_550.jpg",
+                                    "importAnnot_chartqa_notext_line_two_col_4524.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_6",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_geo_433.jpg",
+                                    "grid_chartqa_text_bar_05411753006467.png",
+                                    "grid_charxiv_scatterplot_617.jpg",
+                                    "grid_chartqa_text_stacked_bar_9280.png",
+                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_chartqa_notext_line_two_col_4524.png"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_charxiv_contour_954.jpg",
+                                    "bubble_charxiv_scatterplot_17.jpg",
+                                    "bubble_charxiv_hist_81.jpg",
+                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_chartqa_notext_bar_two_col_40186.png"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_heatmap_568.jpg",
+                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
+                                    "importAnnot_charxiv_contour_1248.jpg",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_chartqa_text_line_19371621021871.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_7",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_chartqa_notext_pie_two_col_61107.png",
+                                    "grid_chartqa_notext_bar_two_col_40186.png",
+                                    "grid_chartqa_text_line_19371621021871.png",
+                                    "grid_chartqa_text_bar_05411753006467.png",
+                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_charxiv_geo_550.jpg"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_chartqa_notext_line_two_col_4524.png",
+                                    "bubble_charxiv_scatterplot_617.jpg",
+                                    "bubble_charxiv_contour_1248.jpg",
+                                    "bubble_charxiv_scatterplot_17.jpg",
+                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_charxiv_hist_20.jpg"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_charxiv_3d_1314.jpg",
+                                    "importAnnot_charxiv_hist_81.jpg",
+                                    "importAnnot_charxiv_contour_954.jpg"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_8",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_charxiv_hist_20.jpg",
+                                    "grid_charxiv_contour_1248.jpg",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_charxiv_geo_433.jpg",
+                                    "grid_chartqa_notext_bar_two_col_40186.png"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_charxiv_contour_954.jpg",
+                                    "bubble_chartqa_text_line_19371621021871.png",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_charxiv_scatterplot_617.jpg",
+                                    "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_chartqa_notext_line_two_col_4524.png",
+                                    "bubble_chartqa_text_bar_05411753006467.png"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_charxiv_heatmap_446.jpg",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_hist_81.jpg",
+                                    "importAnnot_charxiv_3d_1186.jpg"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "split_9",
+                        "order": "latinSquare",
+                        "components": [
+                            {
+                                "id": "grid",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_grid",
+                                    "grid_example",
+                                    "grid_charxiv_3d_1314.jpg",
+                                    "grid_chartqa_text_line_19371621021871.png",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_chartqa_notext_line_two_col_4524.png",
+                                    "grid_charxiv_scatterplot_617.jpg",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_charxiv_hist_20.jpg"
+                                ]
+                            },
+                            {
+                                "id": "bubble",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_bubble",
+                                    "bubble_example",
+                                    "bubble_charxiv_geo_433.jpg",
+                                    "bubble_chartqa_text_stacked_bar_9280.png",
+                                    "bubble_charxiv_contour_954.jpg",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_chartqa_text_pie_43.png",
+                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_charxiv_hist_81.jpg"
+                                ]
+                            },
+                            {
+                                "id": "importAnnot",
+                                "order": "fixed",
+                                "components": [
+                                    "intro_importAnnot",
+                                    "importAnnot_example",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_chartqa_notext_bar_two_col_40186.png",
+                                    "importAnnot_charxiv_heatmap_446.jpg",
+                                    "importAnnot_charxiv_3d_1186.jpg",
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_charxiv_contour_1248.jpg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
