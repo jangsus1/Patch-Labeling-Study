@@ -11,15 +11,7 @@ function bubble({ parameters, setAnswer }) {
   const [size, setSize] = useState({ width: 0, height: 0 })
   const containerRef = useRef(null);
   const [radius, setRadius] = useState(0)
-  const [view, setView] = useState(false)
 
-  // 2 sec timer
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setView(true)
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
 
 
   useEffect(() => {
@@ -83,21 +75,12 @@ function bubble({ parameters, setAnswer }) {
           zIndex: 1000
         }}>Example Question</h1>
       )}
-      <h1>Bubble View</h1>
-      {question ? (
-        <div>
-          <h2>Please click on regions to reveal. Try to click areas that are <span style={{ color: "red" }} >relevant</span> to answering the question below:</h2>
-          <h2>Q: {question}</h2>
-        </div>
-      ) : (
-        <div>
-          <h2>
-            Please click on regions to reveal.<br />
-            Then, provide a description of the key insights or takeaways from this visualization.
-          </h2>
-        </div>
-      )}
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex" : "none" }}>
+      <h2>Bubble View</h2>
+      <div>
+        <h3>Please click on regions to reveal. Try to click areas that are <span style={{ color: "red" }} >relevant</span> to answering the question below:</h3>
+        <h3>Q: {question}</h3>
+      </div>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "block" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback}>
           <defs>
             <filter id="imageBlurFilter">

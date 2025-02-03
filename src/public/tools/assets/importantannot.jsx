@@ -26,15 +26,6 @@ function ImportantAnnots({ parameters, setAnswer }) {
   const [isDrawing, setIsDrawing] = useState(false)
   const stageRef = useRef(null)
   const [backgroundImage] = useImage(image)
-  const [view, setView] = useState(false)
-
-  // 2 sec timer
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setView(true)
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
 
   const finish = useCallback((shps) => {
     const resizedShapes = shps.map(shape => ({
@@ -176,21 +167,12 @@ function ImportantAnnots({ parameters, setAnswer }) {
           zIndex: 1000
         }}>Example Question</h1>
       )}
-      <h1>Annotation Tools</h1>
-      {question ? (
-        <div>
-          <h2>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below:</h2>
-          <h2>Q: {question}</h2>
-        </div>
-      ) : (
-        <div>
-          <h2>
-            Please annotate the regions you consider important.<br />
-            Then, provide a description of the key insights or takeaways from this visualization.
-          </h2>
-        </div>
-      )}
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex" : "none" }}>
+      <h2>Annotation Tools</h2>
+      <div>
+        <h3>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below:</h3>
+        <h3>Q: {question}</h3>
+      </div>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "flex" }}>
         <Box
           style={{
             width: "250px",

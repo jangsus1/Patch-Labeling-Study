@@ -4,29 +4,14 @@ import { Box } from "@mantine/core"
 import React from "react"
 import _ from "lodash";
 
-const isObjectInList = (obj, list) => {
-  return list.some(item =>
-    Object.keys(obj).every(key => obj[key] === item[key])
-  );
-};
-
-
 function Grid({ parameters, setAnswer }) {
   const ref = useRef(null)
   const { image, question, x_grids, y_grids, example, ourDefinition } = parameters
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [rectangles, setRectangles] = useState([])
   const containerRef = useRef(null);
-  const [view, setView] = useState(false)
 
-  // 2 sec timer
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setView(true)
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
+  
   useEffect(() => {
     const img = new Image();
     img.src = image;
@@ -135,20 +120,20 @@ function Grid({ parameters, setAnswer }) {
           zIndex: 1000
         }}>Example Question</h1>
       )}
-      <h1>Grids - {ourDefinition ? "Minimum area" : "Importance"}</h1>
+      <h2>Grids - {ourDefinition ? "Minimum area" : "Importance"}</h2>
       {ourDefinition ? (
         <div>
-          <h2>Click on <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below:</h2>
-          <h2>Q: {question}</h2>
+          <h3>Click on <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below:</h3>
+          <h3>Q: {question}</h3>
         </div>
       ) : (
         <div>
-          <h2>Click on <u>all patches</u> that are <span style={{ color: "red" }} >important</span> for answering the question below:</h2>
-          <h2>Q: {question}</h2>
+          <h3>Click on <u>all patches</u> that are <span style={{ color: "red" }} >important</span> for answering the question below:</h3>
+          <h3>Q: {question}</h3>
         </div>
       )}
 
-      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: view ? "flex" : "none" }}>
+      <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "block" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} >
           <defs>
             <filter id="imageBlurFilter" >
