@@ -18,6 +18,8 @@
         "logoPath": "revisitAssets/revisitLogoSquare.svg",
         "withProgressBar": true,
         "autoDownloadStudy": false,
+        "urlParticipantIdParam": "PROLIFIC_PID",
+        "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1DEBJ8K](https://app.prolific.com/submissions/complete?cc=C1DEBJ8K)",
         "sidebar": true
     },
     "baseComponents": {
@@ -1167,13 +1169,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_contour_954.jpg",
-                                    "grid_charxiv_contour_1248.jpg",
-                                    "grid_chartqa_notext_line_two_col_4524.png",
+                                    "grid_charxiv_3d_1314.jpg",
+                                    "grid_chartqa_text_pie_43.png",
+                                    "grid_charxiv_hist_81.jpg",
                                     "grid_chartqa_text_line_19371621021871.png",
+                                    "grid_chartqa_notext_line_two_col_4524.png",
                                     "grid_charxiv_geo_550.jpg",
-                                    "grid_charxiv_heatmap_568.jpg",
-                                    "grid_charxiv_hist_20.jpg"
+                                    "grid_chartqa_notext_pie_two_col_61107.png"
                                 ]
                             },
                             {
@@ -1182,13 +1184,13 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_charxiv_hist_81.jpg",
-                                    "bubble_chartqa_text_bar_05411753006467.png",
-                                    "bubble_charxiv_3d_1186.jpg",
                                     "bubble_charxiv_heatmap_446.jpg",
-                                    "bubble_chartqa_notext_bar_two_col_40186.png",
-                                    "bubble_charxiv_3d_1314.jpg",
-                                    "bubble_chartqa_notext_pie_two_col_61107.png"
+                                    "bubble_charxiv_contour_954.jpg",
+                                    "bubble_charxiv_contour_1248.jpg",
+                                    "bubble_charxiv_hist_20.jpg",
+                                    "bubble_charxiv_scatterplot_617.jpg",
+                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_charxiv_3d_1186.jpg"
                                 ]
                             },
                             {
@@ -1197,12 +1199,12 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_charxiv_geo_433.jpg",
                                     "importAnnot_charxiv_scatterplot_17.jpg",
-                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "importAnnot_chartqa_text_pie_43.png",
-                                    "importAnnot_charxiv_scatterplot_617.jpg",
-                                    "importAnnot_chartqa_text_stacked_bar_9280.png"
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_charxiv_heatmap_568.jpg",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_chartqa_notext_bar_two_col_40186.png"
                                 ]
                             }
                         ]
@@ -1217,13 +1219,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_chartqa_notext_bar_two_col_40186.png",
-                                    "grid_chartqa_text_bar_05411753006467.png",
-                                    "grid_chartqa_text_pie_43.png",
-                                    "grid_charxiv_contour_954.jpg",
-                                    "grid_charxiv_contour_1248.jpg",
-                                    "grid_charxiv_geo_433.jpg",
-                                    "grid_charxiv_scatterplot_617.jpg"
+                                    "grid_chartqa_notext_pie_two_col_61107.png",
+                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_charxiv_heatmap_446.jpg",
+                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_charxiv_scatterplot_17.jpg",
+                                    "grid_charxiv_3d_1314.jpg",
+                                    "grid_charxiv_hist_81.jpg"
                                 ]
                             },
                             {
@@ -1232,12 +1234,12 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_charxiv_hist_81.jpg",
-                                    "bubble_charxiv_3d_1314.jpg",
-                                    "bubble_charxiv_geo_550.jpg",
-                                    "bubble_charxiv_3d_1186.jpg",
-                                    "bubble_charxiv_heatmap_568.jpg",
-                                    "bubble_charxiv_scatterplot_17.jpg"
+                                    "bubble_chartqa_text_stacked_bar_9280.png",
+                                    "bubble_charxiv_hist_20.jpg",
+                                    "bubble_chartqa_notext_bar_two_col_40186.png",
+                                    "bubble_chartqa_text_line_19371621021871.png",
+                                    "bubble_chartqa_notext_line_two_col_4524.png",
+                                    "bubble_chartqa_text_bar_05411753006467.png"
                                 ]
                             },
                             {
@@ -1246,13 +1248,13 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_chartqa_text_line_19371621021871.png",
-                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
-                                    "importAnnot_chartqa_notext_line_two_col_4524.png",
-                                    "importAnnot_charxiv_heatmap_446.jpg",
-                                    "importAnnot_charxiv_hist_20.jpg",
-                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
-                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png"
+                                    "importAnnot_charxiv_contour_954.jpg",
+                                    "importAnnot_charxiv_scatterplot_617.jpg",
+                                    "importAnnot_charxiv_geo_550.jpg",
+                                    "importAnnot_charxiv_contour_1248.jpg",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_chartqa_text_pie_43.png"
                                 ]
                             }
                         ]
@@ -1267,12 +1269,12 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_chartqa_text_stacked_bar_9280.png",
-                                    "grid_chartqa_notext_pie_two_col_61107.png",
-                                    "grid_charxiv_heatmap_568.jpg",
+                                    "grid_charxiv_3d_1314.jpg",
+                                    "grid_charxiv_hist_81.jpg",
+                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_chartqa_notext_bar_two_col_40186.png",
                                     "grid_charxiv_heatmap_446.jpg",
-                                    "grid_chartqa_notext_line_two_col_4524.png",
-                                    "grid_charxiv_hist_20.jpg"
+                                    "grid_charxiv_contour_954.jpg"
                                 ]
                             },
                             {
@@ -1281,13 +1283,13 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_charxiv_heatmap_568.jpg",
                                     "bubble_charxiv_geo_433.jpg",
+                                    "bubble_chartqa_text_stacked_bar_9280.png",
+                                    "bubble_charxiv_hist_20.jpg",
                                     "bubble_charxiv_contour_1248.jpg",
-                                    "bubble_charxiv_3d_1314.jpg",
-                                    "bubble_chartqa_text_pie_43.png",
-                                    "bubble_charxiv_scatterplot_617.jpg",
-                                    "bubble_chartqa_text_bar_05411753006467.png",
-                                    "bubble_charxiv_geo_550.jpg"
+                                    "bubble_charxiv_scatterplot_617.jpg"
                                 ]
                             },
                             {
@@ -1296,13 +1298,13 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_charxiv_hist_81.jpg",
-                                    "importAnnot_charxiv_contour_954.jpg",
-                                    "importAnnot_charxiv_3d_1186.jpg",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_chartqa_text_pie_43.png",
                                     "importAnnot_chartqa_text_line_19371621021871.png",
                                     "importAnnot_charxiv_scatterplot_17.jpg",
-                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "importAnnot_chartqa_notext_bar_two_col_40186.png"
+                                    "importAnnot_chartqa_notext_line_two_col_4524.png",
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_charxiv_geo_550.jpg"
                                 ]
                             }
                         ]
@@ -1317,13 +1319,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_geo_550.jpg",
-                                    "grid_chartqa_text_bar_05411753006467.png",
+                                    "grid_charxiv_hist_20.jpg",
+                                    "grid_charxiv_contour_954.jpg",
+                                    "grid_charxiv_heatmap_446.jpg",
+                                    "grid_chartqa_notext_pie_two_col_61107.png",
                                     "grid_charxiv_geo_433.jpg",
-                                    "grid_chartqa_text_stacked_bar_9280.png",
-                                    "grid_chartqa_notext_bar_two_col_40186.png",
-                                    "grid_charxiv_scatterplot_17.jpg",
-                                    "grid_chartqa_notext_line_two_col_4524.png"
+                                    "grid_charxiv_contour_1248.jpg",
+                                    "grid_chartqa_text_pie_43.png"
                                 ]
                             },
                             {
@@ -1332,13 +1334,13 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
+                                    "bubble_chartqa_notext_bar_two_col_40186.png",
                                     "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_charxiv_3d_1314.jpg",
                                     "bubble_charxiv_hist_81.jpg",
-                                    "bubble_chartqa_notext_pie_two_col_61107.png",
-                                    "bubble_charxiv_3d_1186.jpg",
-                                    "bubble_charxiv_contour_954.jpg",
-                                    "bubble_charxiv_heatmap_568.jpg",
-                                    "bubble_chartqa_text_line_19371621021871.png"
+                                    "bubble_charxiv_scatterplot_17.jpg",
+                                    "bubble_chartqa_notext_line_two_col_4524.png",
+                                    "bubble_charxiv_geo_550.jpg"
                                 ]
                             },
                             {
@@ -1347,12 +1349,12 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_charxiv_hist_20.jpg",
-                                    "importAnnot_charxiv_contour_1248.jpg",
-                                    "importAnnot_charxiv_scatterplot_617.jpg",
-                                    "importAnnot_charxiv_heatmap_446.jpg",
-                                    "importAnnot_chartqa_text_pie_43.png",
-                                    "importAnnot_charxiv_3d_1314.jpg"
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_charxiv_heatmap_568.jpg",
+                                    "importAnnot_charxiv_3d_1186.jpg",
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_charxiv_scatterplot_617.jpg"
                                 ]
                             }
                         ]
@@ -1367,13 +1369,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_geo_550.jpg",
-                                    "grid_chartqa_text_pie_43.png",
-                                    "grid_charxiv_hist_81.jpg",
-                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_charxiv_geo_433.jpg",
                                     "grid_chartqa_notext_pie_two_col_61107.png",
-                                    "grid_chartqa_notext_bar_two_col_40186.png",
-                                    "grid_chartqa_text_line_19371621021871.png"
+                                    "grid_chartqa_text_stacked_bar_9280.png",
+                                    "grid_charxiv_contour_954.jpg",
+                                    "grid_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_charxiv_scatterplot_17.jpg"
                                 ]
                             },
                             {
@@ -1382,12 +1384,12 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_chartqa_text_bar_05411753006467.png",
                                     "bubble_charxiv_scatterplot_617.jpg",
                                     "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_charxiv_hist_20.jpg",
+                                    "bubble_chartqa_text_pie_43.png",
                                     "bubble_chartqa_notext_line_two_col_4524.png",
-                                    "bubble_charxiv_scatterplot_17.jpg",
-                                    "bubble_chartqa_text_stacked_bar_9280.png"
+                                    "bubble_charxiv_hist_81.jpg"
                                 ]
                             },
                             {
@@ -1396,13 +1398,13 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_charxiv_contour_954.jpg",
-                                    "importAnnot_charxiv_contour_1248.jpg",
-                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_charxiv_3d_1186.jpg",
                                     "importAnnot_charxiv_3d_1314.jpg",
-                                    "importAnnot_charxiv_geo_433.jpg",
                                     "importAnnot_charxiv_heatmap_568.jpg",
-                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png"
+                                    "importAnnot_chartqa_notext_bar_two_col_40186.png",
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_charxiv_contour_1248.jpg"
                                 ]
                             }
                         ]
@@ -1417,12 +1419,12 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_scatterplot_617.jpg",
+                                    "grid_charxiv_contour_1248.jpg",
                                     "grid_charxiv_contour_954.jpg",
-                                    "grid_charxiv_hist_20.jpg",
-                                    "grid_charxiv_heatmap_568.jpg",
                                     "grid_chartqa_text_stacked_bar_9280.png",
-                                    "grid_chartqa_text_line_19371621021871.png"
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_charxiv_scatterplot_617.jpg",
+                                    "grid_chartqa_text_pie_43.png"
                                 ]
                             },
                             {
@@ -1431,13 +1433,13 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_charxiv_hist_20.jpg",
+                                    "bubble_charxiv_scatterplot_17.jpg",
                                     "bubble_charxiv_hist_81.jpg",
-                                    "bubble_charxiv_geo_433.jpg",
-                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
                                     "bubble_chartqa_notext_bar_two_col_40186.png",
-                                    "bubble_charxiv_3d_1186.jpg",
-                                    "bubble_charxiv_3d_1314.jpg"
+                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png"
                                 ]
                             },
                             {
@@ -1446,13 +1448,13 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_charxiv_heatmap_568.jpg",
+                                    "importAnnot_chartqa_notext_line_two_col_4524.png",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
                                     "importAnnot_chartqa_text_bar_05411753006467.png",
-                                    "importAnnot_charxiv_contour_1248.jpg",
-                                    "importAnnot_chartqa_text_pie_43.png",
-                                    "importAnnot_charxiv_heatmap_446.jpg",
-                                    "importAnnot_charxiv_geo_550.jpg",
-                                    "importAnnot_chartqa_notext_line_two_col_4524.png"
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_charxiv_3d_1186.jpg",
+                                    "importAnnot_charxiv_geo_433.jpg"
                                 ]
                             }
                         ]
@@ -1467,13 +1469,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_geo_433.jpg",
-                                    "grid_chartqa_text_bar_05411753006467.png",
                                     "grid_charxiv_scatterplot_617.jpg",
-                                    "grid_chartqa_text_stacked_bar_9280.png",
-                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_chartqa_notext_pie_two_col_61107.png",
                                     "grid_charxiv_geo_550.jpg",
-                                    "grid_chartqa_notext_line_two_col_4524.png"
+                                    "grid_charxiv_3d_1186.jpg",
+                                    "grid_charxiv_hist_20.jpg",
+                                    "grid_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "grid_charxiv_heatmap_568.jpg"
                                 ]
                             },
                             {
@@ -1482,12 +1484,12 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_chartqa_text_bar_05411753006467.png",
+                                    "bubble_chartqa_notext_line_two_col_4524.png",
                                     "bubble_charxiv_3d_1314.jpg",
+                                    "bubble_charxiv_heatmap_446.jpg",
                                     "bubble_charxiv_contour_954.jpg",
-                                    "bubble_charxiv_scatterplot_17.jpg",
-                                    "bubble_charxiv_hist_81.jpg",
-                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_charxiv_geo_433.jpg",
                                     "bubble_chartqa_notext_bar_two_col_40186.png"
                                 ]
                             },
@@ -1497,12 +1499,12 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_charxiv_heatmap_568.jpg",
-                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
+                                    "importAnnot_charxiv_hist_81.jpg",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
                                     "importAnnot_charxiv_contour_1248.jpg",
-                                    "importAnnot_chartqa_text_pie_43.png",
-                                    "importAnnot_charxiv_hist_20.jpg",
-                                    "importAnnot_chartqa_text_line_19371621021871.png"
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_chartqa_text_pie_43.png"
                                 ]
                             }
                         ]
@@ -1517,13 +1519,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_heatmap_568.jpg",
-                                    "grid_chartqa_notext_pie_two_col_61107.png",
-                                    "grid_chartqa_notext_bar_two_col_40186.png",
+                                    "grid_charxiv_hist_81.jpg",
+                                    "grid_charxiv_heatmap_446.jpg",
+                                    "grid_chartqa_text_stacked_bar_9280.png",
                                     "grid_chartqa_text_line_19371621021871.png",
-                                    "grid_chartqa_text_bar_05411753006467.png",
-                                    "grid_charxiv_3d_1186.jpg",
-                                    "grid_charxiv_geo_550.jpg"
+                                    "grid_charxiv_scatterplot_17.jpg",
+                                    "grid_chartqa_text_pie_43.png",
+                                    "grid_charxiv_heatmap_568.jpg"
                                 ]
                             },
                             {
@@ -1532,12 +1534,12 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_chartqa_notext_line_two_col_4524.png",
                                     "bubble_charxiv_scatterplot_617.jpg",
-                                    "bubble_charxiv_contour_1248.jpg",
-                                    "bubble_charxiv_scatterplot_17.jpg",
-                                    "bubble_charxiv_heatmap_446.jpg",
-                                    "bubble_charxiv_hist_20.jpg"
+                                    "bubble_charxiv_geo_433.jpg",
+                                    "bubble_charxiv_3d_1186.jpg",
+                                    "bubble_chartqa_notext_bar_two_col_40186.png",
+                                    "bubble_chartqa_notext_pie_two_col_61107.png",
+                                    "bubble_charxiv_contour_1248.jpg"
                                 ]
                             },
                             {
@@ -1546,13 +1548,13 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_chartqa_text_pie_43.png",
-                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_charxiv_contour_954.jpg",
                                     "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_charxiv_geo_550.jpg",
                                     "importAnnot_charxiv_3d_1314.jpg",
-                                    "importAnnot_charxiv_hist_81.jpg",
-                                    "importAnnot_charxiv_contour_954.jpg"
+                                    "importAnnot_chartqa_notext_line_two_col_4524.png",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_chartqa_text_bar_05411753006467.png"
                                 ]
                             }
                         ]
@@ -1567,12 +1569,12 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_heatmap_568.jpg",
-                                    "grid_charxiv_hist_20.jpg",
+                                    "grid_charxiv_contour_954.jpg",
                                     "grid_charxiv_contour_1248.jpg",
-                                    "grid_charxiv_geo_550.jpg",
-                                    "grid_charxiv_geo_433.jpg",
-                                    "grid_chartqa_notext_bar_two_col_40186.png"
+                                    "grid_charxiv_3d_1314.jpg",
+                                    "grid_charxiv_scatterplot_617.jpg",
+                                    "grid_charxiv_scatterplot_17.jpg",
+                                    "grid_chartqa_notext_line_two_col_4524.png"
                                 ]
                             },
                             {
@@ -1581,13 +1583,13 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_charxiv_contour_954.jpg",
-                                    "bubble_chartqa_text_line_19371621021871.png",
-                                    "bubble_chartqa_notext_pie_two_col_61107.png",
-                                    "bubble_charxiv_scatterplot_617.jpg",
-                                    "bubble_charxiv_3d_1314.jpg",
-                                    "bubble_chartqa_notext_line_two_col_4524.png",
-                                    "bubble_chartqa_text_bar_05411753006467.png"
+                                    "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "bubble_charxiv_geo_433.jpg",
+                                    "bubble_charxiv_heatmap_446.jpg",
+                                    "bubble_charxiv_heatmap_568.jpg",
+                                    "bubble_chartqa_text_stacked_bar_9280.png",
+                                    "bubble_chartqa_text_bar_05411753006467.png",
+                                    "bubble_chartqa_text_line_19371621021871.png"
                                 ]
                             },
                             {
@@ -1596,13 +1598,13 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
-                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
-                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "importAnnot_charxiv_heatmap_446.jpg",
-                                    "importAnnot_charxiv_scatterplot_17.jpg",
-                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_charxiv_geo_550.jpg",
                                     "importAnnot_charxiv_hist_81.jpg",
-                                    "importAnnot_charxiv_3d_1186.jpg"
+                                    "importAnnot_charxiv_3d_1186.jpg",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_chartqa_notext_bar_two_col_40186.png",
+                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
+                                    "importAnnot_chartqa_text_pie_43.png"
                                 ]
                             }
                         ]
@@ -1617,13 +1619,13 @@
                                 "components": [
                                     "intro_grid",
                                     "grid_example",
-                                    "grid_charxiv_3d_1314.jpg",
-                                    "grid_chartqa_text_line_19371621021871.png",
-                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_chartqa_notext_bar_two_col_40186.png",
+                                    "grid_charxiv_contour_1248.jpg",
                                     "grid_chartqa_notext_line_two_col_4524.png",
-                                    "grid_charxiv_scatterplot_617.jpg",
-                                    "grid_charxiv_heatmap_568.jpg",
-                                    "grid_charxiv_hist_20.jpg"
+                                    "grid_charxiv_geo_550.jpg",
+                                    "grid_chartqa_text_stacked_bar_9280.png",
+                                    "grid_charxiv_geo_433.jpg",
+                                    "grid_charxiv_hist_81.jpg"
                                 ]
                             },
                             {
@@ -1632,13 +1634,13 @@
                                 "components": [
                                     "intro_bubble",
                                     "bubble_example",
-                                    "bubble_charxiv_geo_433.jpg",
-                                    "bubble_chartqa_text_stacked_bar_9280.png",
-                                    "bubble_charxiv_contour_954.jpg",
-                                    "bubble_chartqa_notext_pie_two_col_61107.png",
-                                    "bubble_chartqa_text_pie_43.png",
                                     "bubble_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "bubble_charxiv_hist_81.jpg"
+                                    "bubble_chartqa_text_pie_43.png",
+                                    "bubble_charxiv_contour_954.jpg",
+                                    "bubble_charxiv_heatmap_568.jpg",
+                                    "bubble_charxiv_hist_20.jpg",
+                                    "bubble_charxiv_3d_1186.jpg",
+                                    "bubble_charxiv_heatmap_446.jpg"
                                 ]
                             },
                             {
@@ -1647,12 +1649,12 @@
                                 "components": [
                                     "intro_importAnnot",
                                     "importAnnot_example",
+                                    "importAnnot_charxiv_scatterplot_617.jpg",
                                     "importAnnot_charxiv_scatterplot_17.jpg",
-                                    "importAnnot_chartqa_notext_bar_two_col_40186.png",
-                                    "importAnnot_charxiv_heatmap_446.jpg",
-                                    "importAnnot_charxiv_3d_1186.jpg",
                                     "importAnnot_chartqa_text_bar_05411753006467.png",
-                                    "importAnnot_charxiv_contour_1248.jpg"
+                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_charxiv_3d_1314.jpg"
                                 ]
                             }
                         ]
