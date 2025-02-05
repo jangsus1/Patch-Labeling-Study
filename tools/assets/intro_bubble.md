@@ -9,4 +9,4 @@
 - You may click as many times as you need.
 
 
-#### You will solve 1 example task and 6~7 main tasks
+#### You will solve 2 example tasks and 20 main tasks

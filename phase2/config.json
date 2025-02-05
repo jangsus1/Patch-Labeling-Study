@@ -1,20 +1,20 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Scatterplot Correlation Perception - Phase 1",
+        "title": "Scatterplot Correlation Perception - Phase 2",
         "version": "dev",
         "authors": [
             "Minsuk Chang"
         ],
         "date": "2025-01-30",
-        "description": "Bubble View for Scatterplot Correlation Perception - Phase 1",
+        "description": "Bubble View for Scatterplot Correlation Perception - Phase 2",
         "organizations": [
             "Georgia Institute of Technology"
         ]
     },
     "uiConfig": {
         "contactEmail": "minsuk@gatech.edu",
-        "helpTextPath": "bias/assets/help.md",
+        "helpTextPath": "phase2/assets/help.md",
         "logoPath": "revisitAssets/revisitLogoSquare.svg",
         "withProgressBar": true,
         "autoDownloadStudy": false,

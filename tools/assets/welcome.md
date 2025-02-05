@@ -1,4 +1,4 @@
-# Welcome to the Labeling Study - Experts
+# Welcome to the Labeling Study - Tool Comparisons
 
 ## Purpose of the Study
 
@@ -18,11 +18,11 @@ Thank you for participating in this labeling study! The goal of this study is to
 One of the three types of tools will be available in each task:
   1. **Bubble View**: A blurry visualization will be shown initially. You can deblur specific areas by clicking on the screen.
   2. **Contour Toolbox**: A toolbox will appear on the left sidebar. You can draw a lasso or polygon to annotate the regions.
-  3. **Grid View**: A blurry visualization will be shown initially. You can deblur specific patches by clicking on them.
+  3. **Grid View**: A covered visualization will be shown initially. You can reveal specific patches by clicking on them.
 
 ### 3. Completion:
 - Once you finish answering the question, click the **"Next"** button on the sidebar to proceed to the next task.
-- There are total 4 examples and 14 main tasks.
+- There are total 2 example and 20 main tasks.
 
 ## Guidelines
 
