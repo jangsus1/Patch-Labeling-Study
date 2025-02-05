@@ -9,4 +9,7 @@
 - You may click as many times as you need.
 
 
-#### You will solve 2 example tasks and 20 main tasks
+### Example Screen
+![example](/tools/assets/bubble.png)
+
+### You will solve 2 example tasks and 20 main tasks
