@@ -76,15 +76,25 @@ function bubble({ parameters, setAnswer }) {
         }}>Example Question</h1>
       )}
       <h2>Bubble View</h2>
-      <div>
-        <h3>Please click on regions to reveal. Try to click areas that are <span style={{ color: "red" }} >relevant</span> to answering the question below:</h3>
-        <h3>Q: {question}</h3>
-      </div>
+      {example ? (
+        <div>
+          <h3>{question}</h3>
+        </div>
+      ) : (
+        <div>
+          <h3>Please click on regions that you wish to reveal.</h3>
+          <h3>Q: {question}</h3>
+        </div>
+      )}
+
       <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "block" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback}>
           <defs>
             <filter id="imageBlurFilter">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="11" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="11" />
+              <feComponentTransfer>
+                <feFuncA type="table" tableValues="1 1" />
+              </feComponentTransfer>
             </filter>
 
             <mask id="unblurMask">

@@ -168,10 +168,18 @@ function ImportantAnnots({ parameters, setAnswer }) {
         }}>Example Question</h1>
       )}
       <h2>Annotation Tools</h2>
-      <div>
-        <h3>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below:</h3>
-        <h3>Q: {question}</h3>
-      </div>
+
+      {example ? (
+        <div>
+          <h3>{question}</h3>
+        </div>
+      ) : (
+        <div>
+          <h3>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below:</h3>
+          <h3>Q: {question}</h3>
+        </div>
+      )}
+
       <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "flex" }}>
         <Box
           style={{

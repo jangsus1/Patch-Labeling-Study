@@ -9,4 +9,4 @@
 - You may always take time to think.
 - You can undo or clear the annotations by pressing buttons.
 
-#### You will solve 1 example task and 6~7 main tasks
+#### You will solve 2 example tasks and 20 main tasks

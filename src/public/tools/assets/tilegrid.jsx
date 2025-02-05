@@ -4,12 +4,13 @@ import { Box } from "@mantine/core"
 import React from "react"
 import _ from "lodash";
 
-function Grid({ parameters, setAnswer }) {
+function tilegrid({ parameters, setAnswer }) {
   const ref = useRef(null)
-  const { image, question, x_grids, y_grids, example } = parameters
+  const { image, question, tiles, example, ourDefinition } = parameters
   const [size, setSize] = useState({ width: 0, height: 0 })
-  const [rectangles, setRectangles] = useState([])
+  const [rectangles, setRectangles] = useState(tiles.map(t => ({ ...t, clicked: false })))
   const containerRef = useRef(null);
+
 
   useEffect(() => {
     const img = new Image();
@@ -31,32 +32,6 @@ function Grid({ parameters, setAnswer }) {
         scaledHeight = availableWidth / aspectRatio;
       }
       setSize({ width: scaledWidth, height: scaledHeight, multiplier: scaledWidth / img.width });
-
-      let pad_x_grids = x_grids;
-      let pad_y_grids = y_grids;
-      if (!x_grids.includes(0)) pad_x_grids = [0, ...x_grids]
-      if (!y_grids.includes(0)) pad_y_grids = [0, ...y_grids]
-      const rect = []
-      for (let i = 0; i < pad_x_grids.length; i++) {
-        for (let j = 0; j < pad_y_grids.length; j++) {
-          let width, height;
-          if (i + 1 === pad_x_grids.length) width = img.width - pad_x_grids[i]
-          else width = pad_x_grids[i + 1] - pad_x_grids[i]
-          if (j + 1 === pad_y_grids.length) height = img.height - pad_y_grids[j]
-          else height = pad_y_grids[j + 1] - pad_y_grids[j]
-
-          rect.push({
-            x: pad_x_grids[i], // Top-left x-coordinate
-            y: pad_y_grids[j], // Top-left y-coordinate
-            width: width, // Width of the rectangle
-            height: height, // Height of the rectangle,
-            clicked: false,
-            unClicked: false
-          })
-
-        }
-      }
-      setRectangles(rect)
     };
   }, [image]);
 
@@ -76,14 +51,12 @@ function Grid({ parameters, setAnswer }) {
       .attr("stroke", "gray")
       .attr("stroke-width", 0.5)
       .attr("cursor", "pointer")
-      // .attr("fill", d => d.clicked? "transparent": "black")
       .attr("fill", d => d.clicked ? "transparent" : "#e6e6e6")
       .attr("opacity", 0.9)
       .on("click", (event, d) => {
         // change rectangles
         const newRectangles = _.cloneDeep(rectangles)
         const index = newRectangles.findIndex(item => item.x === d.x && item.y === d.y)
-        if (newRectangles[index].clicked) newRectangles[index].unClicked = true
         newRectangles[index].clicked = !newRectangles[index].clicked
         setRectangles(newRectangles)
 
@@ -91,7 +64,7 @@ function Grid({ parameters, setAnswer }) {
           status: true,
           answers: {
             patches: JSON.stringify({
-              patches: newRectangles.filter(item => item.clicked||item.unClicked),
+              patches: newRectangles.filter(item => item.clicked),
               multiplier: size.multiplier,
               question: question
             })
@@ -121,7 +94,7 @@ function Grid({ parameters, setAnswer }) {
           zIndex: 1000
         }}>Example Question</h1>
       )}
-      <h2>Grids</h2>
+      <h2>Grids - {ourDefinition ? "Minimum area" : "Importance"}</h2>
 
       {example ? (
         <div>
@@ -136,40 +109,11 @@ function Grid({ parameters, setAnswer }) {
 
       <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "block" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} >
-          <defs>
-            <filter id="imageBlurFilter" >
-              <feGaussianBlur in="SourceGraphic" stdDeviation="17" />
-              <feComponentTransfer>
-                <feFuncA type="table" tableValues="1 1" />
-              </feComponentTransfer>
-            </filter>
-
-            <mask id="unblurMask">
-              <rect width="100%" height="100%" fill="white" />
-              {rectangles.filter(r => r.clicked).map((d, i) => (
-                <rect
-                  key={i}
-                  x={d.x * size.multiplier}
-                  y={d.y * size.multiplier}
-                  width={d.width * size.multiplier}
-                  height={d.height * size.multiplier}
-                  fill="black"
-                />
-              ))}
-            </mask>
-          </defs>
           <image
             href={image}
             width={size.width}
             height={size.height}
           />
-          {/* <image
-            href={image}
-            width={size.width}
-            height={size.height}
-            filter="url(#imageBlurFilter)"
-            mask="url(#unblurMask)"
-          /> */}
           <g id="rectangles"></g>
         </svg>
       </Box>
@@ -177,4 +121,4 @@ function Grid({ parameters, setAnswer }) {
   )
 }
 
-export default Grid
+export default tilegrid
