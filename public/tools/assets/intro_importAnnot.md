@@ -9,4 +9,8 @@
 - You may always take time to think.
 - You can undo or clear the annotations by pressing buttons.
 
-#### You will solve 2 example tasks and 20 main tasks
+
+### Example Screen
+![example](/tools/assets/importAnnot.png)
+
+### You will solve 2 example tasks and 20 main tasks

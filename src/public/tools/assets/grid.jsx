@@ -78,7 +78,7 @@ function Grid({ parameters, setAnswer }) {
       .attr("cursor", "pointer")
       // .attr("fill", d => d.clicked? "transparent": "black")
       .attr("fill", d => d.clicked ? "transparent" : "#e6e6e6")
-      .attr("opacity", 0.9)
+      .attr("opacity", 0.95)
       .on("click", (event, d) => {
         // change rectangles
         const newRectangles = _.cloneDeep(rectangles)
@@ -129,7 +129,7 @@ function Grid({ parameters, setAnswer }) {
         </div>
       ) : (
         <div>
-          <h3>Click on <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below:</h3>
+          <h3>Please annotate <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below:</h3>
           <h3>Q: {question}</h3>
         </div>
       )}
