@@ -158,7 +158,6 @@ function ImportantAnnots({ parameters, setAnswer }) {
       {example && (
         <h1>Example Question</h1>
       )}
-      <h2>Annotation Tools</h2>
 
       {example ? (
         <div>
@@ -166,7 +165,7 @@ function ImportantAnnots({ parameters, setAnswer }) {
         </div>
       ) : (
         <div>
-          <h3>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below:</h3>
+          <h3>Please identify and annotate the regions that are <span style={{ color: "red" }}>important</span> for answering the question below. Then provide your answer for the question.</h3>
           <h3>Q: {question}</h3>
         </div>
       )}

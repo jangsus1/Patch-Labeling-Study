@@ -85,7 +85,6 @@ function tilegrid({ parameters, setAnswer }) {
       {example && (
         <h1>Example Question</h1>
       )}
-      <h2>Grids - {ourDefinition ? "Minimum area" : "Importance"}</h2>
 
       {example ? (
         <div>
@@ -93,7 +92,7 @@ function tilegrid({ parameters, setAnswer }) {
         </div>
       ) : (
         <div>
-          <h3>Please annotate <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below:</h3>
+          <h3>Please annotate <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below. Then provide your answer for the question.</h3>
           <h3>Q: {question}</h3>
         </div>
       )}
