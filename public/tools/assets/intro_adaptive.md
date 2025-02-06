@@ -9,6 +9,6 @@
 - You can hide the revealed patches by clicking the area again.
 
 ### Example Screen
-![example](/tools/assets/adaptive.png)
+![example](/Revisit-Study/tools/assets/adaptive.png)
 
 ### You will solve 2 example tasks and 20 main tasks

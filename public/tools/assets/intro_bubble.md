@@ -10,6 +10,6 @@
 
 
 ### Example Screen
-![example](/tools/assets/bubble.png)
+![example](/Revisit-Study/tools/assets/bubble.png)
 
 ### You will solve 2 example tasks and 20 main tasks
