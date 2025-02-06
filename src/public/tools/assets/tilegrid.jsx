@@ -52,7 +52,7 @@ function tilegrid({ parameters, setAnswer }) {
       .attr("stroke-width", 0.5)
       .attr("cursor", "pointer")
       .attr("fill", d => d.clicked ? "transparent" : "#e6e6e6")
-      .attr("opacity", 0.95)
+      .attr("opacity", 1)
       .on("click", (event, d) => {
         // change rectangles
         const newRectangles = _.cloneDeep(rectangles)
