@@ -1,6 +1,6 @@
-# Grid View  
+# Tool Tutorial
 
-**Grid Labeling** allows you to reveal information selectively while completing tasks.  
+**Grid Labeling Tool** allows you to reveal information selectively while completing tasks.  
 
 ## How It Works  
 - The visualization starts covered with patches.  
@@ -11,9 +11,10 @@
 - Take your time to think before interacting.  
 - Reveal and hide patches as needed.  
 
-## Example Screen  
-![example](/Revisit-Study/tools/assets/adaptive.png)  
-
 ## Task Overview  
 - 2 example tasks  
 - 18 main tasks  
+
+## Screenshot of the tool
+![example](/Revisit-Study/tools/assets/adaptive.png)  
+
