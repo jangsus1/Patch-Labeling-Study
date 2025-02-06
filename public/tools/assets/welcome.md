@@ -1,43 +1,38 @@
-# Welcome to the Labeling Study - Tool Comparisons
+# Welcome to the Labeling Study – Tool Comparisons  
 
-## Purpose of the Study
+## Purpose  
+Thank you for participating! This study explores how people annoate visualizations with certain tasks. Your input will help improve visualization research.  
 
-Thank you for participating in this labeling study! The goal of this study is to better understand how people identify and interact with **important areas** in visualizations to complete specific tasks or answer questions. Your valuable input will help improve the design of visualization systems and tools for human-computer interaction.
+## Study Sequence  
 
-## What to Expect
+1. **Consent** – Review and agree to participate.  
+2. **Tool Explanation** – Learn how to use the annotation tool that will be assigned to you.  
+3. **Example & Main Tasks**:  
+   - **2 Example Tasks** – Practice using the tool.  
+   - **18 Main Tasks** – Complete actual labeling tasks.  
+4. **Task Difficulty Rating** – Assess task difficulty using Likert scales.  
+5. **Visualization Literacy Assessment (VLAT)** – Measure visualization skills (**will not affect payment**).  
+6. **Demographics** – Answer basic demographic questions.  
 
-**Carefully read the instructions before starting the annotation, as they may vary depending on the task.**
+## Task Overview  
 
-### 1. Task Overview:
-- You will be presented with a visualization.
-- A specific question for the visualization will be provided.
-- Your goal is to follow the instructions and annotate the visualization through interaction.
-- You must also answer the questions.
+- You will analyze a visualization and answer a question.  
+- Follow the provided instructions to annotate the visualization.  
+- Each task will use one of the following tools:  
 
-### 2. Interactions:
-One of the three types of tools will be available in each task:
-  1. **Bubble View**: A blurry visualization will be shown initially. You can deblur specific areas by clicking on the screen.
-  2. **Contour Toolbox**: A toolbox will appear on the left sidebar. You can draw a lasso or polygon to annotate the regions.
-  3. **Grid View**: A covered visualization will be shown initially. You can reveal specific patches by clicking on them.
+### Annotation Tools  
+- **Bubble View** – Click to reveal areas in a blurred visualization.  
+- **Contour Toolbox** – Draw regions using lasso or polygon tools.  
+- **Grid View** – Click to reveal or hide patches.  
 
-### 3. Completion:
-- Once you finish answering the question, click the **"Next"** button on the sidebar to proceed to the next task.
-- There are total 2 example and 20 main tasks.
+## Instructions  
 
-## Guidelines
+- **Carefully read instructions for each task, as they may change.**
+- Take your time to focus on which area you may annotate.  
+- No right or wrong answers—just follow your intuition.  
+- Repeatedly failing attention-check questions will lead to automatic rejection.  
 
-- **First read the instructions in every page, as it may differ from task to task.**
-- Take your time to evaluate which areas are truly essential to answering the question or completing the task.
-- There are no right or wrong answers—focus on what you perceive as important.
-- Failing to answer the attention-check questions more than once, your submission will be automatically rejected.
+## Contact  
+For questions, email **minsuk@gatech.edu** (Georgia Tech).  
 
-
-## Contact Information
-
-If you have any questions or encounter issues during the study, please contact us at:
-
-**Email:** minsuk@gatech.edu  
-**Institution:** Georgia Institute of Technology
-
-Thank you for your time and effort! Your participation is invaluable to this research.  
-Let's get started! 🚀
+Thank you for your participation! Let's get started. 🚀  

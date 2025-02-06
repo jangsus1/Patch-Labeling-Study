@@ -1,15 +1,19 @@
-## Grid View
+# Grid View  
 
-- You may able to use **Grid Labeling** in the following tasks.
-- Initially, the visualization will appear covered with patches. 
-- You may click on those patches to reveal.
+**Grid Labeling** allows you to selectively reveal and hide information.  
 
-### Things to keep in mind
-- You may always take time to think.
-- You can hide the revealed patches by clicking the area again.
+## How It Works  
+- The visualization starts covered with patches.  
+- Click on patches to reveal details.  
+- Click again to hide them.  
 
+## Guidelines  
+- Take your time to think before interacting.  
+- Reveal and hide patches as needed.  
 
-### Example Screen
-![example](/Revisit-Study/tools/assets/static.png)
+## Example Screen  
+![example](/Revisit-Study/tools/assets/static.png)  
 
-### You will solve 2 example tasks and 20 main tasks
+## Task Overview  
+- 2 example tasks  
+- 18 main tasks  

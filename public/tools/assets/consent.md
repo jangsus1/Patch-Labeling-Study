@@ -75,8 +75,7 @@ The results may contribute to designing better visualizations and guidelines to 
 ---
 
 ## Compensation
-**- In-person participation:** $10 Amazon gift card via email.
-**- Prolific participation:** $12 per hour, as per Prolific policies.  
+**- Prolific participation:** $12 per hour, following Prolific policies.  
   - Payment is contingent on task completion.
   - No compensation if you withdraw early.
 

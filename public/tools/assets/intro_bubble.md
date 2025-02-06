@@ -1,15 +1,19 @@
-## Bubble-View
+# Bubble-View  
 
-- You may able to use **Bubble-view** in the following tasks.
-- Initially, the visualization will appear blurred. 
-- You may click on the areas to reveal.
+**Bubble-View** allows you to selectively reveal information while completing tasks.  
 
-### Things to keep in mind
-- You may always take time to think.
-- You may click as many times as you need.
+## How It Works  
+- The visualization starts blurred.  
+- Click on areas to reveal details temporarily.  
+- Click as many times as needed.  
 
+## Guidelines  
+- Take your time to think before interacting.  
+- Focus on uncovering relevant details strategically.  
 
-### Example Screen
-![example](/Revisit-Study/tools/assets/bubble.png)
+## Example Screen  
+![example](/Revisit-Study/tools/assets/bubble.png)  
 
-### You will solve 2 example tasks and 20 main tasks
+## Task Overview  
+- 2 example tasks  
+- 18 main tasks  
