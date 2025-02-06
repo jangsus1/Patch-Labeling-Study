@@ -1,13 +1,14 @@
 import * as d3 from "d3"
 import { useEffect, useState, useRef, useCallback } from "react"
-import { Box, Slider, Button } from "@mantine/core"
+import { Box, Button, Slider } from "@mantine/core"
 import React from "react"
 import _ from "lodash";
 
+import DivergingSlider from "./Slider"
 
 // timer for 5 seconds
 
-function Bias({ parameters, setAnswer }) {
+function Bubble({ parameters, setAnswer }) {
   const ref = useRef(null)
   const { image, radius, example, blur_std, correlation, label, X, Y } = parameters
   const [clicked, setClicked] = useState([])
@@ -15,7 +16,7 @@ function Bias({ parameters, setAnswer }) {
   const [view, setView] = useState("belief") // belief, corrbefore, scatter, corrafter
   const [newRadius, setNewRadius] = useState(radius)
   const containerRef = useRef(null);
-  const [belief, setBelief] = useState(0)
+  const [belief, setBelief] = useState(4)
   const [corrBefore, setCorrBefore] = useState(0)
   const [corrAfter, setCorrAfter] = useState(0)
 
@@ -31,7 +32,8 @@ function Bias({ parameters, setAnswer }) {
   }, [view])
 
 
-  const answerCallback = useCallback(() => {
+  const answerCallback = useCallback((newCorrAfter) => {
+    
     setAnswer({
       answers: {
         status: true,
@@ -39,10 +41,11 @@ function Bias({ parameters, setAnswer }) {
           clicked: clicked,
           corr_before: corrBefore,
           corr_act: correlation,
-          belief: (belief-1)/6
+          belief: (newCorrAfter - 1) / 6
         })
       }
     })
+    setCorrAfter(newCorrAfter)
   }, [setAnswer, clicked, corrBefore, corrAfter, belief])
 
 
@@ -146,30 +149,16 @@ function Bias({ parameters, setAnswer }) {
       {view === "corrbefore" && (
         <div style={{ width: '50%', margin: '50px auto' }}>
 
-          <h3>Estimate the correlation of the two variables below:</h3>
+          <h3>Predict the correlation of the two variables below:</h3>
           <h3>X: {X}</h3>
           <h3>Y: {Y}</h3>
-          <Slider
+          <DivergingSlider
             value={corrBefore}
-            onChange={setCorrBefore}
+            setValue={setCorrBefore}
             min={-1}
             max={1}
-            size="xl" // Makes it larger
-            color="blue"
-            step="0.01"
-            marks={[
-              { value: -1.0, label: '-1.0' },
-              { value: -0.8, label: '-0.8' },
-              { value: -0.6, label: '-0.6' },
-              { value: -0.4, label: '-0.4' },
-              { value: -0.2, label: '-0.2' },
-              { value: 0, label: '0' },
-              { value: 0.2, label: '0.2' },
-              { value: 0.4, label: '0.4' },
-              { value: 0.6, label: '0.6' },
-              { value: 0.8, label: '0.8' },
-              { value: 1.0, label: '1.0' }
-            ]}
+            step={0.01}
+            tickInterval={0.2}
           />
           <Button float="right" onClick={() => setView("scatter")}>Done</Button>
         </div>
@@ -178,29 +167,14 @@ function Bias({ parameters, setAnswer }) {
       {view === "corrafter" && (
         <div style={{ width: '50%', margin: '50px auto' }}>
           <h3>Estimate the correlation of the scatterplot.</h3>
-          <Slider
+          <DivergingSlider
             value={corrAfter}
-            onChange={setCorrAfter}
+            setValue={answerCallback}
             min={-1}
             max={1}
-            size="xl" // Makes it larger
-            color="blue"
-            step="0.01"
-            marks={[
-              { value: -1.0, label: '-1.0' },
-              { value: -0.8, label: '-0.8' },
-              { value: -0.6, label: '-0.6' },
-              { value: -0.4, label: '-0.4' },
-              { value: -0.2, label: '-0.2' },
-              { value: 0, label: '0' },
-              { value: 0.2, label: '0.2' },
-              { value: 0.4, label: '0.4' },
-              { value: 0.6, label: '0.6' },
-              { value: 0.8, label: '0.8' },
-              { value: 1.0, label: '1.0' }
-            ]}
+            step={0.01}
+            tickInterval={0.2}
           />
-          <Button float="right" onClick={answerCallback}>Done</Button>
         </div>
       )}
 
@@ -208,25 +182,28 @@ function Bias({ parameters, setAnswer }) {
         <div style={{ width: '50%', margin: '50px auto' }}>
           <h3>How much do you believe about this statement?</h3>
           <h3>{label}</h3>
+          <div style={{ marginBottom: 30 }}>
           <Slider
-            value={belief}
-            onChange={setBelief}
-            min={1}
-            max={7}
-            size="xl" // Makes it larger
-            color="blue"
-            step="0.01"
-            marks={[
-              { value: 1, label: '1' },
-              { value: 2, label: '2' },
-              { value: 3, label: '3' },
-              { value: 4, label: '4' },
-              { value: 5, label: '5' },
-              { value: 6, label: '6' },
-              { value: 7, label: '7' },
-            ]}
-          />
-          <Button float="right" onClick={() => setView("corrbefore")}>Done</Button>
+              value={belief}
+              onChange={setBelief}
+              min={1}
+              max={7}
+              defaultValue={4}
+              size="xl" // Makes it larger
+              color="blue"
+              step="0.01"
+              marks={[
+                { value: 1, label: '1' },
+                { value: 2, label: '2' },
+                { value: 3, label: '3' },
+                { value: 4, label: '4' },
+                { value: 5, label: '5' },
+                { value: 6, label: '6' },
+                { value: 7, label: '7' },
+              ]}
+            />
+          </div>
+          <Button onClick={() => setView("corrbefore")}>Done</Button>
         </div>
       )}
 
@@ -236,4 +213,4 @@ function Bias({ parameters, setAnswer }) {
   )
 }
 
-export default Bias
+export default Bubble

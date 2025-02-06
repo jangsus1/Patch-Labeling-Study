@@ -110,16 +110,7 @@ function Grid({ parameters, setAnswer }) {
   return (
     <div>
       {example && (
-        <h1 style={{
-          color: "red",
-          position: "fixed",
-          top: "50px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          background: "transparent",
-          padding: "10px",
-          zIndex: 1000
-        }}>Example Question</h1>
+        <h1>Example Question</h1>
       )}
       <h2>Grids</h2>
 

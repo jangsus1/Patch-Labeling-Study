@@ -28,7 +28,7 @@ However, instead of seeing the full scatterplot immediately, you will use a **bu
 - You will receive **immediate feedback** showing:
   - Your response.
   - The actual correlation value of the scatterplot.
-- Try to tune your estimate in the following questions! 
+
 ---
 
 ## Important Notes

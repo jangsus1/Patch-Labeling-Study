@@ -1,6 +1,6 @@
-# Bubble-View  
+# Tool Tutorial
 
-**Bubble-View** allows you to selectively reveal information while completing tasks.  
+**Bubble-View Tool** allows you to selectively reveal information while completing tasks.  
 
 ## How It Works  
 - The visualization starts blurred.  
@@ -11,9 +11,11 @@
 - Take your time to think before interacting.  
 - Focus on uncovering relevant details strategically.  
 
-## Example Screen  
-![example](/Revisit-Study/tools/assets/bubble.png)  
 
 ## Task Overview  
 - 2 example tasks  
 - 18 main tasks  
+
+
+## Screenshot of the tool
+![example](/Revisit-Study/tools/assets/bubble.png)  
