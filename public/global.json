@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "tools",
+    "tools_extend",
     "gaze"
   ],
   "configs": {
@@ -10,6 +11,9 @@
     },
     "gaze": {
       "path": "gaze/config.json"
+    },
+    "tools_extend": {
+      "path": "tools_extend/config.json"
     }
   }
 } 

@@ -1,11 +1,11 @@
 # Correlation Perception Experiment
 
-## Welcome to the Study!
+## Welcome!
 
-Thank you for participating in our research on **visual perception of correlations**.  
+Thank you for joining our study on **visual perception of correlations**.  
 
-In this study, you will estimate the relationships between two variables by analyzing scatterplots. However, instead of viewing the scatterplot in full, you will **gradually reveal parts of it** by clicking on the image.
+You'll estimate relationships between two variables by **gradually revealing** scatterplots through clicks.
 
-Your participation is **voluntary**, and you may withdraw at any time. The experiment will take approximately **10 minutes** to complete.
+This study takes **~15 minutes**, and participation is **voluntary**. You can withdraw at any time.
 
-If you are ready, press **Next** to proceed to the consent form and instructions.
+Press **Next** to proceed to the consent form and instructions.

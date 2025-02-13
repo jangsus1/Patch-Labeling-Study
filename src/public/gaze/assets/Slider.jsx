@@ -10,8 +10,8 @@ export default function DivergingSlider({ value, setValue, min = -1, max = 1, st
           to right,
           lightgray 0%,
           lightgray ${middlePercentage}%,
-          blue ${middlePercentage}%,
-          blue ${percentage}%,
+          #228BE6 ${middlePercentage}%,
+          #228BE6 ${percentage}%,
           lightgray ${percentage}%,
           lightgray 100%
         )`
@@ -19,8 +19,8 @@ export default function DivergingSlider({ value, setValue, min = -1, max = 1, st
           to right,
           lightgray 0%,
           lightgray ${percentage}%,
-          blue ${percentage}%,
-          blue ${middlePercentage}%,
+          #228BE6 ${percentage}%,
+          #228BE6 ${middlePercentage}%,
           lightgray ${middlePercentage}%,
           lightgray 100%
         )`;
