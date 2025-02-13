@@ -88,12 +88,12 @@
             "nextButtonText": "I agree",
             "response": []
         },
-        "intro_static": {
+        "intro_staticBlur": {
             "type": "markdown",
             "path": "tools_extend/assets/intro_static.md",
             "response": []
         },
-        "intro_adaptive": {
+        "intro_adaptiveBlur": {
             "type": "markdown",
             "path": "tools_extend/assets/intro_adaptive.md",
             "response": []
