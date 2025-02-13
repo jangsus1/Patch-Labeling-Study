@@ -1,4 +1,4 @@
-# Welcome to the Labeling Study – Tool Comparisons  
+# Welcome to the Labeling Study
 
 ## Purpose  
 Thank you for participating! This study explores how people annotate visualizations with certain tasks. Your input will help improve visualization research.  
