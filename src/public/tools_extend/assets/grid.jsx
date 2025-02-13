@@ -118,7 +118,8 @@ function Grid({ parameters, setAnswer }) {
         </div>
       ) : (
         <div>
-          <h3>Please annotate <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below. Then provide your answer for the question.</h3>
+          <h3>Please annotate <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below, assuming that people <span style={{ color: "red" }} >cannot</span> see the blocked area. 
+          Then provide your answer for the question.</h3>
           <h3>Q: {question}</h3>
         </div>
       )}
