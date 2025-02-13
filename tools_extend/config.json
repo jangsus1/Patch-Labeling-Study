@@ -229,7 +229,7 @@
                 }
             ]
         },
-        "adaptive_chartqa_text_bar_05411753006467.png": {
+        "adaptiveBlur_chartqa_text_bar_05411753006467.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
@@ -245,7 +245,7 @@
                         "x": 840,
                         "y": 0,
                         "width": 42,
-                        "height": 270
+                        "height": 240
                     },
                     {
                         "x": 756,
@@ -256,7 +256,7 @@
                     {
                         "x": 756,
                         "y": 240,
-                        "width": 84,
+                        "width": 126,
                         "height": 30
                     },
                     {
@@ -269,7 +269,7 @@
                         "x": 714,
                         "y": 540,
                         "width": 42,
-                        "height": 60
+                        "height": 30
                     },
                     {
                         "x": 840,
@@ -280,13 +280,13 @@
                     {
                         "x": 210,
                         "y": 570,
-                        "width": 294,
+                        "width": 378,
                         "height": 30
                     },
                     {
-                        "x": 504,
+                        "x": 588,
                         "y": 570,
-                        "width": 210,
+                        "width": 168,
                         "height": 30
                     },
                     {
@@ -514,8 +514,14 @@
                     {
                         "x": 0,
                         "y": 90,
-                        "width": 378,
+                        "width": 126,
                         "height": 30
+                    },
+                    {
+                        "x": 126,
+                        "y": 90,
+                        "width": 252,
+                        "height": 60
                     },
                     {
                         "x": 378,
@@ -524,33 +530,27 @@
                         "height": 60
                     },
                     {
-                        "x": 126,
-                        "y": 120,
-                        "width": 252,
-                        "height": 30
-                    },
-                    {
                         "x": 0,
                         "y": 60,
-                        "width": 378,
+                        "width": 420,
                         "height": 30
                     },
                     {
-                        "x": 378,
+                        "x": 420,
                         "y": 60,
-                        "width": 378,
+                        "width": 336,
                         "height": 30
                     },
                     {
                         "x": 0,
                         "y": 30,
-                        "width": 378,
+                        "width": 420,
                         "height": 30
                     },
                     {
-                        "x": 378,
+                        "x": 420,
                         "y": 30,
-                        "width": 378,
+                        "width": 336,
                         "height": 30
                     },
                     {
@@ -578,11 +578,10 @@
                         "height": 30
                     }
                 ],
-                "chart_type": "text_bar",
-                "grid": "adaptive-8"
+                "chart_type": "text_bar"
             }
         },
-        "adaptive_chartqa_text_stacked_bar_9280.png": {
+        "adaptiveBlur_chartqa_text_stacked_bar_9280.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
@@ -645,50 +644,50 @@
                     {
                         "x": 0,
                         "y": 165,
+                        "width": 60,
+                        "height": 30
+                    },
+                    {
+                        "x": 60,
+                        "y": 165,
                         "width": 150,
                         "height": 15
                     },
                     {
-                        "x": 150,
+                        "x": 210,
                         "y": 165,
-                        "width": 150,
+                        "width": 105,
                         "height": 15
                     },
                     {
                         "x": 300,
-                        "y": 165,
-                        "width": 15,
-                        "height": 60
-                    },
-                    {
-                        "x": 0,
                         "y": 180,
-                        "width": 60,
-                        "height": 15
+                        "width": 15,
+                        "height": 45
                     },
                     {
                         "x": 0,
                         "y": 225,
-                        "width": 135,
+                        "width": 120,
                         "height": 15
                     },
                     {
-                        "x": 135,
+                        "x": 120,
                         "y": 225,
-                        "width": 75,
+                        "width": 90,
                         "height": 15
                     },
                     {
                         "x": 210,
                         "y": 225,
-                        "width": 105,
+                        "width": 30,
                         "height": 30
                     },
                     {
                         "x": 240,
-                        "y": 255,
+                        "y": 225,
                         "width": 75,
-                        "height": 45
+                        "height": 75
                     },
                     {
                         "x": 120,
@@ -855,13 +854,13 @@
                     {
                         "x": 0,
                         "y": 240,
-                        "width": 105,
+                        "width": 120,
                         "height": 15
                     },
                     {
-                        "x": 105,
+                        "x": 120,
                         "y": 240,
-                        "width": 105,
+                        "width": 90,
                         "height": 15
                     },
                     {
@@ -1015,11 +1014,10 @@
                         "height": 30
                     }
                 ],
-                "chart_type": "text_stacked_bar",
-                "grid": "adaptive-8"
+                "chart_type": "text_stacked_bar"
             }
         },
-        "adaptive_chartqa_text_pie_43.png": {
+        "adaptiveBlur_chartqa_text_pie_43.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
@@ -1107,36 +1105,36 @@
                         "x": 0,
                         "y": 215,
                         "width": 62,
-                        "height": 387
-                    },
-                    {
-                        "x": 62,
-                        "y": 258,
-                        "width": 62,
                         "height": 43
                     },
                     {
-                        "x": 62,
-                        "y": 301,
-                        "width": 31,
-                        "height": 215
+                        "x": 0,
+                        "y": 258,
+                        "width": 93,
+                        "height": 258
                     },
                     {
-                        "x": 62,
-                        "y": 516,
-                        "width": 62,
-                        "height": 86
+                        "x": 93,
+                        "y": 258,
+                        "width": 31,
+                        "height": 43
                     },
                     {
                         "x": 0,
-                        "y": 602,
-                        "width": 155,
-                        "height": 86
+                        "y": 516,
+                        "width": 124,
+                        "height": 129
                     },
                     {
-                        "x": 155,
+                        "x": 124,
+                        "y": 602,
+                        "width": 31,
+                        "height": 43
+                    },
+                    {
+                        "x": 0,
                         "y": 645,
-                        "width": 62,
+                        "width": 217,
                         "height": 43
                     },
                     {
@@ -1448,13 +1446,13 @@
                     {
                         "x": 0,
                         "y": 0,
-                        "width": 155,
+                        "width": 310,
                         "height": 43
                     },
                     {
-                        "x": 155,
+                        "x": 310,
                         "y": 0,
-                        "width": 248,
+                        "width": 93,
                         "height": 43
                     },
                     {
@@ -1464,11 +1462,10 @@
                         "height": 86
                     }
                 ],
-                "chart_type": "text_pie",
-                "grid": "adaptive-8"
+                "chart_type": "text_pie"
             }
         },
-        "adaptive_chartqa_text_line_19371621021871.png": {
+        "adaptiveBlur_chartqa_text_line_19371621021871.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
@@ -1771,13 +1768,13 @@
                     {
                         "x": 84,
                         "y": 450,
-                        "width": 420,
+                        "width": 378,
                         "height": 30
                     },
                     {
-                        "x": 504,
+                        "x": 462,
                         "y": 450,
-                        "width": 336,
+                        "width": 378,
                         "height": 30
                     },
                     {
@@ -1937,11 +1934,10 @@
                         "height": 30
                     }
                 ],
-                "chart_type": "text_line",
-                "grid": "adaptive-8"
+                "chart_type": "text_line"
             }
         },
-        "adaptive_chartqa_notext_line_two_col_4524.png": {
+        "adaptiveBlur_chartqa_notext_line_two_col_4524.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
@@ -1956,20 +1952,20 @@
                     {
                         "x": 48,
                         "y": 0,
-                        "width": 48,
+                        "width": 384,
                         "height": 34
-                    },
-                    {
-                        "x": 96,
-                        "y": 0,
-                        "width": 336,
-                        "height": 136
                     },
                     {
                         "x": 432,
                         "y": 0,
                         "width": 288,
                         "height": 68
+                    },
+                    {
+                        "x": 96,
+                        "y": 34,
+                        "width": 336,
+                        "height": 102
                     },
                     {
                         "x": 768,
@@ -2368,11 +2364,10 @@
                         "height": 34
                     }
                 ],
-                "chart_type": "notext_line",
-                "grid": "adaptive-8"
+                "chart_type": "notext_line"
             }
         },
-        "adaptive_chartqa_notext_pie_two_col_61107.png": {
+        "adaptiveBlur_chartqa_notext_pie_two_col_61107.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
@@ -2579,14 +2574,20 @@
                     {
                         "x": 280,
                         "y": 108,
-                        "width": 80,
+                        "width": 40,
                         "height": 54
+                    },
+                    {
+                        "x": 320,
+                        "y": 108,
+                        "width": 40,
+                        "height": 81
                     },
                     {
                         "x": 400,
                         "y": 108,
                         "width": 40,
-                        "height": 81
+                        "height": 189
                     },
                     {
                         "x": 480,
@@ -2601,10 +2602,10 @@
                         "height": 243
                     },
                     {
-                        "x": 320,
+                        "x": 360,
                         "y": 162,
-                        "width": 80,
-                        "height": 27
+                        "width": 40,
+                        "height": 81
                     },
                     {
                         "x": 560,
@@ -2613,9 +2614,9 @@
                         "height": 189
                     },
                     {
-                        "x": 360,
+                        "x": 440,
                         "y": 189,
-                        "width": 160,
+                        "width": 80,
                         "height": 27
                     },
                     {
@@ -2625,16 +2626,10 @@
                         "height": 54
                     },
                     {
-                        "x": 360,
+                        "x": 440,
                         "y": 216,
-                        "width": 120,
-                        "height": 27
-                    },
-                    {
-                        "x": 400,
-                        "y": 243,
                         "width": 40,
-                        "height": 54
+                        "height": 27
                     },
                     {
                         "x": 360,
@@ -2646,7 +2641,7 @@
                         "x": 320,
                         "y": 297,
                         "width": 40,
-                        "height": 135
+                        "height": 54
                     },
                     {
                         "x": 520,
@@ -2657,7 +2652,7 @@
                     {
                         "x": 280,
                         "y": 351,
-                        "width": 40,
+                        "width": 80,
                         "height": 54
                     },
                     {
@@ -2667,9 +2662,9 @@
                         "height": 27
                     },
                     {
-                        "x": 360,
+                        "x": 320,
                         "y": 405,
-                        "width": 160,
+                        "width": 200,
                         "height": 27
                     },
                     {
@@ -2751,11 +2746,10 @@
                         "height": 27
                     }
                 ],
-                "chart_type": "notext_pie",
-                "grid": "adaptive-8"
+                "chart_type": "notext_pie"
             }
         },
-        "adaptive_chartqa_notext_bar_two_col_40186.png": {
+        "adaptiveBlur_chartqa_notext_bar_two_col_40186.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
@@ -2795,19 +2789,19 @@
                         "x": 680,
                         "y": 54,
                         "width": 40,
-                        "height": 270
+                        "height": 27
                     },
                     {
                         "x": 600,
                         "y": 81,
-                        "width": 80,
+                        "width": 120,
                         "height": 243
                     },
                     {
                         "x": 0,
                         "y": 135,
                         "width": 120,
-                        "height": 54
+                        "height": 81
                     },
                     {
                         "x": 120,
@@ -2816,22 +2810,22 @@
                         "height": 27
                     },
                     {
-                        "x": 0,
+                        "x": 120,
                         "y": 189,
+                        "width": 80,
+                        "height": 27
+                    },
+                    {
+                        "x": 0,
+                        "y": 216,
+                        "width": 240,
+                        "height": 27
+                    },
+                    {
+                        "x": 0,
+                        "y": 243,
                         "width": 40,
                         "height": 270
-                    },
-                    {
-                        "x": 40,
-                        "y": 189,
-                        "width": 160,
-                        "height": 27
-                    },
-                    {
-                        "x": 40,
-                        "y": 216,
-                        "width": 200,
-                        "height": 27
                     },
                     {
                         "x": 40,
@@ -2843,7 +2837,7 @@
                         "x": 720,
                         "y": 270,
                         "width": 80,
-                        "height": 216
+                        "height": 189
                     },
                     {
                         "x": 600,
@@ -2855,13 +2849,13 @@
                         "x": 40,
                         "y": 378,
                         "width": 120,
-                        "height": 27
+                        "height": 135
                     },
                     {
-                        "x": 40,
+                        "x": 160,
                         "y": 405,
-                        "width": 200,
-                        "height": 54
+                        "width": 80,
+                        "height": 108
                     },
                     {
                         "x": 280,
@@ -2870,39 +2864,39 @@
                         "height": 27
                     },
                     {
-                        "x": 0,
+                        "x": 240,
                         "y": 459,
                         "width": 200,
-                        "height": 54
-                    },
-                    {
-                        "x": 200,
-                        "y": 459,
-                        "width": 240,
-                        "height": 108
+                        "height": 27
                     },
                     {
                         "x": 560,
                         "y": 459,
-                        "width": 160,
-                        "height": 27
-                    },
-                    {
-                        "x": 440,
-                        "y": 486,
-                        "width": 200,
-                        "height": 27
-                    },
-                    {
-                        "x": 440,
-                        "y": 513,
                         "width": 240,
+                        "height": 27
+                    },
+                    {
+                        "x": 240,
+                        "y": 486,
+                        "width": 400,
+                        "height": 27
+                    },
+                    {
+                        "x": 200,
+                        "y": 513,
+                        "width": 80,
+                        "height": 27
+                    },
+                    {
+                        "x": 280,
+                        "y": 513,
+                        "width": 400,
                         "height": 54
                     },
                     {
                         "x": 0,
                         "y": 540,
-                        "width": 200,
+                        "width": 280,
                         "height": 27
                     },
                     {
@@ -2944,26 +2938,26 @@
                     {
                         "x": 280,
                         "y": 54,
-                        "width": 200,
-                        "height": 81
+                        "width": 80,
+                        "height": 108
                     },
                     {
-                        "x": 480,
+                        "x": 360,
                         "y": 54,
-                        "width": 80,
+                        "width": 200,
                         "height": 27
                     },
                     {
                         "x": 560,
                         "y": 54,
                         "width": 40,
-                        "height": 216
+                        "height": 108
                     },
                     {
-                        "x": 280,
-                        "y": 135,
-                        "width": 80,
-                        "height": 27
+                        "x": 360,
+                        "y": 81,
+                        "width": 120,
+                        "height": 54
                     },
                     {
                         "x": 240,
@@ -2973,9 +2967,9 @@
                     },
                     {
                         "x": 560,
-                        "y": 270,
+                        "y": 162,
                         "width": 40,
-                        "height": 135
+                        "height": 243
                     },
                     {
                         "x": 240,
@@ -3206,11 +3200,10 @@
                         "height": 27
                     }
                 ],
-                "chart_type": "notext_bar",
-                "grid": "adaptive-8"
+                "chart_type": "notext_bar"
             }
         },
-        "adaptive_chartqa_notext_stacked_bar_multi_col_60949.png": {
+        "adaptiveBlur_chartqa_notext_stacked_bar_multi_col_60949.png": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
@@ -3219,37 +3212,13 @@
                     {
                         "x": 0,
                         "y": 0,
-                        "width": 120,
+                        "width": 400,
                         "height": 27
-                    },
-                    {
-                        "x": 120,
-                        "y": 0,
-                        "width": 280,
-                        "height": 135
                     },
                     {
                         "x": 400,
                         "y": 0,
-                        "width": 80,
-                        "height": 108
-                    },
-                    {
-                        "x": 480,
-                        "y": 0,
-                        "width": 40,
-                        "height": 81
-                    },
-                    {
-                        "x": 520,
-                        "y": 0,
-                        "width": 120,
-                        "height": 54
-                    },
-                    {
-                        "x": 640,
-                        "y": 0,
-                        "width": 160,
+                        "width": 400,
                         "height": 27
                     },
                     {
@@ -3257,6 +3226,24 @@
                         "y": 27,
                         "width": 40,
                         "height": 270
+                    },
+                    {
+                        "x": 120,
+                        "y": 27,
+                        "width": 280,
+                        "height": 108
+                    },
+                    {
+                        "x": 400,
+                        "y": 27,
+                        "width": 80,
+                        "height": 81
+                    },
+                    {
+                        "x": 480,
+                        "y": 27,
+                        "width": 160,
+                        "height": 27
                     },
                     {
                         "x": 640,
@@ -3269,6 +3256,12 @@
                         "y": 54,
                         "width": 80,
                         "height": 54
+                    },
+                    {
+                        "x": 480,
+                        "y": 54,
+                        "width": 40,
+                        "height": 27
                     },
                     {
                         "x": 80,
@@ -3298,7 +3291,7 @@
                         "x": 0,
                         "y": 324,
                         "width": 80,
-                        "height": 189
+                        "height": 81
                     },
                     {
                         "x": 720,
@@ -3307,9 +3300,9 @@
                         "height": 135
                     },
                     {
-                        "x": 80,
+                        "x": 0,
                         "y": 405,
-                        "width": 120,
+                        "width": 200,
                         "height": 108
                     },
                     {
@@ -3322,30 +3315,30 @@
                         "x": 200,
                         "y": 459,
                         "width": 360,
-                        "height": 108
+                        "height": 81
                     },
                     {
                         "x": 560,
                         "y": 486,
                         "width": 80,
-                        "height": 27
+                        "height": 54
                     },
                     {
-                        "x": 560,
+                        "x": 640,
                         "y": 513,
-                        "width": 120,
+                        "width": 40,
                         "height": 27
                     },
                     {
                         "x": 0,
                         "y": 540,
-                        "width": 200,
+                        "width": 400,
                         "height": 27
                     },
                     {
-                        "x": 560,
+                        "x": 400,
                         "y": 540,
-                        "width": 240,
+                        "width": 400,
                         "height": 27
                     },
                     {
@@ -3589,11 +3582,10 @@
                         "height": 27
                     }
                 ],
-                "chart_type": "notext_stacked_bar",
-                "grid": "adaptive-8"
+                "chart_type": "notext_stacked_bar"
             }
         },
-        "adaptive_charxiv_scatterplot_17.jpg": {
+        "adaptiveBlur_charxiv_scatterplot_17.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
@@ -3990,11 +3982,10 @@
                         "height": 41
                     }
                 ],
-                "chart_type": "scatterplot",
-                "grid": "adaptive-8"
+                "chart_type": "scatterplot"
             }
         },
-        "adaptive_charxiv_scatterplot_617.jpg": {
+        "adaptiveBlur_charxiv_scatterplot_617.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
@@ -4427,11 +4418,10 @@
                         "height": 63
                     }
                 ],
-                "chart_type": "scatterplot",
-                "grid": "adaptive-8"
+                "chart_type": "scatterplot"
             }
         },
-        "adaptive_charxiv_hist_20.jpg": {
+        "adaptiveBlur_charxiv_hist_20.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
@@ -4507,7 +4497,7 @@
                         "x": 51,
                         "y": 612,
                         "width": 102,
-                        "height": 102
+                        "height": 34
                     },
                     {
                         "x": 204,
@@ -4528,9 +4518,9 @@
                         "height": 34
                     },
                     {
-                        "x": 153,
+                        "x": 51,
                         "y": 646,
-                        "width": 357,
+                        "width": 459,
                         "height": 68
                     },
                     {
@@ -4762,11 +4752,10 @@
                         "height": 34
                     }
                 ],
-                "chart_type": "hist",
-                "grid": "adaptive-8"
+                "chart_type": "hist"
             }
         },
-        "adaptive_charxiv_hist_81.jpg": {
+        "adaptiveBlur_charxiv_hist_81.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
@@ -4812,13 +4801,13 @@
                         "x": 102,
                         "y": 76,
                         "width": 51,
-                        "height": 342
+                        "height": 266
                     },
                     {
                         "x": 102,
-                        "y": 418,
+                        "y": 342,
                         "width": 51,
-                        "height": 190
+                        "height": 266
                     },
                     {
                         "x": 204,
@@ -4866,12 +4855,12 @@
                         "x": 51,
                         "y": 684,
                         "width": 51,
-                        "height": 38
+                        "height": 76
                     },
                     {
-                        "x": 51,
+                        "x": 102,
                         "y": 722,
-                        "width": 459,
+                        "width": 408,
                         "height": 38
                     },
                     {
@@ -5049,11 +5038,10 @@
                         "height": 76
                     }
                 ],
-                "chart_type": "hist",
-                "grid": "adaptive-8"
+                "chart_type": "hist"
             }
         },
-        "adaptive_charxiv_contour_954.jpg": {
+        "adaptiveBlur_charxiv_contour_954.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
@@ -5062,26 +5050,26 @@
                     {
                         "x": 0,
                         "y": 0,
-                        "width": 459,
+                        "width": 510,
                         "height": 45
                     },
                     {
-                        "x": 459,
+                        "x": 510,
                         "y": 0,
-                        "width": 408,
+                        "width": 357,
                         "height": 45
                     },
                     {
                         "x": 1020,
                         "y": 0,
                         "width": 51,
-                        "height": 90
+                        "height": 360
                     },
                     {
                         "x": 969,
                         "y": 90,
-                        "width": 102,
-                        "height": 450
+                        "width": 51,
+                        "height": 225
                     },
                     {
                         "x": 918,
@@ -5098,8 +5086,14 @@
                     {
                         "x": 918,
                         "y": 315,
-                        "width": 51,
+                        "width": 102,
                         "height": 45
+                    },
+                    {
+                        "x": 969,
+                        "y": 360,
+                        "width": 102,
+                        "height": 405
                     },
                     {
                         "x": 918,
@@ -5112,12 +5106,6 @@
                         "y": 495,
                         "width": 51,
                         "height": 45
-                    },
-                    {
-                        "x": 969,
-                        "y": 540,
-                        "width": 102,
-                        "height": 405
                     },
                     {
                         "x": 918,
@@ -5134,7 +5122,7 @@
                     {
                         "x": 918,
                         "y": 765,
-                        "width": 51,
+                        "width": 153,
                         "height": 90
                     },
                     {
@@ -5170,7 +5158,7 @@
                     {
                         "x": 867,
                         "y": 855,
-                        "width": 102,
+                        "width": 204,
                         "height": 90
                     },
                     {
@@ -5212,32 +5200,32 @@
                     {
                         "x": 0,
                         "y": 45,
-                        "width": 51,
+                        "width": 102,
                         "height": 45
                     },
                     {
-                        "x": 51,
+                        "x": 102,
                         "y": 45,
-                        "width": 357,
-                        "height": 180
+                        "width": 255,
+                        "height": 360
                     },
                     {
-                        "x": 408,
+                        "x": 357,
                         "y": 45,
-                        "width": 459,
+                        "width": 510,
                         "height": 360
+                    },
+                    {
+                        "x": 51,
+                        "y": 90,
+                        "width": 51,
+                        "height": 135
                     },
                     {
                         "x": 867,
                         "y": 90,
                         "width": 51,
                         "height": 315
-                    },
-                    {
-                        "x": 102,
-                        "y": 225,
-                        "width": 306,
-                        "height": 180
                     },
                     {
                         "x": 51,
@@ -5248,13 +5236,13 @@
                     {
                         "x": 51,
                         "y": 405,
-                        "width": 459,
+                        "width": 357,
                         "height": 450
                     },
                     {
-                        "x": 510,
+                        "x": 408,
                         "y": 405,
-                        "width": 408,
+                        "width": 510,
                         "height": 450
                     },
                     {
@@ -5366,11 +5354,10 @@
                         "height": 90
                     }
                 ],
-                "chart_type": "contour",
-                "grid": "adaptive-8"
+                "chart_type": "contour"
             }
         },
-        "adaptive_charxiv_contour_1248.jpg": {
+        "adaptiveBlur_charxiv_contour_1248.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
@@ -5488,12 +5475,12 @@
                         "x": 0,
                         "y": 810,
                         "width": 124,
-                        "height": 108
+                        "height": 54
                     },
                     {
-                        "x": 124,
+                        "x": 0,
                         "y": 864,
-                        "width": 310,
+                        "width": 434,
                         "height": 54
                     },
                     {
@@ -5767,11 +5754,10 @@
                         "height": 54
                     }
                 ],
-                "chart_type": "contour",
-                "grid": "adaptive-8"
+                "chart_type": "contour"
             }
         },
-        "adaptive_charxiv_heatmap_568.jpg": {
+        "adaptiveBlur_charxiv_heatmap_568.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
@@ -6228,11 +6214,10 @@
                         "height": 96
                     }
                 ],
-                "chart_type": "heatmap",
-                "grid": "adaptive-8"
+                "chart_type": "heatmap"
             }
         },
-        "adaptive_charxiv_heatmap_446.jpg": {
+        "adaptiveBlur_charxiv_heatmap_446.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
@@ -6719,11 +6704,10 @@
                         "height": 34
                     }
                 ],
-                "chart_type": "heatmap",
-                "grid": "adaptive-8"
+                "chart_type": "heatmap"
             }
         },
-        "adaptive_charxiv_geo_433.jpg": {
+        "adaptiveBlur_charxiv_geo_433.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
@@ -6864,38 +6848,44 @@
                     {
                         "x": 124,
                         "y": 0,
-                        "width": 62,
-                        "height": 180
-                    },
-                    {
-                        "x": 186,
-                        "y": 0,
-                        "width": 496,
-                        "height": 72
-                    },
-                    {
-                        "x": 682,
-                        "y": 0,
                         "width": 248,
+                        "height": 36
+                    },
+                    {
+                        "x": 372,
+                        "y": 0,
+                        "width": 434,
+                        "height": 108
+                    },
+                    {
+                        "x": 806,
+                        "y": 0,
+                        "width": 124,
                         "height": 144
                     },
                     {
                         "x": 0,
                         "y": 36,
-                        "width": 124,
+                        "width": 372,
                         "height": 36
                     },
                     {
                         "x": 62,
                         "y": 72,
-                        "width": 62,
+                        "width": 124,
                         "height": 36
                     },
                     {
                         "x": 248,
                         "y": 72,
-                        "width": 434,
-                        "height": 36
+                        "width": 124,
+                        "height": 360
+                    },
+                    {
+                        "x": 124,
+                        "y": 108,
+                        "width": 62,
+                        "height": 72
                     },
                     {
                         "x": 186,
@@ -6904,16 +6894,10 @@
                         "height": 144
                     },
                     {
-                        "x": 248,
-                        "y": 108,
-                        "width": 124,
-                        "height": 360
-                    },
-                    {
                         "x": 434,
                         "y": 108,
-                        "width": 248,
-                        "height": 252
+                        "width": 372,
+                        "height": 108
                     },
                     {
                         "x": 372,
@@ -6922,10 +6906,10 @@
                         "height": 36
                     },
                     {
-                        "x": 682,
+                        "x": 806,
                         "y": 144,
-                        "width": 186,
-                        "height": 180
+                        "width": 62,
+                        "height": 288
                     },
                     {
                         "x": 62,
@@ -6942,8 +6926,8 @@
                     {
                         "x": 372,
                         "y": 216,
-                        "width": 62,
-                        "height": 144
+                        "width": 434,
+                        "height": 108
                     },
                     {
                         "x": 0,
@@ -6954,49 +6938,49 @@
                     {
                         "x": 62,
                         "y": 324,
-                        "width": 186,
+                        "width": 62,
                         "height": 36
                     },
                     {
-                        "x": 744,
+                        "x": 124,
                         "y": 324,
                         "width": 124,
                         "height": 72
                     },
                     {
-                        "x": 124,
-                        "y": 360,
-                        "width": 124,
+                        "x": 372,
+                        "y": 324,
+                        "width": 310,
                         "height": 36
                     },
                     {
-                        "x": 434,
-                        "y": 360,
-                        "width": 124,
-                        "height": 36
-                    },
-                    {
-                        "x": 558,
-                        "y": 360,
-                        "width": 186,
+                        "x": 744,
+                        "y": 324,
+                        "width": 62,
                         "height": 72
                     },
                     {
                         "x": 434,
-                        "y": 396,
+                        "y": 360,
                         "width": 62,
+                        "height": 72
+                    },
+                    {
+                        "x": 496,
+                        "y": 360,
+                        "width": 248,
                         "height": 36
                     },
                     {
-                        "x": 806,
+                        "x": 558,
                         "y": 396,
-                        "width": 62,
-                        "height": 36
-                    },
-                    {
-                        "x": 372,
-                        "y": 432,
                         "width": 186,
+                        "height": 36
+                    },
+                    {
+                        "x": 248,
+                        "y": 432,
+                        "width": 310,
                         "height": 36
                     },
                     {
@@ -7198,11 +7182,10 @@
                         "height": 36
                     }
                 ],
-                "chart_type": "geo",
-                "grid": "adaptive-8"
+                "chart_type": "geo"
             }
         },
-        "adaptive_charxiv_geo_550.jpg": {
+        "adaptiveBlur_charxiv_geo_550.jpg": {
             "baseComponent": "adaptive_tile",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
@@ -7623,11 +7606,10 @@
                         "height": 51
                     }
                 ],
-                "chart_type": "geo",
-                "grid": "adaptive-8"
+                "chart_type": "geo"
             }
         },
-        "static_chartqa_text_bar_05411753006467.png": {
+        "staticBlur_chartqa_text_bar_05411753006467.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
@@ -7652,11 +7634,10 @@
                     469,
                     536
                 ],
-                "chart_type": "text_bar",
-                "grid": "static-8"
+                "chart_type": "text_bar"
             }
         },
-        "static_chartqa_text_stacked_bar_9280.png": {
+        "staticBlur_chartqa_text_stacked_bar_9280.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
@@ -7681,11 +7662,10 @@
                     238,
                     272
                 ],
-                "chart_type": "text_stacked_bar",
-                "grid": "static-8"
+                "chart_type": "text_stacked_bar"
             }
         },
-        "static_chartqa_text_pie_43.png": {
+        "staticBlur_chartqa_text_pie_43.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
@@ -7710,11 +7690,10 @@
                     686,
                     784
                 ],
-                "chart_type": "text_pie",
-                "grid": "static-8"
+                "chart_type": "text_pie"
             }
         },
-        "static_chartqa_text_line_19371621021871.png": {
+        "staticBlur_chartqa_text_line_19371621021871.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
@@ -7739,11 +7718,10 @@
                     469,
                     536
                 ],
-                "chart_type": "text_line",
-                "grid": "static-8"
+                "chart_type": "text_line"
             }
         },
-        "static_chartqa_notext_line_two_col_4524.png": {
+        "staticBlur_chartqa_notext_line_two_col_4524.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
@@ -7768,11 +7746,10 @@
                     434,
                     496
                 ],
-                "chart_type": "notext_line",
-                "grid": "static-8"
+                "chart_type": "notext_line"
             }
         },
-        "static_chartqa_notext_pie_two_col_61107.png": {
+        "staticBlur_chartqa_notext_pie_two_col_61107.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
@@ -7797,11 +7774,10 @@
                     434,
                     496
                 ],
-                "chart_type": "notext_pie",
-                "grid": "static-8"
+                "chart_type": "notext_pie"
             }
         },
-        "static_chartqa_notext_bar_two_col_40186.png": {
+        "staticBlur_chartqa_notext_bar_two_col_40186.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
@@ -7826,11 +7802,10 @@
                     434,
                     496
                 ],
-                "chart_type": "notext_bar",
-                "grid": "static-8"
+                "chart_type": "notext_bar"
             }
         },
-        "static_chartqa_notext_stacked_bar_multi_col_60949.png": {
+        "staticBlur_chartqa_notext_stacked_bar_multi_col_60949.png": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
@@ -7855,11 +7830,10 @@
                     434,
                     496
                 ],
-                "chart_type": "notext_stacked_bar",
-                "grid": "static-8"
+                "chart_type": "notext_stacked_bar"
             }
         },
-        "static_charxiv_scatterplot_17.jpg": {
+        "staticBlur_charxiv_scatterplot_17.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
@@ -7884,11 +7858,10 @@
                     532,
                     608
                 ],
-                "chart_type": "scatterplot",
-                "grid": "static-8"
+                "chart_type": "scatterplot"
             }
         },
-        "static_charxiv_scatterplot_617.jpg": {
+        "staticBlur_charxiv_scatterplot_617.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
@@ -7913,11 +7886,10 @@
                     637,
                     728
                 ],
-                "chart_type": "scatterplot",
-                "grid": "static-8"
+                "chart_type": "scatterplot"
             }
         },
-        "static_charxiv_hist_20.jpg": {
+        "staticBlur_charxiv_hist_20.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
@@ -7942,11 +7914,10 @@
                     532,
                     608
                 ],
-                "chart_type": "hist",
-                "grid": "static-8"
+                "chart_type": "hist"
             }
         },
-        "static_charxiv_hist_81.jpg": {
+        "staticBlur_charxiv_hist_81.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
@@ -7971,11 +7942,10 @@
                     595,
                     680
                 ],
-                "chart_type": "hist",
-                "grid": "static-8"
+                "chart_type": "hist"
             }
         },
-        "static_charxiv_contour_954.jpg": {
+        "staticBlur_charxiv_contour_954.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
@@ -8000,11 +7970,10 @@
                     707,
                     808
                 ],
-                "chart_type": "contour",
-                "grid": "static-8"
+                "chart_type": "contour"
             }
         },
-        "static_charxiv_contour_1248.jpg": {
+        "staticBlur_charxiv_contour_1248.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
@@ -8029,11 +7998,10 @@
                     700,
                     800
                 ],
-                "chart_type": "contour",
-                "grid": "static-8"
+                "chart_type": "contour"
             }
         },
-        "static_charxiv_heatmap_568.jpg": {
+        "staticBlur_charxiv_heatmap_568.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
@@ -8058,11 +8026,10 @@
                     798,
                     912
                 ],
-                "chart_type": "heatmap",
-                "grid": "static-8"
+                "chart_type": "heatmap"
             }
         },
-        "static_charxiv_heatmap_446.jpg": {
+        "staticBlur_charxiv_heatmap_446.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
@@ -8087,11 +8054,10 @@
                     294,
                     336
                 ],
-                "chart_type": "heatmap",
-                "grid": "static-8"
+                "chart_type": "heatmap"
             }
         },
-        "static_charxiv_geo_433.jpg": {
+        "staticBlur_charxiv_geo_433.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
@@ -8116,11 +8082,10 @@
                     462,
                     528
                 ],
-                "chart_type": "geo",
-                "grid": "static-8"
+                "chart_type": "geo"
             }
         },
-        "static_charxiv_geo_550.jpg": {
+        "staticBlur_charxiv_geo_550.jpg": {
             "baseComponent": "grid",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
@@ -8145,8 +8110,7 @@
                     798,
                     912
                 ],
-                "chart_type": "geo",
-                "grid": "static-8"
+                "chart_type": "geo"
             }
         }
     },
@@ -8162,63 +8126,63 @@
                 "numSamples": 1,
                 "components": [
                     {
-                        "id": "adaptive",
+                        "id": "adaptiveBlur",
                         "order": "fixed",
                         "components": [
-                            "intro_adaptive",
+                            "intro_adaptiveBlur",
                             {
                                 "id": "main",
                                 "order": "latinSquare",
                                 "components": [
-                                    "adaptive_chartqa_text_bar_05411753006467.png",
-                                    "adaptive_chartqa_text_stacked_bar_9280.png",
-                                    "adaptive_chartqa_text_pie_43.png",
-                                    "adaptive_chartqa_text_line_19371621021871.png",
-                                    "adaptive_chartqa_notext_line_two_col_4524.png",
-                                    "adaptive_chartqa_notext_pie_two_col_61107.png",
-                                    "adaptive_chartqa_notext_bar_two_col_40186.png",
-                                    "adaptive_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "adaptive_charxiv_scatterplot_17.jpg",
-                                    "adaptive_charxiv_scatterplot_617.jpg",
-                                    "adaptive_charxiv_hist_20.jpg",
-                                    "adaptive_charxiv_hist_81.jpg",
-                                    "adaptive_charxiv_contour_954.jpg",
-                                    "adaptive_charxiv_contour_1248.jpg",
-                                    "adaptive_charxiv_heatmap_568.jpg",
-                                    "adaptive_charxiv_heatmap_446.jpg",
-                                    "adaptive_charxiv_geo_433.jpg",
-                                    "adaptive_charxiv_geo_550.jpg"
+                                    "adaptiveBlur_chartqa_text_bar_05411753006467.png",
+                                    "adaptiveBlur_chartqa_text_stacked_bar_9280.png",
+                                    "adaptiveBlur_chartqa_text_pie_43.png",
+                                    "adaptiveBlur_chartqa_text_line_19371621021871.png",
+                                    "adaptiveBlur_chartqa_notext_line_two_col_4524.png",
+                                    "adaptiveBlur_chartqa_notext_pie_two_col_61107.png",
+                                    "adaptiveBlur_chartqa_notext_bar_two_col_40186.png",
+                                    "adaptiveBlur_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "adaptiveBlur_charxiv_scatterplot_17.jpg",
+                                    "adaptiveBlur_charxiv_scatterplot_617.jpg",
+                                    "adaptiveBlur_charxiv_hist_20.jpg",
+                                    "adaptiveBlur_charxiv_hist_81.jpg",
+                                    "adaptiveBlur_charxiv_contour_954.jpg",
+                                    "adaptiveBlur_charxiv_contour_1248.jpg",
+                                    "adaptiveBlur_charxiv_heatmap_568.jpg",
+                                    "adaptiveBlur_charxiv_heatmap_446.jpg",
+                                    "adaptiveBlur_charxiv_geo_433.jpg",
+                                    "adaptiveBlur_charxiv_geo_550.jpg"
                                 ]
                             }
                         ]
                     },
                     {
-                        "id": "static",
+                        "id": "staticBlur",
                         "order": "fixed",
                         "components": [
-                            "intro_static",
+                            "intro_staticBlur",
                             {
                                 "id": "main",
                                 "order": "latinSquare",
                                 "components": [
-                                    "static_chartqa_text_bar_05411753006467.png",
-                                    "static_chartqa_text_stacked_bar_9280.png",
-                                    "static_chartqa_text_pie_43.png",
-                                    "static_chartqa_text_line_19371621021871.png",
-                                    "static_chartqa_notext_line_two_col_4524.png",
-                                    "static_chartqa_notext_pie_two_col_61107.png",
-                                    "static_chartqa_notext_bar_two_col_40186.png",
-                                    "static_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "static_charxiv_scatterplot_17.jpg",
-                                    "static_charxiv_scatterplot_617.jpg",
-                                    "static_charxiv_hist_20.jpg",
-                                    "static_charxiv_hist_81.jpg",
-                                    "static_charxiv_contour_954.jpg",
-                                    "static_charxiv_contour_1248.jpg",
-                                    "static_charxiv_heatmap_568.jpg",
-                                    "static_charxiv_heatmap_446.jpg",
-                                    "static_charxiv_geo_433.jpg",
-                                    "static_charxiv_geo_550.jpg"
+                                    "staticBlur_chartqa_text_bar_05411753006467.png",
+                                    "staticBlur_chartqa_text_stacked_bar_9280.png",
+                                    "staticBlur_chartqa_text_pie_43.png",
+                                    "staticBlur_chartqa_text_line_19371621021871.png",
+                                    "staticBlur_chartqa_notext_line_two_col_4524.png",
+                                    "staticBlur_chartqa_notext_pie_two_col_61107.png",
+                                    "staticBlur_chartqa_notext_bar_two_col_40186.png",
+                                    "staticBlur_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "staticBlur_charxiv_scatterplot_17.jpg",
+                                    "staticBlur_charxiv_scatterplot_617.jpg",
+                                    "staticBlur_charxiv_hist_20.jpg",
+                                    "staticBlur_charxiv_hist_81.jpg",
+                                    "staticBlur_charxiv_contour_954.jpg",
+                                    "staticBlur_charxiv_contour_1248.jpg",
+                                    "staticBlur_charxiv_heatmap_568.jpg",
+                                    "staticBlur_charxiv_heatmap_446.jpg",
+                                    "staticBlur_charxiv_geo_433.jpg",
+                                    "staticBlur_charxiv_geo_550.jpg"
                                 ]
                             }
                         ]
