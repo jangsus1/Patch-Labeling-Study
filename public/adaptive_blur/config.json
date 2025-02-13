@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Tool Comparison Extended",
+        "title": "Adaptive Blur",
         "version": "dev",
         "authors": [
             "Minsuk Chang"
         ],
         "date": "2025-01-23",
-        "description": "Comparing Tools for Importance Annotation (Extended)",
+        "description": "Adaptive Blur",
         "organizations": [
             "Georgia Institute of Technology"
         ]
@@ -26,31 +26,9 @@
         "sidebar": true
     },
     "baseComponents": {
-        "grid": {
-            "type": "react-component",
-            "path": "tools_extend/assets/grid.jsx",
-            "response": [
-                {
-                    "id": "answer",
-                    "prompt": "Answer for the question:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "shortText"
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
-                }
-            ],
-            "instructionLocation": "aboveStimulus",
-            "nextButtonLocation": "sidebar"
-        },
         "adaptive_tile": {
             "type": "react-component",
-            "path": "tools_extend/assets/tilegrid.jsx",
+            "path": "adaptive_blur/assets/tilegrid.jsx",
             "response": [
                 {
                     "id": "answer",
@@ -74,38 +52,33 @@
     "components": {
         "welcome": {
             "type": "markdown",
-            "path": "tools_extend/assets/welcome.md",
+            "path": "adaptive_blur/assets/welcome.md",
             "response": []
         },
         "instructions": {
             "type": "markdown",
-            "path": "tools_extend/assets/instructions.md",
+            "path": "adaptive_blur/assets/instructions.md",
             "response": []
         },
         "consent": {
             "type": "markdown",
-            "path": "tools_extend/assets/consent.md",
+            "path": "adaptive_blur/assets/consent.md",
             "nextButtonText": "I agree",
-            "response": []
-        },
-        "intro_staticBlur": {
-            "type": "markdown",
-            "path": "tools_extend/assets/intro_static.md",
             "response": []
         },
         "intro_adaptiveBlur": {
             "type": "markdown",
-            "path": "tools_extend/assets/intro_adaptive.md",
+            "path": "adaptive_blur/assets/intro_adaptive.md",
             "response": []
         },
         "vlat_intro": {
             "type": "markdown",
-            "path": "tools_extend/assets/vlat_intro.md",
+            "path": "adaptive_blur/assets/vlat_intro.md",
             "response": []
         },
         "demographics": {
             "type": "markdown",
-            "path": "tools_extend/assets/blank.md",
+            "path": "adaptive_blur/assets/blank.md",
             "response": [
                 {
                     "id": "gender",
@@ -159,7 +132,7 @@
         },
         "NASA": {
             "type": "markdown",
-            "path": "tools_extend/assets/blank.md",
+            "path": "adaptive_blur/assets/blank.md",
             "response": [
                 {
                     "id": "mental-demand",
@@ -514,20 +487,20 @@
                     {
                         "x": 0,
                         "y": 90,
-                        "width": 126,
+                        "width": 378,
                         "height": 30
-                    },
-                    {
-                        "x": 126,
-                        "y": 90,
-                        "width": 252,
-                        "height": 60
                     },
                     {
                         "x": 378,
                         "y": 90,
                         "width": 378,
                         "height": 60
+                    },
+                    {
+                        "x": 126,
+                        "y": 120,
+                        "width": 252,
+                        "height": 30
                     },
                     {
                         "x": 0,
@@ -734,13 +707,13 @@
                     {
                         "x": 75,
                         "y": 120,
-                        "width": 150,
+                        "width": 75,
                         "height": 15
                     },
                     {
-                        "x": 225,
+                        "x": 150,
                         "y": 120,
-                        "width": 75,
+                        "width": 150,
                         "height": 15
                     },
                     {
@@ -998,19 +971,19 @@
                     {
                         "x": 0,
                         "y": 0,
+                        "width": 105,
+                        "height": 30
+                    },
+                    {
+                        "x": 105,
+                        "y": 0,
                         "width": 75,
                         "height": 30
                     },
                     {
-                        "x": 75,
+                        "x": 180,
                         "y": 0,
-                        "width": 120,
-                        "height": 30
-                    },
-                    {
-                        "x": 195,
-                        "y": 0,
-                        "width": 120,
+                        "width": 135,
                         "height": 30
                     }
                 ],
@@ -1027,7 +1000,7 @@
                         "x": 589,
                         "y": 43,
                         "width": 31,
-                        "height": 301
+                        "height": 129
                     },
                     {
                         "x": 403,
@@ -1050,7 +1023,7 @@
                     {
                         "x": 558,
                         "y": 172,
-                        "width": 31,
+                        "width": 62,
                         "height": 387
                     },
                     {
@@ -1072,27 +1045,27 @@
                         "height": 215
                     },
                     {
-                        "x": 589,
-                        "y": 344,
-                        "width": 31,
-                        "height": 387
-                    },
-                    {
                         "x": 496,
                         "y": 559,
                         "width": 93,
-                        "height": 86
+                        "height": 43
+                    },
+                    {
+                        "x": 589,
+                        "y": 559,
+                        "width": 31,
+                        "height": 172
                     },
                     {
                         "x": 465,
                         "y": 602,
-                        "width": 31,
-                        "height": 43
+                        "width": 124,
+                        "height": 86
                     },
                     {
                         "x": 403,
                         "y": 645,
-                        "width": 186,
+                        "width": 62,
                         "height": 43
                     },
                     {
@@ -1105,36 +1078,36 @@
                         "x": 0,
                         "y": 215,
                         "width": 62,
+                        "height": 387
+                    },
+                    {
+                        "x": 62,
+                        "y": 258,
+                        "width": 62,
                         "height": 43
                     },
                     {
-                        "x": 0,
-                        "y": 258,
-                        "width": 93,
-                        "height": 258
-                    },
-                    {
-                        "x": 93,
-                        "y": 258,
+                        "x": 62,
+                        "y": 301,
                         "width": 31,
-                        "height": 43
+                        "height": 215
                     },
                     {
-                        "x": 0,
+                        "x": 62,
                         "y": 516,
-                        "width": 124,
-                        "height": 129
-                    },
-                    {
-                        "x": 124,
-                        "y": 602,
-                        "width": 31,
-                        "height": 43
+                        "width": 62,
+                        "height": 86
                     },
                     {
                         "x": 0,
+                        "y": 602,
+                        "width": 155,
+                        "height": 86
+                    },
+                    {
+                        "x": 155,
                         "y": 645,
-                        "width": 217,
+                        "width": 62,
                         "height": 43
                     },
                     {
@@ -1194,13 +1167,13 @@
                     {
                         "x": 248,
                         "y": 774,
-                        "width": 279,
+                        "width": 248,
                         "height": 86
                     },
                     {
-                        "x": 527,
+                        "x": 496,
                         "y": 774,
-                        "width": 93,
+                        "width": 124,
                         "height": 86
                     },
                     {
@@ -1225,19 +1198,13 @@
                         "x": 124,
                         "y": 258,
                         "width": 31,
-                        "height": 301
+                        "height": 344
                     },
                     {
                         "x": 155,
                         "y": 258,
-                        "width": 279,
+                        "width": 310,
                         "height": 43
-                    },
-                    {
-                        "x": 434,
-                        "y": 258,
-                        "width": 31,
-                        "height": 86
                     },
                     {
                         "x": 93,
@@ -1250,6 +1217,12 @@
                         "y": 301,
                         "width": 62,
                         "height": 172
+                    },
+                    {
+                        "x": 434,
+                        "y": 301,
+                        "width": 31,
+                        "height": 43
                     },
                     {
                         "x": 465,
@@ -1276,27 +1249,27 @@
                         "height": 86
                     },
                     {
-                        "x": 124,
+                        "x": 155,
                         "y": 559,
-                        "width": 62,
-                        "height": 43
+                        "width": 31,
+                        "height": 86
                     },
                     {
                         "x": 434,
                         "y": 559,
                         "width": 31,
-                        "height": 43
+                        "height": 86
                     },
                     {
-                        "x": 155,
+                        "x": 186,
                         "y": 602,
-                        "width": 93,
+                        "width": 62,
                         "height": 43
                     },
                     {
                         "x": 372,
                         "y": 602,
-                        "width": 93,
+                        "width": 62,
                         "height": 43
                     },
                     {
@@ -1446,13 +1419,13 @@
                     {
                         "x": 0,
                         "y": 0,
-                        "width": 310,
+                        "width": 155,
                         "height": 43
                     },
                     {
-                        "x": 310,
+                        "x": 155,
                         "y": 0,
-                        "width": 93,
+                        "width": 248,
                         "height": 43
                     },
                     {
@@ -1952,20 +1925,20 @@
                     {
                         "x": 48,
                         "y": 0,
-                        "width": 384,
+                        "width": 48,
                         "height": 34
+                    },
+                    {
+                        "x": 96,
+                        "y": 0,
+                        "width": 336,
+                        "height": 136
                     },
                     {
                         "x": 432,
                         "y": 0,
                         "width": 288,
                         "height": 68
-                    },
-                    {
-                        "x": 96,
-                        "y": 34,
-                        "width": 336,
-                        "height": 102
                     },
                     {
                         "x": 768,
@@ -2145,7 +2118,7 @@
                         "x": 192,
                         "y": 306,
                         "width": 432,
-                        "height": 68
+                        "height": 34
                     },
                     {
                         "x": 720,
@@ -2156,37 +2129,37 @@
                     {
                         "x": 96,
                         "y": 340,
-                        "width": 96,
+                        "width": 480,
                         "height": 34
                     },
                     {
-                        "x": 624,
+                        "x": 576,
                         "y": 340,
                         "width": 96,
                         "height": 34
                     },
                     {
                         "x": 672,
-                        "y": 374,
+                        "y": 340,
                         "width": 48,
-                        "height": 34
+                        "height": 68
                     },
                     {
                         "x": 96,
                         "y": 408,
-                        "width": 480,
-                        "height": 68
+                        "width": 432,
+                        "height": 34
                     },
                     {
-                        "x": 576,
+                        "x": 528,
                         "y": 408,
-                        "width": 144,
+                        "width": 192,
                         "height": 68
                     },
                     {
                         "x": 48,
                         "y": 442,
-                        "width": 48,
+                        "width": 480,
                         "height": 34
                     },
                     {
@@ -2574,20 +2547,14 @@
                     {
                         "x": 280,
                         "y": 108,
-                        "width": 40,
+                        "width": 80,
                         "height": 54
-                    },
-                    {
-                        "x": 320,
-                        "y": 108,
-                        "width": 40,
-                        "height": 81
                     },
                     {
                         "x": 400,
                         "y": 108,
                         "width": 40,
-                        "height": 189
+                        "height": 81
                     },
                     {
                         "x": 480,
@@ -2602,10 +2569,10 @@
                         "height": 243
                     },
                     {
-                        "x": 360,
+                        "x": 320,
                         "y": 162,
-                        "width": 40,
-                        "height": 81
+                        "width": 80,
+                        "height": 27
                     },
                     {
                         "x": 560,
@@ -2614,9 +2581,9 @@
                         "height": 189
                     },
                     {
-                        "x": 440,
+                        "x": 360,
                         "y": 189,
-                        "width": 80,
+                        "width": 160,
                         "height": 27
                     },
                     {
@@ -2626,10 +2593,16 @@
                         "height": 54
                     },
                     {
-                        "x": 440,
+                        "x": 360,
                         "y": 216,
-                        "width": 40,
+                        "width": 120,
                         "height": 27
+                    },
+                    {
+                        "x": 400,
+                        "y": 243,
+                        "width": 40,
+                        "height": 54
                     },
                     {
                         "x": 360,
@@ -2641,7 +2614,7 @@
                         "x": 320,
                         "y": 297,
                         "width": 40,
-                        "height": 54
+                        "height": 135
                     },
                     {
                         "x": 520,
@@ -2652,7 +2625,7 @@
                     {
                         "x": 280,
                         "y": 351,
-                        "width": 80,
+                        "width": 40,
                         "height": 54
                     },
                     {
@@ -2662,9 +2635,9 @@
                         "height": 27
                     },
                     {
-                        "x": 320,
+                        "x": 360,
                         "y": 405,
-                        "width": 200,
+                        "width": 160,
                         "height": 27
                     },
                     {
@@ -3212,13 +3185,37 @@
                     {
                         "x": 0,
                         "y": 0,
-                        "width": 400,
+                        "width": 120,
                         "height": 27
+                    },
+                    {
+                        "x": 120,
+                        "y": 0,
+                        "width": 280,
+                        "height": 135
                     },
                     {
                         "x": 400,
                         "y": 0,
-                        "width": 400,
+                        "width": 80,
+                        "height": 108
+                    },
+                    {
+                        "x": 480,
+                        "y": 0,
+                        "width": 40,
+                        "height": 81
+                    },
+                    {
+                        "x": 520,
+                        "y": 0,
+                        "width": 120,
+                        "height": 54
+                    },
+                    {
+                        "x": 640,
+                        "y": 0,
+                        "width": 160,
                         "height": 27
                     },
                     {
@@ -3226,24 +3223,6 @@
                         "y": 27,
                         "width": 40,
                         "height": 270
-                    },
-                    {
-                        "x": 120,
-                        "y": 27,
-                        "width": 280,
-                        "height": 108
-                    },
-                    {
-                        "x": 400,
-                        "y": 27,
-                        "width": 80,
-                        "height": 81
-                    },
-                    {
-                        "x": 480,
-                        "y": 27,
-                        "width": 160,
-                        "height": 27
                     },
                     {
                         "x": 640,
@@ -3256,12 +3235,6 @@
                         "y": 54,
                         "width": 80,
                         "height": 54
-                    },
-                    {
-                        "x": 480,
-                        "y": 54,
-                        "width": 40,
-                        "height": 27
                     },
                     {
                         "x": 80,
@@ -3291,7 +3264,7 @@
                         "x": 0,
                         "y": 324,
                         "width": 80,
-                        "height": 81
+                        "height": 189
                     },
                     {
                         "x": 720,
@@ -3300,9 +3273,9 @@
                         "height": 135
                     },
                     {
-                        "x": 0,
+                        "x": 80,
                         "y": 405,
-                        "width": 200,
+                        "width": 120,
                         "height": 108
                     },
                     {
@@ -3315,30 +3288,30 @@
                         "x": 200,
                         "y": 459,
                         "width": 360,
-                        "height": 81
+                        "height": 108
                     },
                     {
                         "x": 560,
                         "y": 486,
                         "width": 80,
-                        "height": 54
+                        "height": 27
                     },
                     {
-                        "x": 640,
+                        "x": 560,
                         "y": 513,
-                        "width": 40,
+                        "width": 120,
                         "height": 27
                     },
                     {
                         "x": 0,
                         "y": 540,
-                        "width": 400,
+                        "width": 200,
                         "height": 27
                     },
                     {
-                        "x": 400,
+                        "x": 560,
                         "y": 540,
-                        "width": 400,
+                        "width": 240,
                         "height": 27
                     },
                     {
@@ -3600,38 +3573,38 @@
                     {
                         "x": 124,
                         "y": 0,
-                        "width": 62,
+                        "width": 372,
                         "height": 205
                     },
                     {
-                        "x": 186,
+                        "x": 496,
                         "y": 0,
-                        "width": 620,
+                        "width": 310,
                         "height": 123
                     },
                     {
                         "x": 806,
                         "y": 0,
-                        "width": 248,
+                        "width": 186,
                         "height": 82
                     },
                     {
                         "x": 992,
-                        "y": 82,
+                        "y": 0,
                         "width": 62,
-                        "height": 328
-                    },
-                    {
-                        "x": 186,
-                        "y": 123,
-                        "width": 310,
-                        "height": 164
+                        "height": 410
                     },
                     {
                         "x": 496,
                         "y": 123,
                         "width": 62,
                         "height": 41
+                    },
+                    {
+                        "x": 186,
+                        "y": 205,
+                        "width": 310,
+                        "height": 82
                     },
                     {
                         "x": 124,
@@ -3643,31 +3616,31 @@
                         "x": 248,
                         "y": 328,
                         "width": 248,
-                        "height": 41
+                        "height": 164
                     },
                     {
                         "x": 620,
                         "y": 328,
                         "width": 62,
-                        "height": 82
+                        "height": 164
                     },
                     {
-                        "x": 248,
+                        "x": 496,
                         "y": 369,
                         "width": 124,
                         "height": 123
                     },
                     {
-                        "x": 372,
-                        "y": 369,
-                        "width": 248,
-                        "height": 205
+                        "x": 682,
+                        "y": 410,
+                        "width": 372,
+                        "height": 164
                     },
                     {
-                        "x": 620,
-                        "y": 410,
-                        "width": 434,
-                        "height": 164
+                        "x": 372,
+                        "y": 492,
+                        "width": 310,
+                        "height": 82
                     },
                     {
                         "x": 0,
@@ -4126,20 +4099,26 @@
                     {
                         "x": 158,
                         "y": 0,
-                        "width": 316,
+                        "width": 474,
                         "height": 63
-                    },
-                    {
-                        "x": 474,
-                        "y": 0,
-                        "width": 158,
-                        "height": 315
                     },
                     {
                         "x": 237,
                         "y": 63,
                         "width": 158,
                         "height": 63
+                    },
+                    {
+                        "x": 474,
+                        "y": 63,
+                        "width": 79,
+                        "height": 252
+                    },
+                    {
+                        "x": 553,
+                        "y": 63,
+                        "width": 79,
+                        "height": 630
                     },
                     {
                         "x": 948,
@@ -4176,12 +4155,6 @@
                         "y": 315,
                         "width": 395,
                         "height": 63
-                    },
-                    {
-                        "x": 553,
-                        "y": 315,
-                        "width": 79,
-                        "height": 378
                     },
                     {
                         "x": 632,
@@ -4443,37 +4416,37 @@
                         "x": 204,
                         "y": 34,
                         "width": 408,
-                        "height": 306
+                        "height": 204
                     },
                     {
                         "x": 612,
                         "y": 136,
                         "width": 357,
-                        "height": 204
+                        "height": 102
                     },
                     {
                         "x": 204,
-                        "y": 340,
-                        "width": 102,
-                        "height": 136
-                    },
-                    {
-                        "x": 306,
-                        "y": 340,
-                        "width": 153,
-                        "height": 170
+                        "y": 238,
+                        "width": 255,
+                        "height": 238
                     },
                     {
                         "x": 459,
-                        "y": 340,
-                        "width": 255,
-                        "height": 204
+                        "y": 238,
+                        "width": 510,
+                        "height": 306
+                    },
+                    {
+                        "x": 306,
+                        "y": 476,
+                        "width": 153,
+                        "height": 34
                     },
                     {
                         "x": 714,
-                        "y": 340,
+                        "y": 544,
                         "width": 255,
-                        "height": 238
+                        "height": 34
                     },
                     {
                         "x": 1020,
@@ -4497,7 +4470,7 @@
                         "x": 51,
                         "y": 612,
                         "width": 102,
-                        "height": 34
+                        "height": 102
                     },
                     {
                         "x": 204,
@@ -4518,9 +4491,9 @@
                         "height": 34
                     },
                     {
-                        "x": 51,
+                        "x": 153,
                         "y": 646,
-                        "width": 459,
+                        "width": 357,
                         "height": 68
                     },
                     {
@@ -4801,13 +4774,13 @@
                         "x": 102,
                         "y": 76,
                         "width": 51,
-                        "height": 266
+                        "height": 304
                     },
                     {
                         "x": 102,
-                        "y": 342,
+                        "y": 380,
                         "width": 51,
-                        "height": 266
+                        "height": 228
                     },
                     {
                         "x": 204,
@@ -5200,32 +5173,32 @@
                     {
                         "x": 0,
                         "y": 45,
-                        "width": 102,
+                        "width": 51,
                         "height": 45
                     },
                     {
-                        "x": 102,
-                        "y": 45,
-                        "width": 255,
-                        "height": 360
-                    },
-                    {
-                        "x": 357,
-                        "y": 45,
-                        "width": 510,
-                        "height": 360
-                    },
-                    {
                         "x": 51,
-                        "y": 90,
-                        "width": 51,
-                        "height": 135
+                        "y": 45,
+                        "width": 357,
+                        "height": 180
+                    },
+                    {
+                        "x": 408,
+                        "y": 45,
+                        "width": 459,
+                        "height": 360
                     },
                     {
                         "x": 867,
                         "y": 90,
                         "width": 51,
                         "height": 315
+                    },
+                    {
+                        "x": 102,
+                        "y": 225,
+                        "width": 306,
+                        "height": 180
                     },
                     {
                         "x": 51,
@@ -5236,13 +5209,13 @@
                     {
                         "x": 51,
                         "y": 405,
-                        "width": 357,
+                        "width": 459,
                         "height": 450
                     },
                     {
-                        "x": 408,
+                        "x": 510,
                         "y": 405,
-                        "width": 510,
+                        "width": 408,
                         "height": 450
                     },
                     {
@@ -5391,13 +5364,13 @@
                         "x": 992,
                         "y": 54,
                         "width": 62,
-                        "height": 432
+                        "height": 378
                     },
                     {
                         "x": 992,
-                        "y": 486,
+                        "y": 432,
                         "width": 62,
-                        "height": 324
+                        "height": 378
                     },
                     {
                         "x": 0,
@@ -5427,18 +5400,18 @@
                         "x": 310,
                         "y": 432,
                         "width": 124,
+                        "height": 108
+                    },
+                    {
+                        "x": 434,
+                        "y": 486,
+                        "width": 124,
                         "height": 54
                     },
                     {
                         "x": 310,
-                        "y": 486,
-                        "width": 248,
-                        "height": 108
-                    },
-                    {
-                        "x": 558,
                         "y": 540,
-                        "width": 186,
+                        "width": 434,
                         "height": 54
                     },
                     {
@@ -5475,12 +5448,12 @@
                         "x": 0,
                         "y": 810,
                         "width": 124,
-                        "height": 54
+                        "height": 108
                     },
                     {
-                        "x": 0,
+                        "x": 124,
                         "y": 864,
-                        "width": 434,
+                        "width": 310,
                         "height": 54
                     },
                     {
@@ -5547,7 +5520,7 @@
                         "x": 868,
                         "y": 162,
                         "width": 124,
-                        "height": 432
+                        "height": 378
                     },
                     {
                         "x": 124,
@@ -5564,20 +5537,8 @@
                     {
                         "x": 310,
                         "y": 378,
-                        "width": 124,
+                        "width": 496,
                         "height": 54
-                    },
-                    {
-                        "x": 434,
-                        "y": 378,
-                        "width": 124,
-                        "height": 108
-                    },
-                    {
-                        "x": 558,
-                        "y": 378,
-                        "width": 248,
-                        "height": 162
                     },
                     {
                         "x": 186,
@@ -5586,9 +5547,21 @@
                         "height": 162
                     },
                     {
+                        "x": 434,
+                        "y": 432,
+                        "width": 372,
+                        "height": 54
+                    },
+                    {
                         "x": 124,
                         "y": 486,
                         "width": 62,
+                        "height": 54
+                    },
+                    {
+                        "x": 558,
+                        "y": 486,
+                        "width": 248,
                         "height": 54
                     },
                     {
@@ -5600,17 +5573,17 @@
                     {
                         "x": 744,
                         "y": 540,
-                        "width": 124,
+                        "width": 186,
                         "height": 54
                     },
                     {
-                        "x": 310,
-                        "y": 594,
+                        "x": 930,
+                        "y": 540,
                         "width": 62,
                         "height": 216
                     },
                     {
-                        "x": 930,
+                        "x": 310,
                         "y": 594,
                         "width": 62,
                         "height": 216
@@ -5624,7 +5597,7 @@
                     {
                         "x": 372,
                         "y": 756,
-                        "width": 558,
+                        "width": 620,
                         "height": 54
                     },
                     {
@@ -7206,14 +7179,8 @@
                     {
                         "x": 893,
                         "y": 0,
-                        "width": 47,
+                        "width": 94,
                         "height": 102
-                    },
-                    {
-                        "x": 940,
-                        "y": 0,
-                        "width": 47,
-                        "height": 510
                     },
                     {
                         "x": 0,
@@ -7226,6 +7193,12 @@
                         "y": 102,
                         "width": 47,
                         "height": 204
+                    },
+                    {
+                        "x": 940,
+                        "y": 102,
+                        "width": 47,
+                        "height": 408
                     },
                     {
                         "x": 893,
@@ -7255,7 +7228,7 @@
                         "x": 752,
                         "y": 357,
                         "width": 47,
-                        "height": 102
+                        "height": 204
                     },
                     {
                         "x": 893,
@@ -7266,7 +7239,7 @@
                     {
                         "x": 705,
                         "y": 459,
-                        "width": 94,
+                        "width": 47,
                         "height": 102
                     },
                     {
@@ -7291,7 +7264,7 @@
                         "x": 47,
                         "y": 561,
                         "width": 47,
-                        "height": 357
+                        "height": 306
                     },
                     {
                         "x": 517,
@@ -7303,7 +7276,7 @@
                         "x": 940,
                         "y": 561,
                         "width": 47,
-                        "height": 510
+                        "height": 459
                     },
                     {
                         "x": 94,
@@ -7315,7 +7288,7 @@
                         "x": 470,
                         "y": 612,
                         "width": 47,
-                        "height": 102
+                        "height": 459
                     },
                     {
                         "x": 893,
@@ -7332,8 +7305,8 @@
                     {
                         "x": 376,
                         "y": 714,
-                        "width": 141,
-                        "height": 357
+                        "width": 94,
+                        "height": 153
                     },
                     {
                         "x": 94,
@@ -7348,15 +7321,15 @@
                         "height": 51
                     },
                     {
-                        "x": 94,
+                        "x": 47,
                         "y": 867,
-                        "width": 141,
+                        "width": 188,
                         "height": 51
                     },
                     {
                         "x": 329,
                         "y": 867,
-                        "width": 47,
+                        "width": 141,
                         "height": 204
                     },
                     {
@@ -7374,7 +7347,7 @@
                     {
                         "x": 517,
                         "y": 1020,
-                        "width": 423,
+                        "width": 470,
                         "height": 51
                     },
                     {
@@ -7608,510 +7581,6 @@
                 ],
                 "chart_type": "geo"
             }
-        },
-        "staticBlur_chartqa_text_bar_05411753006467.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
-                "question": "What is the highest value in the chart?",
-                "x_grids": [
-                    95,
-                    190,
-                    285,
-                    380,
-                    475,
-                    570,
-                    665,
-                    760
-                ],
-                "y_grids": [
-                    67,
-                    134,
-                    201,
-                    268,
-                    335,
-                    402,
-                    469,
-                    536
-                ],
-                "chart_type": "text_bar"
-            }
-        },
-        "staticBlur_chartqa_text_stacked_bar_9280.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
-                "question": "What's the difference of people choosing very important between 2016 and 2010?",
-                "x_grids": [
-                    35,
-                    70,
-                    105,
-                    140,
-                    175,
-                    210,
-                    245,
-                    280
-                ],
-                "y_grids": [
-                    34,
-                    68,
-                    102,
-                    136,
-                    170,
-                    204,
-                    238,
-                    272
-                ],
-                "chart_type": "text_stacked_bar"
-            }
-        },
-        "staticBlur_chartqa_text_pie_43.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
-                "question": "What's the ratio of people who use Latinx versus people who don't?",
-                "x_grids": [
-                    69,
-                    138,
-                    207,
-                    276,
-                    345,
-                    414,
-                    483,
-                    552
-                ],
-                "y_grids": [
-                    98,
-                    196,
-                    294,
-                    392,
-                    490,
-                    588,
-                    686,
-                    784
-                ],
-                "chart_type": "text_pie"
-            }
-        },
-        "staticBlur_chartqa_text_line_19371621021871.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
-                "question": "Between which two years was the public trust in government least?",
-                "x_grids": [
-                    95,
-                    190,
-                    285,
-                    380,
-                    475,
-                    570,
-                    665,
-                    760
-                ],
-                "y_grids": [
-                    67,
-                    134,
-                    201,
-                    268,
-                    335,
-                    402,
-                    469,
-                    536
-                ],
-                "chart_type": "text_line"
-            }
-        },
-        "staticBlur_chartqa_notext_line_two_col_4524.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
-                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
-                "x_grids": [
-                    89,
-                    178,
-                    267,
-                    356,
-                    445,
-                    534,
-                    623,
-                    712
-                ],
-                "y_grids": [
-                    62,
-                    124,
-                    186,
-                    248,
-                    310,
-                    372,
-                    434,
-                    496
-                ],
-                "chart_type": "notext_line"
-            }
-        },
-        "staticBlur_chartqa_notext_pie_two_col_61107.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
-                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
-                "x_grids": [
-                    89,
-                    178,
-                    267,
-                    356,
-                    445,
-                    534,
-                    623,
-                    712
-                ],
-                "y_grids": [
-                    62,
-                    124,
-                    186,
-                    248,
-                    310,
-                    372,
-                    434,
-                    496
-                ],
-                "chart_type": "notext_pie"
-            }
-        },
-        "staticBlur_chartqa_notext_bar_two_col_40186.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
-                "question": "what is the average of top and bottom bar in the chart?",
-                "x_grids": [
-                    89,
-                    178,
-                    267,
-                    356,
-                    445,
-                    534,
-                    623,
-                    712
-                ],
-                "y_grids": [
-                    62,
-                    124,
-                    186,
-                    248,
-                    310,
-                    372,
-                    434,
-                    496
-                ],
-                "chart_type": "notext_bar"
-            }
-        },
-        "staticBlur_chartqa_notext_stacked_bar_multi_col_60949.png": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
-                "question": "How many bars in the chart have larger value than 750000?",
-                "x_grids": [
-                    89,
-                    178,
-                    267,
-                    356,
-                    445,
-                    534,
-                    623,
-                    712
-                ],
-                "y_grids": [
-                    62,
-                    124,
-                    186,
-                    248,
-                    310,
-                    372,
-                    434,
-                    496
-                ],
-                "chart_type": "notext_stacked_bar"
-            }
-        },
-        "staticBlur_charxiv_scatterplot_17.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
-                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    76,
-                    152,
-                    228,
-                    304,
-                    380,
-                    456,
-                    532,
-                    608
-                ],
-                "chart_type": "scatterplot"
-            }
-        },
-        "staticBlur_charxiv_scatterplot_617.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
-                "question": "How many Serviced K users which have meters value less than 5?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    91,
-                    182,
-                    273,
-                    364,
-                    455,
-                    546,
-                    637,
-                    728
-                ],
-                "chart_type": "scatterplot"
-            }
-        },
-        "staticBlur_charxiv_hist_20.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
-                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    76,
-                    152,
-                    228,
-                    304,
-                    380,
-                    456,
-                    532,
-                    608
-                ],
-                "chart_type": "hist"
-            }
-        },
-        "staticBlur_charxiv_hist_81.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
-                "question": "What is the most frequent caption length in terms of number of words for MS COCO based on the chart?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680
-                ],
-                "chart_type": "hist"
-            }
-        },
-        "staticBlur_charxiv_contour_954.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
-                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    101,
-                    202,
-                    303,
-                    404,
-                    505,
-                    606,
-                    707,
-                    808
-                ],
-                "chart_type": "contour"
-            }
-        },
-        "staticBlur_charxiv_contour_1248.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
-                "question": "Does the lowest PB value occur above or below 17,000K?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    100,
-                    200,
-                    300,
-                    400,
-                    500,
-                    600,
-                    700,
-                    800
-                ],
-                "chart_type": "contour"
-            }
-        },
-        "staticBlur_charxiv_heatmap_568.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
-                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "chart_type": "heatmap"
-            }
-        },
-        "staticBlur_charxiv_heatmap_446.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
-                "question": "Adding up all numbers in each individual column, which column achieves the smallest total value?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    42,
-                    84,
-                    126,
-                    168,
-                    210,
-                    252,
-                    294,
-                    336
-                ],
-                "chart_type": "heatmap"
-            }
-        },
-        "staticBlur_charxiv_geo_433.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
-                "question": "Does Australia display more variation in shade than South America?",
-                "x_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "y_grids": [
-                    66,
-                    132,
-                    198,
-                    264,
-                    330,
-                    396,
-                    462,
-                    528
-                ],
-                "chart_type": "geo"
-            }
-        },
-        "staticBlur_charxiv_geo_550.jpg": {
-            "baseComponent": "grid",
-            "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
-                "question": "Is there any region with a positive value according to the scale provided?",
-                "x_grids": [
-                    106,
-                    212,
-                    318,
-                    424,
-                    530,
-                    636,
-                    742,
-                    848
-                ],
-                "y_grids": [
-                    114,
-                    228,
-                    342,
-                    456,
-                    570,
-                    684,
-                    798,
-                    912
-                ],
-                "chart_type": "geo"
-            }
         }
     },
     "sequence": {
@@ -8152,37 +7621,6 @@
                                     "adaptiveBlur_charxiv_heatmap_446.jpg",
                                     "adaptiveBlur_charxiv_geo_433.jpg",
                                     "adaptiveBlur_charxiv_geo_550.jpg"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": "staticBlur",
-                        "order": "fixed",
-                        "components": [
-                            "intro_staticBlur",
-                            {
-                                "id": "main",
-                                "order": "latinSquare",
-                                "components": [
-                                    "staticBlur_chartqa_text_bar_05411753006467.png",
-                                    "staticBlur_chartqa_text_stacked_bar_9280.png",
-                                    "staticBlur_chartqa_text_pie_43.png",
-                                    "staticBlur_chartqa_text_line_19371621021871.png",
-                                    "staticBlur_chartqa_notext_line_two_col_4524.png",
-                                    "staticBlur_chartqa_notext_pie_two_col_61107.png",
-                                    "staticBlur_chartqa_notext_bar_two_col_40186.png",
-                                    "staticBlur_chartqa_notext_stacked_bar_multi_col_60949.png",
-                                    "staticBlur_charxiv_scatterplot_17.jpg",
-                                    "staticBlur_charxiv_scatterplot_617.jpg",
-                                    "staticBlur_charxiv_hist_20.jpg",
-                                    "staticBlur_charxiv_hist_81.jpg",
-                                    "staticBlur_charxiv_contour_954.jpg",
-                                    "staticBlur_charxiv_contour_1248.jpg",
-                                    "staticBlur_charxiv_heatmap_568.jpg",
-                                    "staticBlur_charxiv_heatmap_446.jpg",
-                                    "staticBlur_charxiv_geo_433.jpg",
-                                    "staticBlur_charxiv_geo_550.jpg"
                                 ]
                             }
                         ]
