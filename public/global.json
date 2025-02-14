@@ -1,10 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
-    "tools",
     "adaptive_blur",
     "static_blur",
-    "gaze"
+    "bubble",
+    "importAnnot"
   ],
   "configs": {
     "tools": {
@@ -18,6 +18,12 @@
     },
     "static_blur": {
       "path": "static_blur/config.json"
+    },
+    "bubble": {
+      "path": "bubble/config.json"
+    },
+    "importAnnot": {
+      "path": "importAnnot/config.json"
     }
   }
 } 
