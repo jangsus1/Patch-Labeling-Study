@@ -9,6 +9,7 @@ function Grid({ parameters, setAnswer }) {
   const { image, question, x_grids, y_grids, example } = parameters
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [rectangles, setRectangles] = useState([])
+  const [clicked, setClicked] = useState([{ x: -1, y: -1, width: 0, height: 0 }])
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -50,8 +51,6 @@ function Grid({ parameters, setAnswer }) {
             y: pad_y_grids[j], // Top-left y-coordinate
             width: width, // Width of the rectangle
             height: height, // Height of the rectangle,
-            clicked: false,
-            unClicked: false
           })
 
         }
@@ -64,6 +63,7 @@ function Grid({ parameters, setAnswer }) {
   useEffect(() => {
     const svg = d3.select(ref.current)
     const m = size.multiplier;
+    const lastClicked = _.last(clicked)
     svg
       .select("g")
       .selectAll("rect")
@@ -73,24 +73,20 @@ function Grid({ parameters, setAnswer }) {
       .attr("y", d => d.y * m)
       .attr("width", d => d.width * m)
       .attr("height", d => d.height * m)
-      .attr("stroke", "black")
-      .attr("stroke-width", 2)
+      .attr("stroke", (d) => (d.x==lastClicked.x&d.y==lastClicked.y) ? "blue" : "gray")
+      .attr("stroke-width", (d) => (d.x==lastClicked.x&d.y==lastClicked.y) ? 2 : 0.5)
       .attr("cursor", "pointer")
-      .attr("fill", "#e6e6e6")
-      .attr("opacity", d => d.clicked ? 0 : 0.5)
+      .attr("fill", "transparent")
       .on("click", (event, d) => {
         // change rectangles
-        const newRectangles = _.cloneDeep(rectangles)
-        const index = newRectangles.findIndex(item => item.x === d.x && item.y === d.y)
-        if (newRectangles[index].clicked) newRectangles[index].unClicked = true
-        newRectangles[index].clicked = !newRectangles[index].clicked
-        setRectangles(newRectangles)
+        const newClicked = [...clicked, d]
+        setClicked(newClicked)
 
         setAnswer({
           status: true,
           answers: {
             patches: JSON.stringify({
-              patches: newRectangles.filter(item => item.clicked||item.unClicked),
+              patches: newClicked.slice(1),
               multiplier: size.multiplier,
               question: question
             })
@@ -98,54 +94,47 @@ function Grid({ parameters, setAnswer }) {
         })
       })
       .on("mouseover", (event, d) => {
-        d3.select(event.target).attr("stroke", "blue").attr("stroke-width", 2)
+        if (d.x==lastClicked.x&d.y==lastClicked.y) return
+        d3.select(event.target).attr("stroke", "black").attr("stroke-width", 1)
       })
       .on("mouseout", (event, d) => {
+        if (d.x==lastClicked.x&d.y==lastClicked.y) return
         d3.select(event.target).attr("stroke", "gray").attr("stroke-width", 0.5)
       });
 
-  }, [rectangles, setAnswer, size])
+  }, [rectangles, setAnswer, size, clicked])
 
   return (
     <div>
-      {example && (
-        <h1>Example Question</h1>
-      )}
 
-      {example ? (
-        <div>
-          <h3>{question}</h3>
-        </div>
-      ) : (
-        <div>
-          <h3>Please annotate <u>minimum patches</u> that <span style={{ color: "red" }} > must be revealed </span> for people to <span style={{ color: "red" }} >confidently</span> answer the question below, assuming that people <span style={{ color: "red" }} >cannot</span> see the blocked area. 
-          Then provide your answer for the question.</h3>
-          <h3>Q: {question}</h3>
-        </div>
-      )}
-
+      <h3>Click on the image to reveal</h3>
+      {/* <h3>Q: {question}</h3> */}
       <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "block" }}>
         <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} >
           <defs>
-            <filter id="imageBlurFilter" >
-              <feGaussianBlur in="SourceGraphic" stdDeviation="17" />
+            <filter
+              id="imageBlurFilter"
+              x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
               <feComponentTransfer>
-                <feFuncA type="table" tableValues="1 1" />
+                <feFuncA type="linear" slope="2.5" />
               </feComponentTransfer>
+
             </filter>
 
             <mask id="unblurMask">
               <rect width="100%" height="100%" fill="white" />
-              {rectangles.filter(r => r.clicked).map((d, i) => (
+              {clicked.length > 0 &&
                 <rect
-                  key={i}
-                  x={d.x * size.multiplier}
-                  y={d.y * size.multiplier}
-                  width={d.width * size.multiplier}
-                  height={d.height * size.multiplier}
+                  key={0}
+                  x={clicked[clicked.length - 1].x * size.multiplier}
+                  y={clicked[clicked.length - 1].y * size.multiplier}
+                  width={clicked[clicked.length - 1].width * size.multiplier}
+                  height={clicked[clicked.length - 1].height * size.multiplier}
                   fill="black"
                 />
-              ))}
+              }
+
             </mask>
           </defs>
           <image
@@ -153,17 +142,17 @@ function Grid({ parameters, setAnswer }) {
             width={size.width}
             height={size.height}
           />
-          {/* <image
+          <image
             href={image}
             width={size.width}
             height={size.height}
             filter="url(#imageBlurFilter)"
             mask="url(#unblurMask)"
-          /> */}
+          />
           <g id="rectangles"></g>
         </svg>
       </Box>
-    </div>
+    </div >
   )
 }
 

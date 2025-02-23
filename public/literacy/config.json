@@ -1,0 +1,916 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "Literacy",
+        "version": "dev",
+        "authors": [
+            "Minsuk Chang"
+        ],
+        "date": "2025-01-23",
+        "description": "Literacy test",
+        "organizations": [
+            "Georgia Institute of Technology"
+        ]
+    },
+    "importedLibraries": [
+        "mini-vlat"
+    ],
+    "uiConfig": {
+        "contactEmail": "minsuk@gatech.edu",
+        "helpTextPath": "literacy/assets/welcome.md",
+        "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "urlParticipantIdParam": "PROLIFIC_PID",
+        "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1DEBJ8K](https://app.prolific.com/submissions/complete?cc=C1DEBJ8K)",
+        "sidebar": true
+    },
+    "baseComponents": {
+        "grid": {
+            "type": "react-component",
+            "path": "literacy/assets/grid.jsx",
+            "instructionLocation": "sidebar",
+            "nextButtonLocation": "sidebar",
+            "nextButtonDisableTime": 90000,
+            "nextButtonEnableTime": 10000
+        }
+    },
+    "components": {
+        "instructions": {
+            "type": "markdown",
+            "path": "literacy/assets/instructions.md",
+            "response": []
+        },
+        "consent": {
+            "type": "markdown",
+            "path": "literacy/assets/consent.md",
+            "nextButtonText": "I agree",
+            "response": []
+        },
+        "vlat_intro": {
+            "type": "markdown",
+            "path": "literacy/assets/vlat_intro.md",
+            "response": []
+        },
+        "demographics": {
+            "type": "markdown",
+            "path": "literacy/assets/blank.md",
+            "response": [
+                {
+                    "id": "gender",
+                    "prompt": "What is your **gender**?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "withOther": true,
+                    "options": [
+                        "Woman",
+                        "Man",
+                        "Prefer not to say"
+                    ],
+                    "withDivider": true
+                },
+                {
+                    "id": "age",
+                    "prompt": "What is your **age**?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "options": [
+                        "Under 18 years",
+                        "18-24 years",
+                        "25-34 years",
+                        "35-44 years",
+                        "45-54 years",
+                        "55-64 years",
+                        "65 years or older",
+                        "Prefer not to say"
+                    ],
+                    "withDivider": true
+                },
+                {
+                    "id": "education",
+                    "prompt": "What is the **highest degree or level of education** you have completed?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "withOther": true,
+                    "options": [
+                        "Less than high school",
+                        "High school diploma or equivalent",
+                        "Bachelor's degree or equivalent",
+                        "Master's degree or equivalent",
+                        "Doctoral degree or equivalent"
+                    ],
+                    "withDivider": true
+                }
+            ]
+        },
+        "NASA": {
+            "type": "markdown",
+            "path": "literacy/assets/blank.md",
+            "response": [
+                {
+                    "id": "mental-demand",
+                    "prompt": "How **mentally demanding** was the task?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "physical-demand",
+                    "prompt": "How **physically demanding** was the task?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "temporal-demand",
+                    "prompt": "How **hurried or rushed** was the pace of the task?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "performance",
+                    "prompt": "How **successful** were you in accomplishing what you were asked to do?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Perfect",
+                    "leftLabel": "Failure",
+                    "withDivider": true
+                },
+                {
+                    "id": "effort",
+                    "prompt": "How **hard** did you have to work to accomplish your level of performance?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "frustration",
+                    "prompt": "How **insecure, discouraged, irritated, stressed, and annoyed** were you?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                }
+            ]
+        },
+        "bubble-TreeMap.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: For which website was the number of visitors the largest?**",
+            "parameters": {
+                "image": "/literacy/assets/images/TreeMap.png",
+                "question": "For which website was the number of visitors the largest?",
+                "x_grids": [
+                    75,
+                    150,
+                    225,
+                    300,
+                    375,
+                    450,
+                    525,
+                    600,
+                    675
+                ],
+                "y_grids": [
+                    75,
+                    150,
+                    225,
+                    300,
+                    375,
+                    450,
+                    525,
+                    600,
+                    675
+                ]
+            },
+            "response": [
+                {
+                    "id": "TreeMap-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "Facebook",
+                        "Ask",
+                        "Google",
+                        "eBay"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "TreeMap-original",
+                    "answer": "Google"
+                }
+            ]
+        },
+        "bubble-Stacked100.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: Japan had higher proportion of Silver medals than Australia.**",
+            "parameters": {
+                "image": "/literacy/assets/images/Stacked100.png",
+                "question": "Japan had higher proportion of Silver medals than Australia.",
+                "x_grids": [
+                    83,
+                    166,
+                    249,
+                    332,
+                    415,
+                    498,
+                    581,
+                    664,
+                    747
+                ],
+                "y_grids": [
+                    79,
+                    158,
+                    237,
+                    316,
+                    395,
+                    474,
+                    553,
+                    632,
+                    711
+                ]
+            },
+            "response": [
+                {
+                    "id": "Stacked100-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Stacked100-original",
+                    "answer": "True"
+                }
+            ]
+        },
+        "bubble-Histogram.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4**",
+            "parameters": {
+                "image": "/literacy/assets/images/Histogram.png",
+                "question": "More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4",
+                "x_grids": [
+                    87,
+                    174,
+                    261,
+                    348,
+                    435,
+                    522,
+                    609,
+                    696,
+                    783
+                ],
+                "y_grids": [
+                    87,
+                    174,
+                    261,
+                    348,
+                    435,
+                    522,
+                    609,
+                    696,
+                    783
+                ]
+            },
+            "response": [
+                {
+                    "id": "Histogram-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Histogram-original",
+                    "answer": "True"
+                }
+            ]
+        },
+        "bubble-Choropleth.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: In which state was the unemployment rate the highest in 2015?**",
+            "parameters": {
+                "image": "/literacy/assets/images/Choropleth.png",
+                "question": "In which state was the unemployment rate the highest in 2015?",
+                "x_grids": [
+                    358,
+                    716,
+                    1074,
+                    1432,
+                    1790,
+                    2148,
+                    2506,
+                    2864,
+                    3222
+                ],
+                "y_grids": [
+                    270,
+                    540,
+                    810,
+                    1080,
+                    1350,
+                    1620,
+                    1890,
+                    2160,
+                    2430
+                ]
+            },
+            "response": [
+                {
+                    "id": "Choropleth-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "Alaska (AK)",
+                        "New Mexico (NM)",
+                        "Florida (FL)",
+                        "New York (NY)"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Choropleth-original",
+                    "answer": "New Mexico (NM)"
+                }
+            ]
+        },
+        "bubble-PieChart.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: The global smartphone market share of Apple is larger than that of Huawei.**",
+            "parameters": {
+                "image": "/literacy/assets/images/PieChart.png",
+                "question": "The global smartphone market share of Apple is larger than that of Huawei.",
+                "x_grids": [
+                    58,
+                    116,
+                    174,
+                    232,
+                    290,
+                    348,
+                    406,
+                    464,
+                    522
+                ],
+                "y_grids": [
+                    63,
+                    126,
+                    189,
+                    252,
+                    315,
+                    378,
+                    441,
+                    504,
+                    567
+                ]
+            },
+            "response": [
+                {
+                    "id": "PieChart-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "PieChart-original",
+                    "answer": "True"
+                }
+            ]
+        },
+        "bubble-BubbleChart.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: What is the range of the total length of the metro systems?**",
+            "parameters": {
+                "image": "/literacy/assets/images/BubbleChart.png",
+                "question": "What is the range of the total length of the metro systems?",
+                "x_grids": [
+                    84,
+                    168,
+                    252,
+                    336,
+                    420,
+                    504,
+                    588,
+                    672,
+                    756
+                ],
+                "y_grids": [
+                    85,
+                    170,
+                    255,
+                    340,
+                    425,
+                    510,
+                    595,
+                    680,
+                    765
+                ]
+            },
+            "response": [
+                {
+                    "id": "BubbleChart-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "150 - 600 km",
+                        "240 - 380 km",
+                        "240 - 560 km",
+                        "180 - 560 km"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "BubbleChart-original",
+                    "answer": "150 - 600 km"
+                }
+            ]
+        },
+        "bubble-StackedBar.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: The cost of vodka in Atlanta is higher than that of Honolulu.**",
+            "parameters": {
+                "image": "/literacy/assets/images/StackedBar.png",
+                "question": "The cost of vodka in Atlanta is higher than that of Honolulu.",
+                "x_grids": [
+                    87,
+                    174,
+                    261,
+                    348,
+                    435,
+                    522,
+                    609,
+                    696,
+                    783
+                ],
+                "y_grids": [
+                    79,
+                    158,
+                    237,
+                    316,
+                    395,
+                    474,
+                    553,
+                    632,
+                    711
+                ]
+            },
+            "response": [
+                {
+                    "id": "StackedBar-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "StackedBar-original",
+                    "answer": "True"
+                }
+            ]
+        },
+        "bubble-LineChart.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: Over the course of the second half of 2015, the price of a barrel of oil was ____________.**",
+            "parameters": {
+                "image": "/literacy/assets/images/LineChart.png",
+                "question": "Over the course of the second half of 2015, the price of a barrel of oil was ____________.",
+                "x_grids": [
+                    77,
+                    154,
+                    231,
+                    308,
+                    385,
+                    462,
+                    539,
+                    616,
+                    693
+                ],
+                "y_grids": [
+                    77,
+                    154,
+                    231,
+                    308,
+                    385,
+                    462,
+                    539,
+                    616,
+                    693
+                ]
+            },
+            "response": [
+                {
+                    "id": "LineChart-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "rising",
+                        "falling",
+                        "staying the same"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "LineChart-original",
+                    "answer": "falling"
+                }
+            ]
+        },
+        "bubble-BarChart.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: How many countries in Asia is the average internet speed slower than Thailand?**",
+            "parameters": {
+                "image": "/literacy/assets/images/BarChart.png",
+                "question": "How many countries in Asia is the average internet speed slower than Thailand?",
+                "x_grids": [
+                    86,
+                    172,
+                    258,
+                    344,
+                    430,
+                    516,
+                    602,
+                    688,
+                    774
+                ],
+                "y_grids": [
+                    84,
+                    168,
+                    252,
+                    336,
+                    420,
+                    504,
+                    588,
+                    672,
+                    756
+                ]
+            },
+            "response": [
+                {
+                    "id": "BarChart-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "BarChart-original",
+                    "answer": "6"
+                }
+            ]
+        },
+        "bubble-AreaChart.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?**",
+            "parameters": {
+                "image": "/literacy/assets/images/AreaChart.png",
+                "question": "What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?",
+                "x_grids": [
+                    86,
+                    172,
+                    258,
+                    344,
+                    430,
+                    516,
+                    602,
+                    688,
+                    774
+                ],
+                "y_grids": [
+                    82,
+                    164,
+                    246,
+                    328,
+                    410,
+                    492,
+                    574,
+                    656,
+                    738
+                ]
+            },
+            "response": [
+                {
+                    "id": "AreaChart-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "$4.4 - $6.2",
+                        "$4.6 - $5.9",
+                        "$4.6 - $6.0",
+                        "$4.6 - $6.1"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "AreaChart-original",
+                    "answer": "$4.6 - $6.0"
+                }
+            ]
+        },
+        "bubble-StackedArea.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,**",
+            "parameters": {
+                "image": "/literacy/assets/images/StackedArea.png",
+                "question": "In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,",
+                "x_grids": [
+                    84,
+                    168,
+                    252,
+                    336,
+                    420,
+                    504,
+                    588,
+                    672,
+                    756
+                ],
+                "y_grids": [
+                    80,
+                    160,
+                    240,
+                    320,
+                    400,
+                    480,
+                    560,
+                    640,
+                    720
+                ]
+            },
+            "response": [
+                {
+                    "id": "StackedArea-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "StackedArea-original",
+                    "answer": "False"
+                }
+            ]
+        },
+        "bubble-Scatterplot.png": {
+            "baseComponent": "grid",
+            "instruction": " **Q: What is the weight for the person who is 165.1cm tall?**",
+            "parameters": {
+                "image": "/literacy/assets/images/Scatterplot.png",
+                "question": "What is the weight for the person who is 165.1cm tall?",
+                "x_grids": [
+                    85,
+                    170,
+                    255,
+                    340,
+                    425,
+                    510,
+                    595,
+                    680,
+                    765
+                ],
+                "y_grids": [
+                    87,
+                    174,
+                    261,
+                    348,
+                    435,
+                    522,
+                    609,
+                    696,
+                    783
+                ]
+            },
+            "response": [
+                {
+                    "id": "Scatterplot-original",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "53.9 kg",
+                        "67.7 kg",
+                        "70.5 kg",
+                        "82.7 kg"
+                    ]
+                },
+                {
+                    "id": "patches",
+                    "prompt": "Selected Patches:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Scatterplot-original",
+                    "answer": "70.5 kg"
+                }
+            ]
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "consent",
+            "vlat_intro",
+            "$mini-vlat.se.full",
+            "instructions",
+            {
+                "id": "same_inst",
+                "order": "random",
+                "numSamples": 6,
+                "components": [
+                    "bubble-TreeMap.png",
+                    "bubble-Stacked100.png",
+                    "bubble-Histogram.png",
+                    "bubble-Choropleth.png",
+                    "bubble-PieChart.png",
+                    "bubble-BubbleChart.png",
+                    "bubble-StackedBar.png",
+                    "bubble-LineChart.png",
+                    "bubble-BarChart.png",
+                    "bubble-AreaChart.png",
+                    "bubble-StackedArea.png",
+                    "bubble-Scatterplot.png"
+                ]
+            },
+            {
+                "id": "different_inst",
+                "order": "random",
+                "numSamples": 6,
+                "components": [
+                    "bubble-TreeMap.png",
+                    "bubble-Stacked100.png",
+                    "bubble-Histogram.png",
+                    "bubble-Choropleth.png",
+                    "bubble-PieChart.png",
+                    "bubble-BubbleChart.png",
+                    "bubble-StackedBar.png",
+                    "bubble-LineChart.png",
+                    "bubble-BarChart.png",
+                    "bubble-AreaChart.png",
+                    "bubble-StackedArea.png",
+                    "bubble-Scatterplot.png"
+                ]
+            },
+            "NASA",
+            "demographics"
+        ]
+    }
+}
