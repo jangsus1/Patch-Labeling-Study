@@ -1,6 +1,6 @@
 # VLAT
 
-In this section, you'll answer 14 questions to assess visualization comprehension.
+In this section, you'll answer 12 questions to assess visualization comprehension.
 
 - Each question has a **25-second** time limit.  
 - Next button will be enabled after 5 seconds.  

@@ -31,7 +31,7 @@
             "path": "literacy/assets/grid.jsx",
             "instructionLocation": "sidebar",
             "nextButtonLocation": "sidebar",
-            "nextButtonDisableTime": 90000,
+            "nextButtonDisableTime": 70000,
             "nextButtonEnableTime": 5000
         }
     },

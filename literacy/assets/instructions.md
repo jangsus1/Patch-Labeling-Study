@@ -1,17 +1,12 @@
-# Main Task Overview & Instructions  
+# Main Task Instructions  
 
+Great job on completing the test! 🎉   
 
-Great job on completing the study! 🎉  
+In this section, you'll answer another 12 questions while clicking the image.
 
-## Task Overview  
+- Each question has a **70-second** time limit.  
+- You will be shown a blurry visualization with a question.  
+- Click on areas of the image to temporarily reveal details.  
 
-- You will given a blurry visualization and a question to answer.  
-- Click on areas if image to reveal details temporarily.  
-- If you can answer the question, then write your answer and click next.
-- Each question has a **90-second** time limit.
-
-## Task Overview  
-- 12 main tasks  
-
-## Screenshot of the tool
-![example](../tools/assets/bubble.png)  
+## Example Screenshot
+![example](../literacy/assets/static_blur.png)  
