@@ -32,7 +32,7 @@
             "instructionLocation": "sidebar",
             "nextButtonLocation": "sidebar",
             "nextButtonDisableTime": 90000,
-            "nextButtonEnableTime": 10000
+            "nextButtonEnableTime": 5000
         }
     },
     "components": {
@@ -220,13 +220,6 @@
                         "Google",
                         "eBay"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -276,13 +269,6 @@
                         "True",
                         "False"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -332,13 +318,6 @@
                         "True",
                         "False"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -390,13 +369,6 @@
                         "Florida (FL)",
                         "New York (NY)"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -446,13 +418,6 @@
                         "True",
                         "False"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -504,13 +469,6 @@
                         "240 - 560 km",
                         "180 - 560 km"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -560,13 +518,6 @@
                         "True",
                         "False"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -617,13 +568,6 @@
                         "falling",
                         "staying the same"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -675,13 +619,6 @@
                         "7",
                         "8"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -733,13 +670,6 @@
                         "$4.6 - $6.0",
                         "$4.6 - $6.1"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -789,13 +719,6 @@
                         "True",
                         "False"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [
@@ -847,13 +770,6 @@
                         "70.5 kg",
                         "82.7 kg"
                     ]
-                },
-                {
-                    "id": "patches",
-                    "prompt": "Selected Patches:",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "reactive"
                 }
             ],
             "correctAnswer": [

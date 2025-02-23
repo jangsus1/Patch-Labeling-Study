@@ -14,4 +14,4 @@ Great job on completing the study! 🎉
 - 12 main tasks  
 
 ## Screenshot of the tool
-![example](/Revisit-Study/tools/assets/bubble.png)  
+![example](../tools/assets/bubble.png)  
