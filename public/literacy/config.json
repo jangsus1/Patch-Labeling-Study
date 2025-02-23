@@ -182,7 +182,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: For which website was the number of visitors the largest?**",
             "parameters": {
-                "image": "/literacy/assets/images/TreeMap.png",
+                "image": "../literacy/assets/images/TreeMap.png",
                 "question": "For which website was the number of visitors the largest?",
                 "x_grids": [
                     75,
@@ -240,7 +240,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: Japan had higher proportion of Silver medals than Australia.**",
             "parameters": {
-                "image": "/literacy/assets/images/Stacked100.png",
+                "image": "../literacy/assets/images/Stacked100.png",
                 "question": "Japan had higher proportion of Silver medals than Australia.",
                 "x_grids": [
                     83,
@@ -296,7 +296,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4**",
             "parameters": {
-                "image": "/literacy/assets/images/Histogram.png",
+                "image": "../literacy/assets/images/Histogram.png",
                 "question": "More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4",
                 "x_grids": [
                     87,
@@ -352,7 +352,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: In which state was the unemployment rate the highest in 2015?**",
             "parameters": {
-                "image": "/literacy/assets/images/Choropleth.png",
+                "image": "../literacy/assets/images/Choropleth.png",
                 "question": "In which state was the unemployment rate the highest in 2015?",
                 "x_grids": [
                     358,
@@ -410,7 +410,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: The global smartphone market share of Apple is larger than that of Huawei.**",
             "parameters": {
-                "image": "/literacy/assets/images/PieChart.png",
+                "image": "../literacy/assets/images/PieChart.png",
                 "question": "The global smartphone market share of Apple is larger than that of Huawei.",
                 "x_grids": [
                     58,
@@ -466,7 +466,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: What is the range of the total length of the metro systems?**",
             "parameters": {
-                "image": "/literacy/assets/images/BubbleChart.png",
+                "image": "../literacy/assets/images/BubbleChart.png",
                 "question": "What is the range of the total length of the metro systems?",
                 "x_grids": [
                     84,
@@ -524,7 +524,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: The cost of vodka in Atlanta is higher than that of Honolulu.**",
             "parameters": {
-                "image": "/literacy/assets/images/StackedBar.png",
+                "image": "../literacy/assets/images/StackedBar.png",
                 "question": "The cost of vodka in Atlanta is higher than that of Honolulu.",
                 "x_grids": [
                     87,
@@ -580,7 +580,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: Over the course of the second half of 2015, the price of a barrel of oil was ____________.**",
             "parameters": {
-                "image": "/literacy/assets/images/LineChart.png",
+                "image": "../literacy/assets/images/LineChart.png",
                 "question": "Over the course of the second half of 2015, the price of a barrel of oil was ____________.",
                 "x_grids": [
                     77,
@@ -637,7 +637,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: How many countries in Asia is the average internet speed slower than Thailand?**",
             "parameters": {
-                "image": "/literacy/assets/images/BarChart.png",
+                "image": "../literacy/assets/images/BarChart.png",
                 "question": "How many countries in Asia is the average internet speed slower than Thailand?",
                 "x_grids": [
                     86,
@@ -695,7 +695,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?**",
             "parameters": {
-                "image": "/literacy/assets/images/AreaChart.png",
+                "image": "../literacy/assets/images/AreaChart.png",
                 "question": "What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?",
                 "x_grids": [
                     86,
@@ -753,7 +753,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,**",
             "parameters": {
-                "image": "/literacy/assets/images/StackedArea.png",
+                "image": "../literacy/assets/images/StackedArea.png",
                 "question": "In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,",
                 "x_grids": [
                     84,
@@ -809,7 +809,7 @@
             "baseComponent": "grid",
             "instruction": " **Q: What is the weight for the person who is 165.1cm tall?**",
             "parameters": {
-                "image": "/literacy/assets/images/Scatterplot.png",
+                "image": "../literacy/assets/images/Scatterplot.png",
                 "question": "What is the weight for the person who is 165.1cm tall?",
                 "x_grids": [
                     85,
