@@ -43,7 +43,7 @@
         },
         "consent": {
             "type": "markdown",
-            "path": "literacy/assets/consent.md",
+            "path": "shared/consent.md",
             "nextButtonText": "I agree",
             "response": []
         },
@@ -54,7 +54,7 @@
         },
         "demographics": {
             "type": "markdown",
-            "path": "literacy/assets/blank.md",
+            "path": "shared/blank.md",
             "response": [
                 {
                     "id": "gender",
