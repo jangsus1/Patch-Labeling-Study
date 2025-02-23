@@ -1,16 +1,45 @@
 import * as d3 from "d3"
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState, useRef, useMemo, useCallback } from "react"
 import { Box } from "@mantine/core"
 import React from "react"
 import _ from "lodash";
+import { Registry, initializeTrrack } from "@trrack/core";
+
 
 function Grid({ parameters, setAnswer }) {
   const ref = useRef(null)
-  const { image, question, x_grids, y_grids, example } = parameters
+  const { image, question, x_grids, y_grids } = parameters
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [rectangles, setRectangles] = useState([])
-  const [clicked, setClicked] = useState([{ x: -1, y: -1, width: 0, height: 0 }])
+  const [clicked, setClicked] = useState({ x: -1, y: -1, width: 0, height: 0 });
   const containerRef = useRef(null);
+
+  const { actions, trrack } = useMemo(() => {
+    const reg = Registry.create();
+    const clickAction = reg.register('click', (state, clickRecord) => {
+      state.clickRecord = clickRecord;
+      return state;
+    });
+    const trrackInst = initializeTrrack({
+      registry: reg,
+      initialState: { clickRecord: {timestamp: new Date().getTime()} },
+    });
+    return {
+      actions: { clickAction },
+      trrack: trrackInst,
+    };
+  }, []);
+
+  // Update applyAnswer to record the click event via ttrack and include the ttrack provenance in the answer
+  const applyAnswer = useCallback((clickRecord) => {
+    trrack.apply('click', actions.clickAction(clickRecord));
+    setAnswer({
+      status: true,
+      provenanceGraph: trrack.graph.backend,
+      answers: {},
+    });
+  }, [actions, trrack, setAnswer, size.multiplier, question]);
+
 
   useEffect(() => {
     const img = new Image();
@@ -63,7 +92,6 @@ function Grid({ parameters, setAnswer }) {
   useEffect(() => {
     const svg = d3.select(ref.current)
     const m = size.multiplier;
-    const lastClicked = _.last(clicked)
     svg
       .select("g")
       .selectAll("rect")
@@ -73,32 +101,22 @@ function Grid({ parameters, setAnswer }) {
       .attr("y", d => d.y * m)
       .attr("width", d => d.width * m)
       .attr("height", d => d.height * m)
-      .attr("stroke", (d) => (d.x==lastClicked.x&d.y==lastClicked.y) ? "blue" : "gray")
-      .attr("stroke-width", (d) => (d.x==lastClicked.x&d.y==lastClicked.y) ? 2 : 0.5)
+      .attr("stroke", (d) => (d.x == clicked.x & d.y == clicked.y) ? "blue" : "gray")
+      .attr("stroke-width", (d) => (d.x == clicked.x & d.y == clicked.y) ? 1 : 0.5)
       .attr("cursor", "pointer")
       .attr("fill", "transparent")
       .on("click", (event, d) => {
         // change rectangles
-        const newClicked = [...clicked, d]
-        setClicked(newClicked)
-
-        setAnswer({
-          status: true,
-          answers: {
-            patches: JSON.stringify({
-              patches: newClicked.slice(1),
-              multiplier: size.multiplier,
-              question: question
-            })
-          }
-        })
+        const clickRecord = { ...d, timestamp: new Date().getTime() };
+        setClicked(clickRecord);
+        applyAnswer(clickRecord);
       })
       .on("mouseover", (event, d) => {
-        if (d.x==lastClicked.x&d.y==lastClicked.y) return
+        if (d.x == clicked.x & d.y == clicked.y) return
         d3.select(event.target).attr("stroke", "black").attr("stroke-width", 1)
       })
       .on("mouseout", (event, d) => {
-        if (d.x==lastClicked.x&d.y==lastClicked.y) return
+        if (d.x == clicked.x & d.y == clicked.y) return
         d3.select(event.target).attr("stroke", "gray").attr("stroke-width", 0.5)
       });
 
@@ -124,16 +142,14 @@ function Grid({ parameters, setAnswer }) {
 
             <mask id="unblurMask">
               <rect width="100%" height="100%" fill="white" />
-              {clicked.length > 0 &&
-                <rect
+              <rect
                   key={0}
-                  x={clicked[clicked.length - 1].x * size.multiplier}
-                  y={clicked[clicked.length - 1].y * size.multiplier}
-                  width={clicked[clicked.length - 1].width * size.multiplier}
-                  height={clicked[clicked.length - 1].height * size.multiplier}
+                  x={clicked.x * size.multiplier}
+                  y={clicked.y * size.multiplier}
+                  width={clicked.width * size.multiplier}
+                  height={clicked.height * size.multiplier}
                   fill="black"
                 />
-              }
 
             </mask>
           </defs>
