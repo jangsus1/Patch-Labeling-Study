@@ -106,7 +106,7 @@
                 }
             ]
         },
-        "same_inst-TreeMap.png": {
+        "TreeMap-same_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: The number of unique visitors for Amazon was more than that of Yahoo in 2010.**",
             "parameters": {
@@ -135,7 +135,7 @@
                 }
             ]
         },
-        "same_inst-Stacked100.png": {
+        "Stacked100-same_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: The percentage of Gold medals of Australia is lower than Japan**",
             "parameters": {
@@ -164,12 +164,12 @@
                 }
             ]
         },
-        "same_inst-Histogram.png": {
+        "Histogram-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: More people had a trip between 10km and 20km than between 60km and 70km.**",
+            "instruction": " **Q: More people traveled between 10 and 20km than between 60 and 70km.**",
             "parameters": {
                 "image": "../literacy/assets/images/Histogram.png",
-                "question": "More people had a trip between 10km and 20km than between 60km and 70km.",
+                "question": "More people traveled between 10 and 20km than between 60 and 70km.",
                 "radius": 32
             },
             "response": [
@@ -193,12 +193,12 @@
                 }
             ]
         },
-        "same_inst-Choropleth.png": {
+        "Choropleth-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: In which state was the unemployment rate the highest in 2015?**",
+            "instruction": " **Q: In which state has the highest value?**",
             "parameters": {
                 "image": "../literacy/assets/images/Choropleth.png",
-                "question": "In which state was the unemployment rate the highest in 2015?",
+                "question": "In which state has the highest value?",
                 "radius": 32
             },
             "response": [
@@ -224,7 +224,7 @@
                 }
             ]
         },
-        "same_inst-PieChart.png": {
+        "PieChart-same_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: In which company is the global smartphone market share the smallest?**",
             "parameters": {
@@ -240,7 +240,7 @@
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "Oppo",
+                        "Samsung",
                         "Apple",
                         "Vivo",
                         "Xiaomi",
@@ -255,12 +255,12 @@
                 }
             ]
         },
-        "same_inst-BubbleChart.png": {
+        "BubbleChart-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: What is the range of the total length of the metro systems?**",
+            "instruction": " **Q: The length of metro systems in this chart ranges from ______**",
             "parameters": {
                 "image": "../literacy/assets/images/BubbleChart.png",
-                "question": "What is the range of the total length of the metro systems?",
+                "question": "The length of metro systems in this chart ranges from ______",
                 "radius": 32
             },
             "response": [
@@ -286,12 +286,12 @@
                 }
             ]
         },
-        "same_inst-StackedBar.png": {
+        "StackedBar-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: The cost of vodka in Totonto is higher than that of Zurich.**",
+            "instruction": " **Q: The cost of vodka in Toronto is higher than that of Zurich.**",
             "parameters": {
                 "image": "../literacy/assets/images/StackedBar.png",
-                "question": "The cost of vodka in Totonto is higher than that of Zurich.",
+                "question": "The cost of vodka in Toronto is higher than that of Zurich.",
                 "radius": 32
             },
             "response": [
@@ -315,7 +315,7 @@
                 }
             ]
         },
-        "same_inst-LineChart.png": {
+        "LineChart-same_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: Over the first three months in 2020, the price of a barrel of oil was ____________.**",
             "parameters": {
@@ -345,12 +345,12 @@
                 }
             ]
         },
-        "same_inst-BarChart.png": {
+        "BarChart-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: How many countries in Asia is the average internet speed faster than Taiwan?**",
+            "instruction": " **Q: How many countries have a faster average internet speed than Taiwan?**",
             "parameters": {
                 "image": "../literacy/assets/images/BarChart.png",
-                "question": "How many countries in Asia is the average internet speed faster than Taiwan?",
+                "question": "How many countries have a faster average internet speed than Taiwan?",
                 "radius": 32
             },
             "response": [
@@ -376,12 +376,12 @@
                 }
             ]
         },
-        "same_inst-AreaChart.png": {
+        "AreaChart-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: What was the range of the average price of a pound of coffee beans between July 2018 and July 2019?**",
+            "instruction": " **Q: Between July 2018 and July 2019, the average price of a pound of coffee beans ranged from _______ to ________**",
             "parameters": {
                 "image": "../literacy/assets/images/AreaChart.png",
-                "question": "What was the range of the average price of a pound of coffee beans between July 2018 and July 2019?",
+                "question": "Between July 2018 and July 2019, the average price of a pound of coffee beans ranged from _______ to ________",
                 "radius": 32
             },
             "response": [
@@ -407,12 +407,12 @@
                 }
             ]
         },
-        "same_inst-StackedArea.png": {
+        "StackedArea-same_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,**",
+            "instruction": " **Q: In the UK, the number of girls named \"Amelia\" was higher in 2014 than in 2013**",
             "parameters": {
                 "image": "../literacy/assets/images/StackedArea.png",
-                "question": "In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,",
+                "question": "In the UK, the number of girls named \"Amelia\" was higher in 2014 than in 2013",
                 "radius": 32
             },
             "response": [
@@ -436,7 +436,7 @@
                 }
             ]
         },
-        "same_inst-Scatterplot.png": {
+        "Scatterplot-same_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: What is the weight for the person who is 161cm tall?**",
             "parameters": {
@@ -467,7 +467,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-TreeMap.png": {
+        "TreeMap-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: Samsung is nested in the Financial category.**",
             "parameters": {
@@ -496,7 +496,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-Stacked100.png": {
+        "Stacked100-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: What is the education level of people in which the Democrats have the lowest approval rating?**",
             "parameters": {
@@ -527,12 +527,12 @@
                 }
             ]
         },
-        "diff_inst-VLAT-Histogram.png": {
+        "Histogram-diff_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: What is the rating that the people have rated the taxi the most?**",
+            "instruction": " **Q: Most people rated the taxi service between ______ and ______ stars**",
             "parameters": {
                 "image": "../literacy/assets/images/VLAT-Histogram.png",
-                "question": "What is the rating that the people have rated the taxi the most?",
+                "question": "Most people rated the taxi service between ______ and ______ stars",
                 "radius": 32
             },
             "response": [
@@ -558,7 +558,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-Choropleth.png": {
+        "Choropleth-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: In 2015, the unemployment rate for Wisconsin (WI) was higher than that of Washington (WA).**",
             "parameters": {
@@ -587,7 +587,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-PieChart.png": {
+        "PieChart-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: The global smartphone market share of Apple is larger than that of Huawei.**",
             "parameters": {
@@ -616,7 +616,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-BubbleChart.png": {
+        "BubbleChart-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: Which city's metro system has the largest number of stations?**",
             "parameters": {
@@ -647,7 +647,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-StackedBar.png": {
+        "StackedBar-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: What is the cost of peanuts in Las Vegas?**",
             "parameters": {
@@ -678,7 +678,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-LineChart.png": {
+        "LineChart-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: What was the price of a barrel of oil in February 2015?**",
             "parameters": {
@@ -709,7 +709,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-BarChart.png": {
+        "BarChart-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: What is the average internet speed in Japan?**",
             "parameters": {
@@ -740,7 +740,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-AreaChart.png": {
+        "AreaChart-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: What was the average price of a pound of coffee beans in September 2013?**",
             "parameters": {
@@ -771,12 +771,12 @@
                 }
             ]
         },
-        "diff_inst-VLAT-StackedArea.png": {
+        "StackedArea-diff_inst": {
             "baseComponent": "bubble",
-            "instruction": " **Q: About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?**",
+            "instruction": " **Q: Approximately, what is the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?**",
             "parameters": {
                 "image": "../literacy/assets/images/VLAT-StackedArea.png",
-                "question": "About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?",
+                "question": "Approximately, what is the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?",
                 "radius": 32
             },
             "response": [
@@ -802,7 +802,7 @@
                 }
             ]
         },
-        "diff_inst-VLAT-Scatterplot.png": {
+        "Scatterplot-diff_inst": {
             "baseComponent": "bubble",
             "instruction": " **Q: There is a positive linear relationship between the height and the weight of the 85 males.**",
             "parameters": {
@@ -831,12 +831,12 @@
                 }
             ]
         },
-        "chartqa-two_col_40186.png": {
+        "notextBar-chartqa": {
             "baseComponent": "bubble",
-            "instruction": " **Q: What is the value of 'Cocaine'?**",
+            "instruction": " **Q: How many deaths resulted from cocaine use?**",
             "parameters": {
                 "image": "../literacy/assets/images/two_col_40186.png",
-                "question": "What is the value of 'Cocaine'?",
+                "question": "How many deaths resulted from cocaine use?",
                 "radius": 32
             },
             "response": [
@@ -862,7 +862,7 @@
                 }
             ]
         },
-        "chartqa-two_col_4524.png": {
+        "notextLine-chartqa": {
             "baseComponent": "bubble",
             "instruction": " **Q: What is the poverty rate in California in the year 2019?**",
             "parameters": {
@@ -893,7 +893,7 @@
                 }
             ]
         },
-        "chartqa-two_col_61107.png": {
+        "notextPie-chartqa": {
             "baseComponent": "bubble",
             "instruction": " **Q: What is the percentage of \"Very important\"?**",
             "parameters": {
@@ -924,12 +924,12 @@
                 }
             ]
         },
-        "chartqa-multi_col_60949.png": {
+        "notextStackedBar-chartqa": {
             "baseComponent": "bubble",
-            "instruction": " **Q: y-axis represents the date**",
+            "instruction": " **Q: The Y axis represents the date**",
             "parameters": {
                 "image": "../literacy/assets/images/multi_col_60949.png",
-                "question": "y-axis represents the date",
+                "question": "The Y axis represents the date",
                 "radius": 32
             },
             "response": [
@@ -953,12 +953,12 @@
                 }
             ]
         },
-        "chartqa-05411753006467.png": {
+        "textBar-chartqa": {
             "baseComponent": "bubble",
-            "instruction": " **Q: Which country had the second largest vale?**",
+            "instruction": " **Q: Which country had the second largest value?**",
             "parameters": {
                 "image": "../literacy/assets/images/05411753006467.png",
-                "question": "Which country had the second largest vale?",
+                "question": "Which country had the second largest value?",
                 "radius": 32
             },
             "response": [
@@ -983,12 +983,12 @@
                 }
             ]
         },
-        "chartqa-19371621021871.png": {
+        "textLine-chartqa": {
             "baseComponent": "bubble",
-            "instruction": " **Q: Since which year did the public trust in government drop below 50%?**",
+            "instruction": " **Q: In which year did public trust in government first drop below 50%?**",
             "parameters": {
                 "image": "../literacy/assets/images/19371621021871.png",
-                "question": "Since which year did the public trust in government drop below 50%?",
+                "question": "In which year did public trust in government first drop below 50%?",
                 "radius": 32
             },
             "response": [
@@ -1014,12 +1014,12 @@
                 }
             ]
         },
-        "chartqa-43.png": {
+        "textPie-chartqa": {
             "baseComponent": "bubble",
-            "instruction": " **Q: Percentage of people who 'have heard of Latinx' is 20%**",
+            "instruction": " **Q: Percentage of people who 'Do not use Latinx' is 20%**",
             "parameters": {
                 "image": "../literacy/assets/images/43.png",
-                "question": "Percentage of people who 'have heard of Latinx' is 20%",
+                "question": "Percentage of people who 'Do not use Latinx' is 20%",
                 "radius": 32
             },
             "response": [
@@ -1039,11 +1039,11 @@
             "correctAnswer": [
                 {
                     "id": "textPie-chartqa",
-                    "answer": "False"
+                    "answer": "True"
                 }
             ]
         },
-        "chartqa-9280.png": {
+        "textStackedBar-chartqa": {
             "baseComponent": "bubble",
             "instruction": " **Q: What's the percentage of people choosing 'Very' in Feb 2016?**",
             "parameters": {
@@ -1083,41 +1083,54 @@
             "$mini-vlat.se.full",
             "instructions",
             {
-                "id": "mix",
+                "id": "batch",
                 "order": "latinSquare",
+                "numSamples": 1,
                 "components": [
-                    "same_inst-TreeMap.png",
-                    "same_inst-Stacked100.png",
-                    "same_inst-Histogram.png",
-                    "same_inst-Choropleth.png",
-                    "same_inst-PieChart.png",
-                    "same_inst-BubbleChart.png",
-                    "same_inst-StackedBar.png",
-                    "same_inst-LineChart.png",
-                    "same_inst-BarChart.png",
-                    "same_inst-AreaChart.png",
-                    "same_inst-StackedArea.png",
-                    "same_inst-Scatterplot.png",
-                    "diff_inst-VLAT-TreeMap.png",
-                    "diff_inst-VLAT-Stacked100.png",
-                    "diff_inst-VLAT-Histogram.png",
-                    "diff_inst-VLAT-Choropleth.png",
-                    "diff_inst-VLAT-PieChart.png",
-                    "diff_inst-VLAT-BubbleChart.png",
-                    "diff_inst-VLAT-StackedBar.png",
-                    "diff_inst-VLAT-LineChart.png",
-                    "diff_inst-VLAT-BarChart.png",
-                    "diff_inst-VLAT-AreaChart.png",
-                    "diff_inst-VLAT-StackedArea.png",
-                    "diff_inst-VLAT-Scatterplot.png",
-                    "chartqa-two_col_40186.png",
-                    "chartqa-two_col_4524.png",
-                    "chartqa-two_col_61107.png",
-                    "chartqa-multi_col_60949.png",
-                    "chartqa-05411753006467.png",
-                    "chartqa-19371621021871.png",
-                    "chartqa-43.png",
-                    "chartqa-9280.png"
+                    {
+                        "id": "batch1",
+                        "order": "latinSquare",
+                        "components": [
+                            "notextBar-chartqa",
+                            "notextLine-chartqa",
+                            "notextPie-chartqa",
+                            "notextStackedBar-chartqa",
+                            "TreeMap-same_inst",
+                            "Stacked100-same_inst",
+                            "Histogram-same_inst",
+                            "Choropleth-same_inst",
+                            "PieChart-same_inst",
+                            "BubbleChart-same_inst",
+                            "TreeMap-diff_inst",
+                            "Stacked100-diff_inst",
+                            "Histogram-diff_inst",
+                            "Choropleth-diff_inst",
+                            "PieChart-diff_inst",
+                            "BubbleChart-diff_inst"
+                        ]
+                    },
+                    {
+                        "id": "batch2",
+                        "order": "latinSquare",
+                        "components": [
+                            "textBar-chartqa",
+                            "textLine-chartqa",
+                            "textPie-chartqa",
+                            "textStackedBar-chartqa",
+                            "StackedBar-same_inst",
+                            "LineChart-same_inst",
+                            "BarChart-same_inst",
+                            "AreaChart-same_inst",
+                            "StackedArea-same_inst",
+                            "Scatterplot-same_inst",
+                            "StackedBar-diff_inst",
+                            "LineChart-diff_inst",
+                            "BarChart-diff_inst",
+                            "AreaChart-diff_inst",
+                            "StackedArea-diff_inst",
+                            "Scatterplot-diff_inst"
+                        ]
+                    }
                 ]
             },
             "demographics"
