@@ -26,9 +26,9 @@
         "sidebar": true
     },
     "baseComponents": {
-        "grid": {
+        "bubble": {
             "type": "react-component",
-            "path": "literacy/assets/grid.jsx",
+            "path": "literacy/assets/bubble.jsx",
             "instructionLocation": "sidebar",
             "nextButtonLocation": "sidebar",
             "nextButtonDisableTime": 60000,
@@ -106,38 +106,17 @@
                 }
             ]
         },
-        "basic-TreeMap.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: eBay is nested in the Software category.**",
+        "same_inst-TreeMap.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: The number of unique visitors for Amazon was more than that of Yahoo in 2010.**",
             "parameters": {
                 "image": "../literacy/assets/images/TreeMap.png",
-                "question": "eBay is nested in the Software category.",
-                "x_grids": [
-                    75,
-                    150,
-                    225,
-                    300,
-                    375,
-                    450,
-                    525,
-                    600,
-                    675
-                ],
-                "y_grids": [
-                    75,
-                    150,
-                    225,
-                    300,
-                    375,
-                    450,
-                    525,
-                    600,
-                    675
-                ]
+                "question": "The number of unique visitors for Amazon was more than that of Yahoo in 2010.",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "TreeMap-basic",
+                    "id": "TreeMap-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
@@ -150,145 +129,22 @@
             ],
             "correctAnswer": [
                 {
-                    "id": "TreeMap-basic",
+                    "id": "TreeMap-same_inst",
                     "answer": "False"
                 }
             ]
         },
-        "basic-Stacked100.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: Which country has the lowest proportion of Gold medals?**",
+        "same_inst-Stacked100.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: The percentage of Gold medals of Australia is lower than Japan**",
             "parameters": {
                 "image": "../literacy/assets/images/Stacked100.png",
-                "question": "Which country has the lowest proportion of Gold medals?",
-                "x_grids": [
-                    83,
-                    166,
-                    249,
-                    332,
-                    415,
-                    498,
-                    581,
-                    664,
-                    747
-                ],
-                "y_grids": [
-                    79,
-                    158,
-                    237,
-                    316,
-                    395,
-                    474,
-                    553,
-                    632,
-                    711
-                ]
+                "question": "The percentage of Gold medals of Australia is lower than Japan",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "Stacked100-basic",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "Great Britain",
-                        "USA",
-                        "Japan",
-                        "Australia"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "Stacked100-basic",
-                    "answer": "Great Britain"
-                }
-            ]
-        },
-        "basic-Histogram.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What distance have customers traveled in the taxi the most?**",
-            "parameters": {
-                "image": "../literacy/assets/images/Histogram.png",
-                "question": "What distance have customers traveled in the taxi the most?",
-                "x_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ],
-                "y_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ]
-            },
-            "response": [
-                {
-                    "id": "Histogram-basic",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "50-70km",
-                        "30-40km",
-                        "20-30km",
-                        "50-60km"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "Histogram-basic",
-                    "answer": "30-40km"
-                }
-            ]
-        },
-        "basic-Choropleth.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: In 2020, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI)?**",
-            "parameters": {
-                "image": "../literacy/assets/images/Choropleth.png",
-                "question": "In 2020, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI)?",
-                "x_grids": [
-                    358,
-                    716,
-                    1074,
-                    1432,
-                    1790,
-                    2148,
-                    2506,
-                    2864,
-                    3222
-                ],
-                "y_grids": [
-                    270,
-                    540,
-                    810,
-                    1080,
-                    1350,
-                    1620,
-                    1890,
-                    2160,
-                    2430
-                ]
-            },
-            "response": [
-                {
-                    "id": "Choropleth-basic",
+                    "id": "Stacked100-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
@@ -301,349 +157,609 @@
             ],
             "correctAnswer": [
                 {
-                    "id": "Choropleth-basic",
+                    "id": "Stacked100-same_inst",
                     "answer": "True"
                 }
             ]
         },
-        "basic-PieChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What is the approximate global smartphone market share of Samsung?**",
+        "same_inst-Histogram.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: More people had a trip between 10km and 20km than between 60km and 70km.**",
+            "parameters": {
+                "image": "../literacy/assets/images/Histogram.png",
+                "question": "More people had a trip between 10km and 20km than between 60km and 70km.",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "Histogram-same_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Histogram-same_inst",
+                    "answer": "True"
+                }
+            ]
+        },
+        "same_inst-Choropleth.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: In which state was the unemployment rate the highest in 2015?**",
+            "parameters": {
+                "image": "../literacy/assets/images/Choropleth.png",
+                "question": "In which state was the unemployment rate the highest in 2015?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "Choropleth-same_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "Michigan (MI)",
+                        "Illinois (IL)",
+                        "Nevada (NV)",
+                        "New York (NY)"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Choropleth-same_inst",
+                    "answer": "Nevada (NV)"
+                }
+            ]
+        },
+        "same_inst-PieChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: In which company is the global smartphone market share the smallest?**",
             "parameters": {
                 "image": "../literacy/assets/images/PieChart.png",
-                "question": "What is the approximate global smartphone market share of Samsung?",
-                "x_grids": [
-                    58,
-                    116,
-                    174,
-                    232,
-                    290,
-                    348,
-                    406,
-                    464,
-                    522
-                ],
-                "y_grids": [
-                    63,
-                    126,
-                    189,
-                    252,
-                    315,
-                    378,
-                    441,
-                    504,
-                    567
-                ]
+                "question": "In which company is the global smartphone market share the smallest?",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "PieChart-basic",
+                    "id": "PieChart-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "17.6%",
-                        "25.3%",
-                        "10.9%",
-                        "35.2%"
+                        "Oppo",
+                        "Apple",
+                        "Vivo",
+                        "Xiaomi"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
-                    "id": "PieChart-basic",
-                    "answer": "17.6%"
+                    "id": "PieChart-same_inst",
+                    "answer": "Vivo"
                 }
             ]
         },
-        "basic-BubbleChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: Which city's metro system has the largest number of stations?**",
+        "same_inst-BubbleChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What is the range of the total length of the metro systems?**",
             "parameters": {
                 "image": "../literacy/assets/images/BubbleChart.png",
-                "question": "Which city's metro system has the largest number of stations?",
-                "x_grids": [
-                    84,
-                    168,
-                    252,
-                    336,
-                    420,
-                    504,
-                    588,
-                    672,
-                    756
-                ],
-                "y_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680,
-                    765
-                ]
+                "question": "What is the range of the total length of the metro systems?",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "BubbleChart-basic",
+                    "id": "BubbleChart-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "Beijing",
-                        "Shanghai",
-                        "London",
-                        "Seoul"
+                        "160 - 460 km",
+                        "240 - 380 km",
+                        "240 - 560 km",
+                        "180 - 560 km"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
-                    "id": "BubbleChart-basic",
-                    "answer": "Shanghai"
+                    "id": "BubbleChart-same_inst",
+                    "answer": "160 - 460 km"
                 }
             ]
         },
-        "basic-StackedBar.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What is the cost of peanuts in Seoul?**",
+        "same_inst-StackedBar.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: The cost of vodka in Totonto is higher than that of Zurich.**",
             "parameters": {
                 "image": "../literacy/assets/images/StackedBar.png",
-                "question": "What is the cost of peanuts in Seoul?",
-                "x_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ],
-                "y_grids": [
-                    79,
-                    158,
-                    237,
-                    316,
-                    395,
-                    474,
-                    553,
-                    632,
-                    711
-                ]
+                "question": "The cost of vodka in Totonto is higher than that of Zurich.",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "StackedBar-basic",
+                    "id": "StackedBar-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "$5.2",
-                        "$6.1",
-                        "$7.5",
-                        "$4.5"
+                        "True",
+                        "False"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
-                    "id": "StackedBar-basic",
-                    "answer": "$6.1"
+                    "id": "StackedBar-same_inst",
+                    "answer": "True"
                 }
             ]
         },
-        "basic-LineChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What was the price of a barrel of oil in February 2020?**",
+        "same_inst-LineChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: Over the first three months in 2020, the price of a barrel of oil was ____________.**",
             "parameters": {
                 "image": "../literacy/assets/images/LineChart.png",
-                "question": "What was the price of a barrel of oil in February 2020?",
-                "x_grids": [
-                    77,
-                    154,
-                    231,
-                    308,
-                    385,
-                    462,
-                    539,
-                    616,
-                    693
-                ],
-                "y_grids": [
-                    77,
-                    154,
-                    231,
-                    308,
-                    385,
-                    462,
-                    539,
-                    616,
-                    693
-                ]
+                "question": "Over the first three months in 2020, the price of a barrel of oil was ____________.",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "LineChart-basic",
+                    "id": "LineChart-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "$50.54",
-                        "$47.02",
-                        "$42.34",
-                        "$43.48"
+                        "rising",
+                        "falling",
+                        "staying the same"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
-                    "id": "LineChart-basic",
-                    "answer": "$50.54"
+                    "id": "LineChart-same_inst",
+                    "answer": "falling"
                 }
             ]
         },
-        "basic-BarChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What is the average internet speed in Japan?**",
+        "same_inst-BarChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: How many countries in Asia is the average internet speed faster than Taiwan?**",
             "parameters": {
                 "image": "../literacy/assets/images/BarChart.png",
-                "question": "What is the average internet speed in Japan?",
-                "x_grids": [
-                    86,
-                    172,
-                    258,
-                    344,
-                    430,
-                    516,
-                    602,
-                    688,
-                    774
-                ],
-                "y_grids": [
-                    84,
-                    168,
-                    252,
-                    336,
-                    420,
-                    504,
-                    588,
-                    672,
-                    756
-                ]
+                "question": "How many countries in Asia is the average internet speed faster than Taiwan?",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "BarChart-basic",
+                    "id": "BarChart-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "42.30 Mbps",
-                        "40.51 Mbps",
-                        "35.25 Mbps",
-                        "16.16 Mbps"
+                        "3",
+                        "4",
+                        "5",
+                        "6"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
-                    "id": "BarChart-basic",
-                    "answer": "40.51 Mbps"
+                    "id": "BarChart-same_inst",
+                    "answer": "4"
                 }
             ]
         },
-        "basic-AreaChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What was the average price of a pound of coffee in October 2019?**",
+        "same_inst-AreaChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What was the range of the average price of a pound of coffee beans between July 2018 and July 2019?**",
             "parameters": {
                 "image": "../literacy/assets/images/AreaChart.png",
-                "question": "What was the average price of a pound of coffee in October 2019?",
-                "x_grids": [
-                    86,
-                    172,
-                    258,
-                    344,
-                    430,
-                    516,
-                    602,
-                    688,
-                    774
-                ],
-                "y_grids": [
-                    82,
-                    164,
-                    246,
-                    328,
-                    410,
-                    492,
-                    574,
-                    656,
-                    738
-                ]
+                "question": "What was the range of the average price of a pound of coffee beans between July 2018 and July 2019?",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "AreaChart-basic",
+                    "id": "AreaChart-same_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "$0.71",
-                        "$0.90",
-                        "$0.80",
-                        "$0.63"
+                        "$0.61 - $0.75",
+                        "$0.75 - $0.85",
+                        "$0.71 - $0.87",
+                        "$0.76 - $0.85"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
-                    "id": "AreaChart-basic",
-                    "answer": "$0.71"
+                    "id": "AreaChart-same_inst",
+                    "answer": "$0.71 - $0.87"
                 }
             ]
         },
-        "basic-StackedArea.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What was the ratio of girls named \"Isla\" to girls named \"Amelia\" in 2012 in the UK?**",
+        "same_inst-StackedArea.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,**",
             "parameters": {
                 "image": "../literacy/assets/images/StackedArea.png",
-                "question": "What was the ratio of girls named \"Isla\" to girls named \"Amelia\" in 2012 in the UK?",
-                "x_grids": [
-                    84,
-                    168,
-                    252,
-                    336,
-                    420,
-                    504,
-                    588,
-                    672,
-                    756
-                ],
-                "y_grids": [
-                    80,
-                    160,
-                    240,
-                    320,
-                    400,
-                    480,
-                    560,
-                    640,
-                    720
-                ]
+                "question": "In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,",
+                "radius": 32
             },
             "response": [
                 {
-                    "id": "StackedArea-basic",
+                    "id": "StackedArea-same_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "StackedArea-same_inst",
+                    "answer": "False"
+                }
+            ]
+        },
+        "same_inst-Scatterplot.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What is the weight for the person who is 161cm tall?**",
+            "parameters": {
+                "image": "../literacy/assets/images/Scatterplot.png",
+                "question": "What is the weight for the person who is 161cm tall?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "Scatterplot-same_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "44 kg",
+                        "52 kg",
+                        "61 kg",
+                        "67 kg"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Scatterplot-same_inst",
+                    "answer": "44 kg"
+                }
+            ]
+        },
+        "diff_inst-VLAT-TreeMap.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: Samsung is nested in the Financial category.**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-TreeMap.png",
+                "question": "Samsung is nested in the Financial category.",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "TreeMap-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "TreeMap-diff_inst",
+                    "answer": "False"
+                }
+            ]
+        },
+        "diff_inst-VLAT-Stacked100.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What is the education level of people in which the Democrats have the lowest approval rating?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-Stacked100.png",
+                "question": "What is the education level of people in which the Democrats have the lowest approval rating?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "Stacked100-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "High School Graduate or Less",
+                        "Some College Degree",
+                        "College Graduate",
+                        "Postgraduate study"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Stacked100-diff_inst",
+                    "answer": "College Graduate"
+                }
+            ]
+        },
+        "diff_inst-VLAT-Histogram.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What is the rating that the people have rated the taxi the most?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-Histogram.png",
+                "question": "What is the rating that the people have rated the taxi the most?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "Histogram-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "4.2 - 4.4",
+                        "4.4 - 4.6",
+                        "4.6 - 4.8",
+                        "4.8 - 5.0"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Histogram-diff_inst",
+                    "answer": "4.4 - 4.6"
+                }
+            ]
+        },
+        "diff_inst-VLAT-Choropleth.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: In 2015, the unemployment rate for Wisconsin (WI) was higher than that of Washington (WA).**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-Choropleth.png",
+                "question": "In 2015, the unemployment rate for Wisconsin (WI) was higher than that of Washington (WA).",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "Choropleth-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "true",
+                        "False"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "Choropleth-diff_inst",
+                    "answer": "False"
+                }
+            ]
+        },
+        "diff_inst-VLAT-PieChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: The global smartphone market share of Apple is larger than that of Huawei.**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-PieChart.png",
+                "question": "The global smartphone market share of Apple is larger than that of Huawei.",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "PieChart-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "PieChart-diff_inst",
+                    "answer": "True"
+                }
+            ]
+        },
+        "diff_inst-VLAT-BubbleChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: Which city's metro system has the largest number of stations?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-BubbleChart.png",
+                "question": "Which city's metro system has the largest number of stations?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "BubbleChart-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "Seoul",
+                        "Beijing",
+                        "New York City",
+                        "Shanghai"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "BubbleChart-diff_inst",
+                    "answer": "New York City"
+                }
+            ]
+        },
+        "diff_inst-VLAT-StackedBar.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What is the cost of peanuts in Las Vegas?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-StackedBar.png",
+                "question": "What is the cost of peanuts in Las Vegas?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "StackedBar-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "$12",
+                        "$16.7",
+                        "$23.4",
+                        "$35.4"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "StackedBar-diff_inst",
+                    "answer": "$12"
+                }
+            ]
+        },
+        "diff_inst-VLAT-LineChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What was the price of a barrel of oil in February 2015?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-LineChart.png",
+                "question": "What was the price of a barrel of oil in February 2015?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "LineChart-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "$57.36",
+                        "$47.82",
+                        "$50.24",
+                        "$39.72"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "LineChart-diff_inst",
+                    "answer": "$50.24"
+                }
+            ]
+        },
+        "diff_inst-VLAT-BarChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What is the average internet speed in Japan?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-BarChart.png",
+                "question": "What is the average internet speed in Japan?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "BarChart-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "10 Mbps",
+                        "14 Mbps",
+                        "15 Mbps",
+                        "16 Mbps"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "BarChart-diff_inst",
+                    "answer": "15 Mbps"
+                }
+            ]
+        },
+        "diff_inst-VLAT-AreaChart.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: What was the average price of a pound of coffee beans in September 2013?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-AreaChart.png",
+                "question": "What was the average price of a pound of coffee beans in September 2013?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "AreaChart-diff_inst",
+                    "prompt": "Your answer",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        "$4.9",
+                        "$5.0",
+                        "$5.1",
+                        "$5.2"
+                    ]
+                }
+            ],
+            "correctAnswer": [
+                {
+                    "id": "AreaChart-diff_inst",
+                    "answer": "$5.1"
+                }
+            ]
+        },
+        "diff_inst-VLAT-StackedArea.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?**",
+            "parameters": {
+                "image": "../literacy/assets/images/VLAT-StackedArea.png",
+                "question": "About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?",
+                "radius": 32
+            },
+            "response": [
+                {
+                    "id": "StackedArea-diff_inst",
                     "prompt": "Your answer",
                     "required": true,
                     "location": "sidebar",
@@ -658,638 +774,18 @@
             ],
             "correctAnswer": [
                 {
-                    "id": "StackedArea-basic",
-                    "answer": "1 to 2"
-                }
-            ]
-        },
-        "basic-Scatterplot.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: There is a negative relationship between the height and the weight of the 85 males.**",
-            "parameters": {
-                "image": "../literacy/assets/images/Scatterplot.png",
-                "question": "There is a negative relationship between the height and the weight of the 85 males.",
-                "x_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680,
-                    765
-                ],
-                "y_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ]
-            },
-            "response": [
-                {
-                    "id": "Scatterplot-basic",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "True",
-                        "False"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "Scatterplot-basic",
-                    "answer": "False"
-                }
-            ]
-        },
-        "diff_inst-TreeMap.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: For which website was the number of visitors the largest?**",
-            "parameters": {
-                "image": "../literacy/assets/images/TreeMap.png",
-                "question": "For which website was the number of visitors the largest?",
-                "x_grids": [
-                    75,
-                    150,
-                    225,
-                    300,
-                    375,
-                    450,
-                    525,
-                    600,
-                    675
-                ],
-                "y_grids": [
-                    75,
-                    150,
-                    225,
-                    300,
-                    375,
-                    450,
-                    525,
-                    600,
-                    675
-                ]
-            },
-            "response": [
-                {
-                    "id": "TreeMap-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "Facebook",
-                        "Ask",
-                        "Google",
-                        "eBay"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "TreeMap-diff_inst",
-                    "answer": "Google"
-                }
-            ]
-        },
-        "diff_inst-Stacked100.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: Japan had higher proportion of Silver medals than Australia.**",
-            "parameters": {
-                "image": "../literacy/assets/images/Stacked100.png",
-                "question": "Japan had higher proportion of Silver medals than Australia.",
-                "x_grids": [
-                    83,
-                    166,
-                    249,
-                    332,
-                    415,
-                    498,
-                    581,
-                    664,
-                    747
-                ],
-                "y_grids": [
-                    79,
-                    158,
-                    237,
-                    316,
-                    395,
-                    474,
-                    553,
-                    632,
-                    711
-                ]
-            },
-            "response": [
-                {
-                    "id": "Stacked100-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "True",
-                        "False"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "Stacked100-diff_inst",
-                    "answer": "True"
-                }
-            ]
-        },
-        "diff_inst-Histogram.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4**",
-            "parameters": {
-                "image": "../literacy/assets/images/Histogram.png",
-                "question": "More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4",
-                "x_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ],
-                "y_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ]
-            },
-            "response": [
-                {
-                    "id": "Histogram-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "True",
-                        "False"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "Histogram-diff_inst",
-                    "answer": "True"
-                }
-            ]
-        },
-        "diff_inst-Choropleth.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: In which state was the unemployment rate the highest in 2015?**",
-            "parameters": {
-                "image": "../literacy/assets/images/Choropleth.png",
-                "question": "In which state was the unemployment rate the highest in 2015?",
-                "x_grids": [
-                    358,
-                    716,
-                    1074,
-                    1432,
-                    1790,
-                    2148,
-                    2506,
-                    2864,
-                    3222
-                ],
-                "y_grids": [
-                    270,
-                    540,
-                    810,
-                    1080,
-                    1350,
-                    1620,
-                    1890,
-                    2160,
-                    2430
-                ]
-            },
-            "response": [
-                {
-                    "id": "Choropleth-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "Alaska (AK)",
-                        "New Mexico (NM)",
-                        "Florida (FL)",
-                        "New York (NY)"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "Choropleth-diff_inst",
-                    "answer": "New Mexico (NM)"
-                }
-            ]
-        },
-        "diff_inst-PieChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: The global smartphone market share of Apple is larger than that of Huawei.**",
-            "parameters": {
-                "image": "../literacy/assets/images/PieChart.png",
-                "question": "The global smartphone market share of Apple is larger than that of Huawei.",
-                "x_grids": [
-                    58,
-                    116,
-                    174,
-                    232,
-                    290,
-                    348,
-                    406,
-                    464,
-                    522
-                ],
-                "y_grids": [
-                    63,
-                    126,
-                    189,
-                    252,
-                    315,
-                    378,
-                    441,
-                    504,
-                    567
-                ]
-            },
-            "response": [
-                {
-                    "id": "PieChart-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "True",
-                        "False"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "PieChart-diff_inst",
-                    "answer": "True"
-                }
-            ]
-        },
-        "diff_inst-BubbleChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What is the range of the total length of the metro systems?**",
-            "parameters": {
-                "image": "../literacy/assets/images/BubbleChart.png",
-                "question": "What is the range of the total length of the metro systems?",
-                "x_grids": [
-                    84,
-                    168,
-                    252,
-                    336,
-                    420,
-                    504,
-                    588,
-                    672,
-                    756
-                ],
-                "y_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680,
-                    765
-                ]
-            },
-            "response": [
-                {
-                    "id": "BubbleChart-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "150 - 600 km",
-                        "240 - 380 km",
-                        "240 - 560 km",
-                        "180 - 560 km"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "BubbleChart-diff_inst",
-                    "answer": "150 - 600 km"
-                }
-            ]
-        },
-        "diff_inst-StackedBar.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: The cost of vodka in Atlanta is higher than that of Honolulu.**",
-            "parameters": {
-                "image": "../literacy/assets/images/StackedBar.png",
-                "question": "The cost of vodka in Atlanta is higher than that of Honolulu.",
-                "x_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ],
-                "y_grids": [
-                    79,
-                    158,
-                    237,
-                    316,
-                    395,
-                    474,
-                    553,
-                    632,
-                    711
-                ]
-            },
-            "response": [
-                {
-                    "id": "StackedBar-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "True",
-                        "False"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "StackedBar-diff_inst",
-                    "answer": "True"
-                }
-            ]
-        },
-        "diff_inst-LineChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: Over the course of the second half of 2015, the price of a barrel of oil was ____________.**",
-            "parameters": {
-                "image": "../literacy/assets/images/LineChart.png",
-                "question": "Over the course of the second half of 2015, the price of a barrel of oil was ____________.",
-                "x_grids": [
-                    77,
-                    154,
-                    231,
-                    308,
-                    385,
-                    462,
-                    539,
-                    616,
-                    693
-                ],
-                "y_grids": [
-                    77,
-                    154,
-                    231,
-                    308,
-                    385,
-                    462,
-                    539,
-                    616,
-                    693
-                ]
-            },
-            "response": [
-                {
-                    "id": "LineChart-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "rising",
-                        "falling",
-                        "staying the same"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "LineChart-diff_inst",
-                    "answer": "falling"
-                }
-            ]
-        },
-        "diff_inst-BarChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: How many countries in Asia is the average internet speed slower than Thailand?**",
-            "parameters": {
-                "image": "../literacy/assets/images/BarChart.png",
-                "question": "How many countries in Asia is the average internet speed slower than Thailand?",
-                "x_grids": [
-                    86,
-                    172,
-                    258,
-                    344,
-                    430,
-                    516,
-                    602,
-                    688,
-                    774
-                ],
-                "y_grids": [
-                    84,
-                    168,
-                    252,
-                    336,
-                    420,
-                    504,
-                    588,
-                    672,
-                    756
-                ]
-            },
-            "response": [
-                {
-                    "id": "BarChart-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "5",
-                        "6",
-                        "7",
-                        "8"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "BarChart-diff_inst",
-                    "answer": "6"
-                }
-            ]
-        },
-        "diff_inst-AreaChart.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?**",
-            "parameters": {
-                "image": "../literacy/assets/images/AreaChart.png",
-                "question": "What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?",
-                "x_grids": [
-                    86,
-                    172,
-                    258,
-                    344,
-                    430,
-                    516,
-                    602,
-                    688,
-                    774
-                ],
-                "y_grids": [
-                    82,
-                    164,
-                    246,
-                    328,
-                    410,
-                    492,
-                    574,
-                    656,
-                    738
-                ]
-            },
-            "response": [
-                {
-                    "id": "AreaChart-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "$4.4 - $6.2",
-                        "$4.6 - $5.9",
-                        "$4.6 - $6.0",
-                        "$4.6 - $6.1"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "AreaChart-diff_inst",
-                    "answer": "$4.6 - $6.0"
-                }
-            ]
-        },
-        "diff_inst-StackedArea.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,**",
-            "parameters": {
-                "image": "../literacy/assets/images/StackedArea.png",
-                "question": "In the UK, the number of girls named \"Amelia\" in 2014 was more than it was in 2013,",
-                "x_grids": [
-                    84,
-                    168,
-                    252,
-                    336,
-                    420,
-                    504,
-                    588,
-                    672,
-                    756
-                ],
-                "y_grids": [
-                    80,
-                    160,
-                    240,
-                    320,
-                    400,
-                    480,
-                    560,
-                    640,
-                    720
-                ]
-            },
-            "response": [
-                {
                     "id": "StackedArea-diff_inst",
-                    "prompt": "Your answer",
-                    "required": true,
-                    "location": "sidebar",
-                    "type": "radio",
-                    "options": [
-                        "True",
-                        "False"
-                    ]
-                }
-            ],
-            "correctAnswer": [
-                {
-                    "id": "StackedArea-diff_inst",
-                    "answer": "False"
+                    "answer": "1 to 1"
                 }
             ]
         },
-        "diff_inst-Scatterplot.png": {
-            "baseComponent": "grid",
-            "instruction": " **Q: What is the weight for the person who is 165.1cm tall?**",
+        "diff_inst-VLAT-Scatterplot.png": {
+            "baseComponent": "bubble",
+            "instruction": " **Q: There is a positive linear relationship between the height and the weight of the 85 males.**",
             "parameters": {
-                "image": "../literacy/assets/images/Scatterplot.png",
-                "question": "What is the weight for the person who is 165.1cm tall?",
-                "x_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680,
-                    765
-                ],
-                "y_grids": [
-                    87,
-                    174,
-                    261,
-                    348,
-                    435,
-                    522,
-                    609,
-                    696,
-                    783
-                ]
+                "image": "../literacy/assets/images/VLAT-Scatterplot.png",
+                "question": "There is a positive linear relationship between the height and the weight of the 85 males.",
+                "radius": 32
             },
             "response": [
                 {
@@ -1299,48 +795,25 @@
                     "location": "sidebar",
                     "type": "radio",
                     "options": [
-                        "53.9 kg",
-                        "67.7 kg",
-                        "70.5 kg",
-                        "82.7 kg"
+                        "True",
+                        "False"
                     ]
                 }
             ],
             "correctAnswer": [
                 {
                     "id": "Scatterplot-diff_inst",
-                    "answer": "70.5 kg"
+                    "answer": "True"
                 }
             ]
         },
         "chartqa-two_col_40186.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: What is the value of 'Cocaine'?**",
             "parameters": {
                 "image": "../literacy/assets/images/two_col_40186.png",
                 "question": "What is the value of 'Cocaine'?",
-                "x_grids": [
-                    80,
-                    160,
-                    240,
-                    320,
-                    400,
-                    480,
-                    560,
-                    640,
-                    720
-                ],
-                "y_grids": [
-                    56,
-                    112,
-                    168,
-                    224,
-                    280,
-                    336,
-                    392,
-                    448,
-                    504
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1365,33 +838,12 @@
             ]
         },
         "chartqa-two_col_4524.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: What is the poverty rate in California in the year 2019?**",
             "parameters": {
                 "image": "../literacy/assets/images/two_col_4524.png",
                 "question": "What is the poverty rate in California in the year 2019?",
-                "x_grids": [
-                    80,
-                    160,
-                    240,
-                    320,
-                    400,
-                    480,
-                    560,
-                    640,
-                    720
-                ],
-                "y_grids": [
-                    56,
-                    112,
-                    168,
-                    224,
-                    280,
-                    336,
-                    392,
-                    448,
-                    504
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1416,33 +868,12 @@
             ]
         },
         "chartqa-two_col_61107.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: What is the percentage of \"Very important\"?**",
             "parameters": {
                 "image": "../literacy/assets/images/two_col_61107.png",
                 "question": "What is the percentage of \"Very important\"?",
-                "x_grids": [
-                    80,
-                    160,
-                    240,
-                    320,
-                    400,
-                    480,
-                    560,
-                    640,
-                    720
-                ],
-                "y_grids": [
-                    56,
-                    112,
-                    168,
-                    224,
-                    280,
-                    336,
-                    392,
-                    448,
-                    504
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1467,33 +898,12 @@
             ]
         },
         "chartqa-multi_col_60949.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: y-axis represents the date**",
             "parameters": {
                 "image": "../literacy/assets/images/multi_col_60949.png",
                 "question": "y-axis represents the date",
-                "x_grids": [
-                    80,
-                    160,
-                    240,
-                    320,
-                    400,
-                    480,
-                    560,
-                    640,
-                    720
-                ],
-                "y_grids": [
-                    56,
-                    112,
-                    168,
-                    224,
-                    280,
-                    336,
-                    392,
-                    448,
-                    504
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1516,33 +926,12 @@
             ]
         },
         "chartqa-05411753006467.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: Which country had the second largest vale?**",
             "parameters": {
                 "image": "../literacy/assets/images/05411753006467.png",
                 "question": "Which country had the second largest vale?",
-                "x_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680,
-                    765
-                ],
-                "y_grids": [
-                    60,
-                    120,
-                    180,
-                    240,
-                    300,
-                    360,
-                    420,
-                    480,
-                    540
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1566,33 +955,12 @@
             ]
         },
         "chartqa-19371621021871.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: Since which year did the public trust in government drop below 50%?**",
             "parameters": {
                 "image": "../literacy/assets/images/19371621021871.png",
                 "question": "Since which year did the public trust in government drop below 50%?",
-                "x_grids": [
-                    85,
-                    170,
-                    255,
-                    340,
-                    425,
-                    510,
-                    595,
-                    680,
-                    765
-                ],
-                "y_grids": [
-                    60,
-                    120,
-                    180,
-                    240,
-                    300,
-                    360,
-                    420,
-                    480,
-                    540
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1617,33 +985,12 @@
             ]
         },
         "chartqa-43.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: Percentage of people who 'have heard of Latinx' is 20%**",
             "parameters": {
                 "image": "../literacy/assets/images/43.png",
                 "question": "Percentage of people who 'have heard of Latinx' is 20%",
-                "x_grids": [
-                    62,
-                    124,
-                    186,
-                    248,
-                    310,
-                    372,
-                    434,
-                    496,
-                    558
-                ],
-                "y_grids": [
-                    88,
-                    176,
-                    264,
-                    352,
-                    440,
-                    528,
-                    616,
-                    704,
-                    792
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1666,33 +1013,12 @@
             ]
         },
         "chartqa-9280.png": {
-            "baseComponent": "grid",
+            "baseComponent": "bubble",
             "instruction": " **Q: What's the percentage of people choosing 'Very' in Feb 2016?**",
             "parameters": {
                 "image": "../literacy/assets/images/9280.png",
                 "question": "What's the percentage of people choosing 'Very' in Feb 2016?",
-                "x_grids": [
-                    31,
-                    62,
-                    93,
-                    124,
-                    155,
-                    186,
-                    217,
-                    248,
-                    279
-                ],
-                "y_grids": [
-                    31,
-                    62,
-                    93,
-                    124,
-                    155,
-                    186,
-                    217,
-                    248,
-                    279
-                ]
+                "radius": 32
             },
             "response": [
                 {
@@ -1728,56 +1054,38 @@
                 "id": "mix",
                 "order": "latinSquare",
                 "components": [
-                    {
-                        "id": "same_inst",
-                        "order": "latinSquare",
-                        "components": [
-                            "basic-TreeMap.png",
-                            "basic-Stacked100.png",
-                            "basic-Histogram.png",
-                            "basic-Choropleth.png",
-                            "basic-PieChart.png",
-                            "basic-BubbleChart.png",
-                            "basic-StackedBar.png",
-                            "basic-LineChart.png",
-                            "basic-BarChart.png",
-                            "basic-AreaChart.png",
-                            "basic-StackedArea.png",
-                            "basic-Scatterplot.png"
-                        ]
-                    },
-                    {
-                        "id": "different_inst",
-                        "order": "latinSquare",
-                        "components": [
-                            "diff_inst-TreeMap.png",
-                            "diff_inst-Stacked100.png",
-                            "diff_inst-Histogram.png",
-                            "diff_inst-Choropleth.png",
-                            "diff_inst-PieChart.png",
-                            "diff_inst-BubbleChart.png",
-                            "diff_inst-StackedBar.png",
-                            "diff_inst-LineChart.png",
-                            "diff_inst-BarChart.png",
-                            "diff_inst-AreaChart.png",
-                            "diff_inst-StackedArea.png",
-                            "diff_inst-Scatterplot.png"
-                        ]
-                    },
-                    {
-                        "id": "chartqa",
-                        "order": "latinSquare",
-                        "components": [
-                            "chartqa-two_col_40186.png",
-                            "chartqa-two_col_4524.png",
-                            "chartqa-two_col_61107.png",
-                            "chartqa-multi_col_60949.png",
-                            "chartqa-05411753006467.png",
-                            "chartqa-19371621021871.png",
-                            "chartqa-43.png",
-                            "chartqa-9280.png"
-                        ]
-                    }
+                    "same_inst-TreeMap.png",
+                    "same_inst-Stacked100.png",
+                    "same_inst-Histogram.png",
+                    "same_inst-Choropleth.png",
+                    "same_inst-PieChart.png",
+                    "same_inst-BubbleChart.png",
+                    "same_inst-StackedBar.png",
+                    "same_inst-LineChart.png",
+                    "same_inst-BarChart.png",
+                    "same_inst-AreaChart.png",
+                    "same_inst-StackedArea.png",
+                    "same_inst-Scatterplot.png",
+                    "diff_inst-VLAT-TreeMap.png",
+                    "diff_inst-VLAT-Stacked100.png",
+                    "diff_inst-VLAT-Histogram.png",
+                    "diff_inst-VLAT-Choropleth.png",
+                    "diff_inst-VLAT-PieChart.png",
+                    "diff_inst-VLAT-BubbleChart.png",
+                    "diff_inst-VLAT-StackedBar.png",
+                    "diff_inst-VLAT-LineChart.png",
+                    "diff_inst-VLAT-BarChart.png",
+                    "diff_inst-VLAT-AreaChart.png",
+                    "diff_inst-VLAT-StackedArea.png",
+                    "diff_inst-VLAT-Scatterplot.png",
+                    "chartqa-two_col_40186.png",
+                    "chartqa-two_col_4524.png",
+                    "chartqa-two_col_61107.png",
+                    "chartqa-multi_col_60949.png",
+                    "chartqa-05411753006467.png",
+                    "chartqa-19371621021871.png",
+                    "chartqa-43.png",
+                    "chartqa-9280.png"
                 ]
             },
             "demographics"
