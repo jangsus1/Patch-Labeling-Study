@@ -1084,12 +1084,12 @@
             "instructions",
             {
                 "id": "batch",
-                "order": "latinSquare",
+                "order": "random",
                 "numSamples": 1,
                 "components": [
                     {
                         "id": "batch1",
-                        "order": "latinSquare",
+                        "order": "random",
                         "components": [
                             "notextBar-chartqa",
                             "notextLine-chartqa",
@@ -1111,7 +1111,7 @@
                     },
                     {
                         "id": "batch2",
-                        "order": "latinSquare",
+                        "order": "random",
                         "components": [
                             "textBar-chartqa",
                             "textLine-chartqa",
