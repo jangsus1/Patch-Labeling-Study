@@ -123,7 +123,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -151,7 +152,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -179,7 +181,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -209,7 +212,8 @@
                         "Michigan (MI)",
                         "Illinois (IL)",
                         "Nevada (NV)",
-                        "New York (NY)"
+                        "New York (NY)",
+                        "Skip"
                     ]
                 }
             ],
@@ -239,7 +243,8 @@
                         "Oppo",
                         "Apple",
                         "Vivo",
-                        "Xiaomi"
+                        "Xiaomi",
+                        "Skip"
                     ]
                 }
             ],
@@ -269,7 +274,8 @@
                         "160 - 460 km",
                         "240 - 380 km",
                         "240 - 560 km",
-                        "180 - 560 km"
+                        "180 - 560 km",
+                        "Skip"
                     ]
                 }
             ],
@@ -297,7 +303,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -326,7 +333,8 @@
                     "options": [
                         "rising",
                         "falling",
-                        "staying the same"
+                        "staying the same",
+                        "Skip"
                     ]
                 }
             ],
@@ -356,7 +364,8 @@
                         "3",
                         "4",
                         "5",
-                        "6"
+                        "6",
+                        "Skip"
                     ]
                 }
             ],
@@ -386,7 +395,8 @@
                         "$0.61 - $0.75",
                         "$0.75 - $0.85",
                         "$0.71 - $0.87",
-                        "$0.76 - $0.85"
+                        "$0.76 - $0.85",
+                        "Skip"
                     ]
                 }
             ],
@@ -414,7 +424,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -444,7 +455,8 @@
                         "44 kg",
                         "52 kg",
                         "61 kg",
-                        "67 kg"
+                        "67 kg",
+                        "Skip"
                     ]
                 }
             ],
@@ -472,7 +484,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -502,7 +515,8 @@
                         "High School Graduate or Less",
                         "Some College Degree",
                         "College Graduate",
-                        "Postgraduate study"
+                        "Postgraduate study",
+                        "Skip"
                     ]
                 }
             ],
@@ -532,7 +546,8 @@
                         "4.2 - 4.4",
                         "4.4 - 4.6",
                         "4.6 - 4.8",
-                        "4.8 - 5.0"
+                        "4.8 - 5.0",
+                        "Skip"
                     ]
                 }
             ],
@@ -560,7 +575,8 @@
                     "type": "radio",
                     "options": [
                         "true",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -588,7 +604,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -618,7 +635,8 @@
                         "Seoul",
                         "Beijing",
                         "New York City",
-                        "Shanghai"
+                        "Shanghai",
+                        "Skip"
                     ]
                 }
             ],
@@ -648,7 +666,8 @@
                         "$12",
                         "$16.7",
                         "$23.4",
-                        "$35.4"
+                        "$35.4",
+                        "Skip"
                     ]
                 }
             ],
@@ -678,7 +697,8 @@
                         "$57.36",
                         "$47.82",
                         "$50.24",
-                        "$39.72"
+                        "$39.72",
+                        "Skip"
                     ]
                 }
             ],
@@ -708,7 +728,8 @@
                         "10 Mbps",
                         "14 Mbps",
                         "15 Mbps",
-                        "16 Mbps"
+                        "16 Mbps",
+                        "Skip"
                     ]
                 }
             ],
@@ -738,7 +759,8 @@
                         "$4.9",
                         "$5.0",
                         "$5.1",
-                        "$5.2"
+                        "$5.2",
+                        "Skip"
                     ]
                 }
             ],
@@ -768,7 +790,8 @@
                         "1 to 1",
                         "1 to 2",
                         "1 to 3",
-                        "1 to 4"
+                        "1 to 4",
+                        "Skip"
                     ]
                 }
             ],
@@ -796,7 +819,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -826,7 +850,8 @@
                         "3194",
                         "13942",
                         "14495",
-                        "28466"
+                        "28466",
+                        "Skip"
                     ]
                 }
             ],
@@ -856,7 +881,8 @@
                         "11.8%",
                         "12.4%",
                         "14.3%",
-                        "17%"
+                        "17%",
+                        "Skip"
                     ]
                 }
             ],
@@ -886,7 +912,8 @@
                         "9%",
                         "12%",
                         "29%",
-                        "50%"
+                        "50%",
+                        "Skip"
                     ]
                 }
             ],
@@ -914,7 +941,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -943,7 +971,8 @@
                     "options": [
                         "Dominican Republic",
                         "Ireland",
-                        "Guadeloupe"
+                        "Guadeloupe",
+                        "Skip"
                     ]
                 }
             ],
@@ -973,7 +1002,8 @@
                         "1964",
                         "1970",
                         "1974",
-                        "1980"
+                        "1980",
+                        "Skip"
                     ]
                 }
             ],
@@ -1001,7 +1031,8 @@
                     "type": "radio",
                     "options": [
                         "True",
-                        "False"
+                        "False",
+                        "Skip"
                     ]
                 }
             ],
@@ -1031,7 +1062,8 @@
                         "17",
                         "24",
                         "40",
-                        "57"
+                        "57",
+                        "Skip"
                     ]
                 }
             ],
