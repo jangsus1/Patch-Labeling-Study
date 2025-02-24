@@ -73,7 +73,7 @@ function bubble({ parameters, setAnswer }) {
     <div>
       <h3>Click on the image to reveal</h3>
       <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%", display: "block" }}>
-        <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback}>
+        <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback} style={{border: "1px solid black"}}>
           <defs>
             <filter
               id="imageBlurFilter"
