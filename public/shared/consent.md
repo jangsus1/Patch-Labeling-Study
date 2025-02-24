@@ -16,9 +16,6 @@
 - Personal data is protected; de-identified data may be shared for research.  
 - Study records may be reviewed by Georgia Tech IRB and regulatory bodies.  
 
-## **Compensation**  
-- Missing **2+ attention checks** may result in disqualification.  
-
 ## **Withdrawal & Contact**  
 - You may exit anytime; collected data will not be saved.  
 - **Study questions**: [minsuk@gatech.edu](mailto:minsuk@gatech.edu)  
