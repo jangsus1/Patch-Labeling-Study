@@ -13,7 +13,8 @@
         ]
     },
     "importedLibraries": [
-        "mini-vlat"
+        "mini-vlat",
+        "calvi"
     ],
     "uiConfig": {
         "contactEmail": "minsuk@gatech.edu",
@@ -1081,6 +1082,7 @@
             "consent",
             "vlat_intro",
             "$mini-vlat.se.full",
+            "$calvi.se.full",
             "instructions",
             {
                 "id": "batch",

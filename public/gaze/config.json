@@ -20,7 +20,7 @@
         "autoDownloadStudy": false,
         "sidebar": false,
         "urlParticipantIdParam": "PROLIFIC_PID",
-        "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [minsukchang.info](minsukchang.info)"
+        "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1DEBJ8K](https://app.prolific.com/submissions/complete?cc=C1DEBJ8K)"
     },
     "components": {
         "welcome": {
@@ -32,16 +32,6 @@
             "type": "markdown",
             "path": "gaze/assets/consent.md",
             "nextButtonText": "I agree",
-            "response": []
-        },
-        "phase1_intro": {
-            "type": "markdown",
-            "path": "gaze/assets/phase1_intro.md",
-            "response": []
-        },
-        "phase2_intro": {
-            "type": "markdown",
-            "path": "gaze/assets/phase2_intro.md",
             "response": []
         },
         "demographics": {
@@ -98,15 +88,76 @@
                 }
             ]
         },
-        "bubble_example1": {
-            "baseComponent": "bubble",
+        "phase3_0": {
+            "baseComponent": "draw",
             "parameters": {
-                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_2_1.png",
-                "example": true,
-                "correlation": 0.1742845994145631,
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
                 "label": "As the usage of internet increases, so does the homicide rate in the city.",
                 "X": "Increasing internet usage",
                 "Y": "Higher homicide rate in the city"
+            }
+        },
+        "phase3_1": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "People who eat more cheese, tend to be better at dancing.",
+                "X": "Eating more cheese",
+                "Y": "Better at dancing"
+            }
+        },
+        "phase3_2": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "The more often students eat breakfast, the higher their GPAs are.",
+                "X": "Eating breakfast more often",
+                "Y": "Having a higher GPA"
+            }
+        },
+        "phase3_3": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "The more students wear glasses, the later the gym closes on campus.",
+                "X": "More students wearing glasses",
+                "Y": "Gym closing later on campus"
+            }
+        },
+        "phase3_4": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "A city with more lawyers, tends to have more trees.",
+                "X": "Having more lawyers in a city",
+                "Y": "Having more trees in the city"
+            }
+        },
+        "phase3_5": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "A worker with a longer commute, tends to be more stressed.",
+                "X": "Commuting for a longer time",
+                "Y": "Being more stressed"
+            }
+        },
+        "phase3_6": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "People who sleep more, tend to be happier with their lives.",
+                "X": "Sleeping more",
+                "Y": "Being happier with life"
+            }
+        },
+        "phase3_7": {
+            "baseComponent": "draw",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/empty_scatter.png",
+                "label": "As the number of environmental regulations increases, so does the air quality in the city.",
+                "X": "Having more environmental regulations",
+                "Y": "Improving air quality in the city"
             }
         },
         "plain_1_1_pos": {
@@ -114,7 +165,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_1_1.png",
                 "example": false,
-                "correlation": 0.08874680838482
+                "correlation": 0.08874680838482,
+                "seconds": 5
             }
         },
         "plain_1_1_neg": {
@@ -122,7 +174,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_1_1.png",
                 "example": false,
-                "correlation": -0.1330919358783738
+                "correlation": -0.1330919358783738,
+                "seconds": 5
             }
         },
         "plain_1_2_pos": {
@@ -130,7 +183,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_1_2.png",
                 "example": false,
-                "correlation": 0.0738378662315979
+                "correlation": 0.0738378662315979,
+                "seconds": 5
             }
         },
         "plain_1_2_neg": {
@@ -138,7 +192,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_1_2.png",
                 "example": false,
-                "correlation": -0.1139561571557837
+                "correlation": -0.1139561571557837,
+                "seconds": 5
             }
         },
         "plain_1_3_pos": {
@@ -146,7 +201,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_1_3.png",
                 "example": false,
-                "correlation": 0.0770746456306559
+                "correlation": 0.0770746456306559,
+                "seconds": 5
             }
         },
         "plain_1_3_neg": {
@@ -154,7 +210,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_1_3.png",
                 "example": false,
-                "correlation": -0.1173445714984468
+                "correlation": -0.1173445714984468,
+                "seconds": 5
             }
         },
         "plain_1_4_pos": {
@@ -162,7 +219,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_1_4.png",
                 "example": false,
-                "correlation": 0.0744177444155651
+                "correlation": 0.0744177444155651,
+                "seconds": 5
             }
         },
         "plain_1_4_neg": {
@@ -170,7 +228,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_1_4.png",
                 "example": false,
-                "correlation": -0.1443390245538172
+                "correlation": -0.1443390245538172,
+                "seconds": 5
             }
         },
         "plain_1_5_pos": {
@@ -178,7 +237,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_1_5.png",
                 "example": false,
-                "correlation": 0.1129778404897898
+                "correlation": 0.1129778404897898,
+                "seconds": 5
             }
         },
         "plain_1_5_neg": {
@@ -186,7 +246,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_1_5.png",
                 "example": false,
-                "correlation": -0.0793714599799248
+                "correlation": -0.0793714599799248,
+                "seconds": 5
             }
         },
         "plain_1_6_pos": {
@@ -194,7 +255,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_1_6.png",
                 "example": false,
-                "correlation": 0.1063043080224522
+                "correlation": 0.1063043080224522,
+                "seconds": 5
             }
         },
         "plain_1_6_neg": {
@@ -202,7 +264,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_1_6.png",
                 "example": false,
-                "correlation": -0.1434658678484027
+                "correlation": -0.1434658678484027,
+                "seconds": 5
             }
         },
         "plain_3_1_pos": {
@@ -210,7 +273,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_1.png",
                 "example": false,
-                "correlation": 0.3006610599104403
+                "correlation": 0.3006610599104403,
+                "seconds": 5
             }
         },
         "plain_3_1_neg": {
@@ -218,7 +282,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_3_1.png",
                 "example": false,
-                "correlation": -0.3457428552166356
+                "correlation": -0.3457428552166356,
+                "seconds": 5
             }
         },
         "plain_3_2_pos": {
@@ -226,7 +291,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_2.png",
                 "example": false,
-                "correlation": 0.3323635104638104
+                "correlation": 0.3323635104638104,
+                "seconds": 5
             }
         },
         "plain_3_2_neg": {
@@ -234,7 +300,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_3_2.png",
                 "example": false,
-                "correlation": -0.3222780788136491
+                "correlation": -0.3222780788136491,
+                "seconds": 5
             }
         },
         "plain_3_3_pos": {
@@ -242,7 +309,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_3.png",
                 "example": false,
-                "correlation": 0.3006958882943672
+                "correlation": 0.3006958882943672,
+                "seconds": 5
             }
         },
         "plain_3_3_neg": {
@@ -250,7 +318,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_3_3.png",
                 "example": false,
-                "correlation": -0.2762456276087718
+                "correlation": -0.2762456276087718,
+                "seconds": 5
             }
         },
         "plain_3_4_pos": {
@@ -258,7 +327,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_4.png",
                 "example": false,
-                "correlation": 0.3397526841077465
+                "correlation": 0.3397526841077465,
+                "seconds": 5
             }
         },
         "plain_3_4_neg": {
@@ -266,7 +336,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_3_4.png",
                 "example": false,
-                "correlation": -0.3158149456914189
+                "correlation": -0.3158149456914189,
+                "seconds": 5
             }
         },
         "plain_3_5_pos": {
@@ -274,7 +345,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_5.png",
                 "example": false,
-                "correlation": 0.2597336778377645
+                "correlation": 0.2597336778377645,
+                "seconds": 5
             }
         },
         "plain_3_5_neg": {
@@ -282,7 +354,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_3_5.png",
                 "example": false,
-                "correlation": -0.2775384695355512
+                "correlation": -0.2775384695355512,
+                "seconds": 5
             }
         },
         "plain_3_6_pos": {
@@ -290,7 +363,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
                 "example": false,
-                "correlation": 0.3447884494755372
+                "correlation": 0.3447884494755372,
+                "seconds": 5
             }
         },
         "plain_3_6_neg": {
@@ -298,7 +372,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_3_6.png",
                 "example": false,
-                "correlation": -0.3307897893692809
+                "correlation": -0.3307897893692809,
+                "seconds": 5
             }
         },
         "plain_5_1_pos": {
@@ -306,7 +381,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_1.png",
                 "example": false,
-                "correlation": 0.4844489780073459
+                "correlation": 0.4844489780073459,
+                "seconds": 5
             }
         },
         "plain_5_1_neg": {
@@ -314,7 +390,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_5_1.png",
                 "example": false,
-                "correlation": -0.5326251252848413
+                "correlation": -0.5326251252848413,
+                "seconds": 5
             }
         },
         "plain_5_2_pos": {
@@ -322,7 +399,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_2.png",
                 "example": false,
-                "correlation": 0.525846688263484
+                "correlation": 0.525846688263484,
+                "seconds": 5
             }
         },
         "plain_5_2_neg": {
@@ -330,7 +408,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_5_2.png",
                 "example": false,
-                "correlation": -0.5217275009223856
+                "correlation": -0.5217275009223856,
+                "seconds": 5
             }
         },
         "plain_5_3_pos": {
@@ -338,7 +417,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_3.png",
                 "example": false,
-                "correlation": 0.5159795469508441
+                "correlation": 0.5159795469508441,
+                "seconds": 5
             }
         },
         "plain_5_3_neg": {
@@ -346,7 +426,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_5_3.png",
                 "example": false,
-                "correlation": -0.4756664604155838
+                "correlation": -0.4756664604155838,
+                "seconds": 5
             }
         },
         "plain_5_4_pos": {
@@ -354,7 +435,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_4.png",
                 "example": false,
-                "correlation": 0.5465572085640057
+                "correlation": 0.5465572085640057,
+                "seconds": 5
             }
         },
         "plain_5_4_neg": {
@@ -362,7 +444,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_5_4.png",
                 "example": false,
-                "correlation": -0.450226570552839
+                "correlation": -0.450226570552839,
+                "seconds": 5
             }
         },
         "plain_5_5_pos": {
@@ -370,7 +453,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_5.png",
                 "example": false,
-                "correlation": 0.5331043971627373
+                "correlation": 0.5331043971627373,
+                "seconds": 5
             }
         },
         "plain_5_5_neg": {
@@ -378,7 +462,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_5_5.png",
                 "example": false,
-                "correlation": -0.5268571212817813
+                "correlation": -0.5268571212817813,
+                "seconds": 5
             }
         },
         "plain_5_6_pos": {
@@ -386,7 +471,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
                 "example": false,
-                "correlation": 0.4953732723763143
+                "correlation": 0.4953732723763143,
+                "seconds": 5
             }
         },
         "plain_5_6_neg": {
@@ -394,7 +480,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_5_6.png",
                 "example": false,
-                "correlation": -0.5338577203646716
+                "correlation": -0.5338577203646716,
+                "seconds": 5
             }
         },
         "plain_7_1_pos": {
@@ -402,7 +489,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_7_1.png",
                 "example": false,
-                "correlation": 0.7332758569881305
+                "correlation": 0.7332758569881305,
+                "seconds": 5
             }
         },
         "plain_7_1_neg": {
@@ -410,7 +498,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_7_1.png",
                 "example": false,
-                "correlation": -0.7224629968905188
+                "correlation": -0.7224629968905188,
+                "seconds": 5
             }
         },
         "plain_7_2_pos": {
@@ -418,7 +507,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_7_2.png",
                 "example": false,
-                "correlation": 0.737286817922838
+                "correlation": 0.737286817922838,
+                "seconds": 5
             }
         },
         "plain_7_2_neg": {
@@ -426,7 +516,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_7_2.png",
                 "example": false,
-                "correlation": -0.7154055576346672
+                "correlation": -0.7154055576346672,
+                "seconds": 5
             }
         },
         "plain_7_3_pos": {
@@ -434,7 +525,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_7_3.png",
                 "example": false,
-                "correlation": 0.6836852791506025
+                "correlation": 0.6836852791506025,
+                "seconds": 5
             }
         },
         "plain_7_3_neg": {
@@ -442,7 +534,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_7_3.png",
                 "example": false,
-                "correlation": -0.6959041584491317
+                "correlation": -0.6959041584491317,
+                "seconds": 5
             }
         },
         "plain_7_4_pos": {
@@ -450,7 +543,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_7_4.png",
                 "example": false,
-                "correlation": 0.671779866035224
+                "correlation": 0.671779866035224,
+                "seconds": 5
             }
         },
         "plain_7_4_neg": {
@@ -458,7 +552,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_7_4.png",
                 "example": false,
-                "correlation": -0.7177333685215629
+                "correlation": -0.7177333685215629,
+                "seconds": 5
             }
         },
         "plain_7_5_pos": {
@@ -466,7 +561,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_7_5.png",
                 "example": false,
-                "correlation": 0.7214765437819962
+                "correlation": 0.7214765437819962,
+                "seconds": 5
             }
         },
         "plain_7_5_neg": {
@@ -474,7 +570,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_7_5.png",
                 "example": false,
-                "correlation": -0.6889666478206067
+                "correlation": -0.6889666478206067,
+                "seconds": 5
             }
         },
         "plain_7_6_pos": {
@@ -482,7 +579,8 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_7_6.png",
                 "example": false,
-                "correlation": 0.733310211735152
+                "correlation": 0.733310211735152,
+                "seconds": 5
             }
         },
         "plain_7_6_neg": {
@@ -490,10 +588,11 @@
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/neg_scatter_7_6.png",
                 "example": false,
-                "correlation": -0.6584557865548402
+                "correlation": -0.6584557865548402,
+                "seconds": 5
             }
         },
-        "bubble_3_6_pos_0": {
+        "phase2_3_6_pos_0": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -507,7 +606,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_0": {
+        "phase2_3_7_pos_0": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -521,7 +620,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_0": {
+        "phase2_5_6_pos_0": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -535,7 +634,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_0": {
+        "phase2_5_7_pos_0": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -549,7 +648,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_1": {
+        "phase2_3_6_pos_1": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -563,7 +662,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_1": {
+        "phase2_3_7_pos_1": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -577,7 +676,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_1": {
+        "phase2_5_6_pos_1": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -591,7 +690,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_1": {
+        "phase2_5_7_pos_1": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -605,7 +704,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_2": {
+        "phase2_3_6_pos_2": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -619,7 +718,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_2": {
+        "phase2_3_7_pos_2": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -633,7 +732,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_2": {
+        "phase2_5_6_pos_2": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -647,7 +746,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_2": {
+        "phase2_5_7_pos_2": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -661,7 +760,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_3": {
+        "phase2_3_6_pos_3": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -675,7 +774,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_3": {
+        "phase2_3_7_pos_3": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -689,7 +788,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_3": {
+        "phase2_5_6_pos_3": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -703,7 +802,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_3": {
+        "phase2_5_7_pos_3": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -717,7 +816,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_4": {
+        "phase2_3_6_pos_4": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -731,7 +830,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_4": {
+        "phase2_3_7_pos_4": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -745,7 +844,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_4": {
+        "phase2_5_6_pos_4": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -759,7 +858,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_4": {
+        "phase2_5_7_pos_4": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -773,7 +872,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_5": {
+        "phase2_3_6_pos_5": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -787,7 +886,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_5": {
+        "phase2_3_7_pos_5": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -801,7 +900,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_5": {
+        "phase2_5_6_pos_5": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -815,7 +914,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_5": {
+        "phase2_5_7_pos_5": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -829,7 +928,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_6": {
+        "phase2_3_6_pos_6": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -843,7 +942,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_6": {
+        "phase2_3_7_pos_6": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -857,7 +956,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_6": {
+        "phase2_5_6_pos_6": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -871,7 +970,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_6": {
+        "phase2_5_7_pos_6": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -885,7 +984,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_6_pos_7": {
+        "phase2_3_6_pos_7": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_6.png",
@@ -899,7 +998,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_3_7_pos_7": {
+        "phase2_3_7_pos_7": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_3_7.png",
@@ -913,7 +1012,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_6_pos_7": {
+        "phase2_5_6_pos_7": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_6.png",
@@ -927,7 +1026,7 @@
                 "direction": "pos"
             }
         },
-        "bubble_5_7_pos_7": {
+        "phase2_5_7_pos_7": {
             "baseComponent": "bubble",
             "parameters": {
                 "image": "https://raw.githubusercontent.com/jangsus1/ChartQA/main/scatter/pos_scatter_5_7.png",
@@ -948,7 +1047,6 @@
             "welcome",
             "consent",
             "demographics",
-            "phase1_intro",
             {
                 "id": "phase1",
                 "order": "latinSquare",
@@ -1004,92 +1102,104 @@
                     "plain_7_6_neg"
                 ]
             },
-            "phase2_intro",
-            "bubble_example1",
             {
-                "id": "images",
+                "id": "phase2",
                 "order": "latinSquare",
                 "components": [
                     {
                         "id": "As the usage of internet incre",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_0",
-                            "bubble_3_7_pos_0",
-                            "bubble_5_6_pos_0",
-                            "bubble_5_7_pos_0"
+                            "phase2_3_6_pos_0",
+                            "phase2_3_7_pos_0",
+                            "phase2_5_6_pos_0",
+                            "phase2_5_7_pos_0"
                         ]
                     },
                     {
                         "id": "People who eat more cheese, te",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_1",
-                            "bubble_3_7_pos_1",
-                            "bubble_5_6_pos_1",
-                            "bubble_5_7_pos_1"
+                            "phase2_3_6_pos_1",
+                            "phase2_3_7_pos_1",
+                            "phase2_5_6_pos_1",
+                            "phase2_5_7_pos_1"
                         ]
                     },
                     {
                         "id": "The more often students eat br",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_2",
-                            "bubble_3_7_pos_2",
-                            "bubble_5_6_pos_2",
-                            "bubble_5_7_pos_2"
+                            "phase2_3_6_pos_2",
+                            "phase2_3_7_pos_2",
+                            "phase2_5_6_pos_2",
+                            "phase2_5_7_pos_2"
                         ]
                     },
                     {
                         "id": "The more students wear glasses",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_3",
-                            "bubble_3_7_pos_3",
-                            "bubble_5_6_pos_3",
-                            "bubble_5_7_pos_3"
+                            "phase2_3_6_pos_3",
+                            "phase2_3_7_pos_3",
+                            "phase2_5_6_pos_3",
+                            "phase2_5_7_pos_3"
                         ]
                     },
                     {
                         "id": "A city with more lawyers, tend",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_4",
-                            "bubble_3_7_pos_4",
-                            "bubble_5_6_pos_4",
-                            "bubble_5_7_pos_4"
+                            "phase2_3_6_pos_4",
+                            "phase2_3_7_pos_4",
+                            "phase2_5_6_pos_4",
+                            "phase2_5_7_pos_4"
                         ]
                     },
                     {
                         "id": "A worker with a longer commute",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_5",
-                            "bubble_3_7_pos_5",
-                            "bubble_5_6_pos_5",
-                            "bubble_5_7_pos_5"
+                            "phase2_3_6_pos_5",
+                            "phase2_3_7_pos_5",
+                            "phase2_5_6_pos_5",
+                            "phase2_5_7_pos_5"
                         ]
                     },
                     {
                         "id": "People who sleep more, tend to",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_6",
-                            "bubble_3_7_pos_6",
-                            "bubble_5_6_pos_6",
-                            "bubble_5_7_pos_6"
+                            "phase2_3_6_pos_6",
+                            "phase2_3_7_pos_6",
+                            "phase2_5_6_pos_6",
+                            "phase2_5_7_pos_6"
                         ]
                     },
                     {
                         "id": "As the number of environmental",
                         "order": "latinSquare",
                         "components": [
-                            "bubble_3_6_pos_7",
-                            "bubble_3_7_pos_7",
-                            "bubble_5_6_pos_7",
-                            "bubble_5_7_pos_7"
+                            "phase2_3_6_pos_7",
+                            "phase2_3_7_pos_7",
+                            "phase2_5_6_pos_7",
+                            "phase2_5_7_pos_7"
                         ]
                     }
+                ]
+            },
+            {
+                "id": "phase3",
+                "order": "fixed",
+                "components": [
+                    "phase3_0",
+                    "phase3_1",
+                    "phase3_2",
+                    "phase3_3",
+                    "phase3_4",
+                    "phase3_5",
+                    "phase3_6",
+                    "phase3_7"
                 ]
             }
         ]
@@ -1101,15 +1211,14 @@
             "response": [
                 {
                     "id": "answer",
-                    "prompt": "Recorded Answer:",
+                    "prompt": "",
                     "required": true,
                     "location": "sidebar",
                     "type": "reactive"
                 }
             ],
             "parameters": {
-                "radius": 100,
-                "blur_std": 13
+                "radius": 100
             },
             "instructionLocation": "belowStimulus",
             "nextButtonLocation": "belowStimulus"
@@ -1120,7 +1229,22 @@
             "response": [
                 {
                     "id": "answer",
-                    "prompt": "Predicted Correlation:",
+                    "prompt": "",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "instructionLocation": "belowStimulus",
+            "nextButtonLocation": "belowStimulus"
+        },
+        "draw": {
+            "type": "react-component",
+            "path": "gaze/assets/draw.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "",
                     "required": true,
                     "location": "sidebar",
                     "type": "reactive"

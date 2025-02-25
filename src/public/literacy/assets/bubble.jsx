@@ -51,8 +51,8 @@ function bubble({ parameters, setAnswer }) {
     img.src = image;
     img.onload = () => {
       const parent = containerRef.current;
-      const availableHeight = window.innerHeight - parent.getBoundingClientRect().top; // Height from parent top to bottom of viewport
-      const availableWidth = window.innerWidth - parent.getBoundingClientRect().left; // Width from parent left to right of viewport
+      const availableHeight = 600 // window.innerHeight - parent.getBoundingClientRect().top; // Height from parent top to bottom of viewport
+      const availableWidth = 600 // window.innerWidth - parent.getBoundingClientRect().left; // Width from parent left to right of viewport
       const aspectRatio = img.width / img.height; // Image aspect ratio
 
       let scaledWidth, scaledHeight;

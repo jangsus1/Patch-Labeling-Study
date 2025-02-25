@@ -11,7 +11,7 @@ import DivergingSlider from "./Slider"
 
 function Plain({ parameters, setAnswer }) {
   const ref = useRef(null)
-  const { image, radius, example, blur_std, correlation } = parameters
+  const { image, radius, example, correlation, seconds } = parameters
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [view, setView] = useState("scatter") // scatter, slider, feedback
   const [newRadius, setNewRadius] = useState(radius)
@@ -23,7 +23,7 @@ function Plain({ parameters, setAnswer }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setView("slider")
-    }, 5000)
+    }, seconds*1000)
     return () => clearTimeout(timer)
   }, [])
 
