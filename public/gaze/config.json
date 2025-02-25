@@ -23,14 +23,9 @@
         "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1DEBJ8K](https://app.prolific.com/submissions/complete?cc=C1DEBJ8K)"
     },
     "components": {
-        "welcome": {
-            "type": "markdown",
-            "path": "gaze/assets/welcome.md",
-            "response": []
-        },
         "consent": {
             "type": "markdown",
-            "path": "gaze/assets/consent.md",
+            "path": "shared/consent.md",
             "nextButtonText": "I agree",
             "response": []
         },
@@ -1044,7 +1039,6 @@
     "sequence": {
         "order": "fixed",
         "components": [
-            "welcome",
             "consent",
             "demographics",
             {
