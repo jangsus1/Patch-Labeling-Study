@@ -9,7 +9,7 @@ import { Registry, initializeTrrack } from "@trrack/core";
 
 function Bubble({ parameters, setAnswer }) {
   const ref = useRef(null)
-  const { image, radius, example, blur_std, correlation, label, X, Y } = parameters
+  const { image, radius, example, seconds, correlation, label, X, Y } = parameters
   const [clicked, setClicked] = useState([])
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [view, setView] = useState("belief") // belief, corrbefore, scatter, corrafter
@@ -38,7 +38,7 @@ function Bubble({ parameters, setAnswer }) {
     if (view !== "scatter") return;
     const timer = setTimeout(() => {
       setView("corrafter")
-    }, 15000)
+    }, seconds*1000)
     return () => clearTimeout(timer)
   }, [view])
 
@@ -110,10 +110,13 @@ function Bubble({ parameters, setAnswer }) {
             <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback}>
               <defs>
                 <filter id="imageBlurFilter">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation={13} />
+                  <feGaussianBlur in="SourceGraphic" stdDeviation={17} />
                 </filter>
                 <mask id="unblurMask">
                   <rect width="100%" height="100%" fill="white" />
+                  <rect x="0" y="0" width="13.1%" height="100%" fill="black" />
+                  <rect x="0" y="89%" width="100%" height="12.8%" fill="black" />
+
                   {clicked.length > 0 && (
                     <circle
                       key={0}
