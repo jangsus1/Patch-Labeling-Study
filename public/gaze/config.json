@@ -599,7 +599,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_0": {
@@ -614,7 +614,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_0": {
@@ -629,7 +629,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_0": {
@@ -644,7 +644,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_1": {
@@ -659,7 +659,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_1": {
@@ -674,7 +674,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_1": {
@@ -689,7 +689,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_1": {
@@ -704,7 +704,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_2": {
@@ -719,7 +719,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_2": {
@@ -734,7 +734,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_2": {
@@ -749,7 +749,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_2": {
@@ -764,7 +764,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_3": {
@@ -779,7 +779,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_3": {
@@ -794,7 +794,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_3": {
@@ -809,7 +809,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_3": {
@@ -824,7 +824,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_4": {
@@ -839,7 +839,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_4": {
@@ -854,7 +854,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_4": {
@@ -869,7 +869,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_4": {
@@ -884,7 +884,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_5": {
@@ -899,7 +899,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_5": {
@@ -914,7 +914,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_5": {
@@ -929,7 +929,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_5": {
@@ -944,7 +944,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_6": {
@@ -959,7 +959,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_6": {
@@ -974,7 +974,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_6": {
@@ -989,7 +989,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_6": {
@@ -1004,7 +1004,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_6_pos_7": {
@@ -1019,7 +1019,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_3_7_pos_7": {
@@ -1034,7 +1034,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_6_pos_7": {
@@ -1049,7 +1049,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         },
         "phase2_5_7_pos_7": {
@@ -1064,7 +1064,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 10
+                "seconds": 15
             }
         }
     },
