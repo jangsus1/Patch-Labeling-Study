@@ -9,6 +9,7 @@ function bubble({ parameters, setAnswer }) {
   const ref = useRef(null)
   const { image, question, radius } = parameters
   const [clicked, setClicked] = useState(null);
+  const [record, setRecord] = useState([]);
   const [size, setSize] = useState({ width: 0, height: 0 })
   const containerRef = useRef(null);
 
@@ -51,8 +52,8 @@ function bubble({ parameters, setAnswer }) {
     img.src = image;
     img.onload = () => {
       const parent = containerRef.current;
-      const availableHeight = 600 // window.innerHeight - parent.getBoundingClientRect().top; // Height from parent top to bottom of viewport
-      const availableWidth = 600 // window.innerWidth - parent.getBoundingClientRect().left; // Width from parent left to right of viewport
+      const availableHeight = window.innerHeight - parent.getBoundingClientRect().top; // Height from parent top to bottom of viewport
+      const availableWidth = window.innerWidth - parent.getBoundingClientRect().left; // Width from parent left to right of viewport
       const aspectRatio = img.width / img.height; // Image aspect ratio
 
       let scaledWidth, scaledHeight;
