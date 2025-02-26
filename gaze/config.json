@@ -31,7 +31,7 @@
         },
         "demographics": {
             "type": "markdown",
-            "path": "tools/assets/blank.md",
+            "path": "shared/blank.md",
             "response": [
                 {
                     "id": "gender",
