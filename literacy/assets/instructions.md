@@ -22,7 +22,7 @@ In this task, you’ll answer **27 main questions** by interacting with an image
 
 ---
 
-## 🎭 Example Trick Question  
+## 🎭 Example Trick Question - Think critically!
 🔹 **The scale starts from 1000 → Answer is 33%, not 100%**  
 ![Example Trick](../literacy/assets/trick.png)  
 
