@@ -32,7 +32,7 @@
             "path": "literacy/assets/bubble.jsx",
             "instructionLocation": "sidebar",
             "nextButtonLocation": "sidebar",
-            "nextButtonDisableTime": 90000,
+            "nextButtonDisableTime": 60000,
             "nextButtonEnableTime": 5000
         }
     },
