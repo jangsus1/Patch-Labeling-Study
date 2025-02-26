@@ -32,7 +32,7 @@
             "path": "literacy/assets/bubble.jsx",
             "instructionLocation": "sidebar",
             "nextButtonLocation": "sidebar",
-            "nextButtonDisableTime": 60000,
+            "nextButtonDisableTime": 90000,
             "nextButtonEnableTime": 5000
         }
     },
@@ -56,7 +56,7 @@
                     "id": "gender",
                     "prompt": "What is your **gender**?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "withOther": true,
                     "options": [
@@ -70,7 +70,7 @@
                     "id": "age",
                     "prompt": "What is your **age**?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "Under 18 years",
@@ -88,7 +88,7 @@
                     "id": "education",
                     "prompt": "What is the **highest degree or level of education** you have completed?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "withOther": true,
                     "options": [
@@ -104,7 +104,7 @@
                     "id": "experience",
                     "prompt": "Please briefly describe your experience with data visualizations.",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "I create data visualizations frequently, either for work or as a hobby.",
@@ -119,13 +119,13 @@
         },
         "self_assessment": {
             "type": "markdown",
-            "path": "shared/blank.md",
+            "path": "literacy/assets/self_assessment.md",
             "response": [
                 {
                     "id": "SGL-item-1",
-                    "prompt": "How good are you at working with bar charts? (1 = not at all good; 6 = extremely good)",
+                    "prompt": "Q1: How good are you at working with bar charts?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all good)",
@@ -139,9 +139,9 @@
                 },
                 {
                     "id": "SGL-item-2",
-                    "prompt": "How good are you at working with line plots? (1 = not at all good; 6 = extremely good)",
+                    "prompt": "Q2: How good are you at working with line plots?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all good)",
@@ -155,9 +155,9 @@
                 },
                 {
                     "id": "SGL-item-3",
-                    "prompt": "How good are you at working with pies? (1 = not at all good; 6 = extremely good)",
+                    "prompt": "Q3: How good are you at working with pies?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all good)",
@@ -171,9 +171,9 @@
                 },
                 {
                     "id": "SGL-item-4",
-                    "prompt": "How good are you at inferring the size of a bar in a bar chart? (1 = not at all good; 6 = extremely good)",
+                    "prompt": "Q4: How good are you at inferring the size of a bar in a bar chart?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all good)",
@@ -187,9 +187,9 @@
                 },
                 {
                     "id": "SGL-item-5",
-                    "prompt": "How good are you at determining the difference between 2 bars in a bar chart? (1 = not at all good; 6 = extremely good)",
+                    "prompt": "Q5: How good are you at determining the difference between 2 bars in a bar chart?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all good)",
@@ -203,9 +203,9 @@
                 },
                 {
                     "id": "SGL-item-6",
-                    "prompt": "How good are you at projecting a future trend from a line chart? (1 = not at all good; 6 = extremely good)",
+                    "prompt": "Q6: How good are you at projecting a future trend from a line chart?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all good)",
@@ -219,9 +219,9 @@
                 },
                 {
                     "id": "SGL-item-7",
-                    "prompt": "Are graphs easier to understand than numbers? (1 = not at all; 6 = much easier)",
+                    "prompt": "Q7: Are graphs easier to understand than numbers?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all)",
@@ -235,9 +235,9 @@
                 },
                 {
                     "id": "SGL-item-8",
-                    "prompt": "How often do you find graphical information to be useful? (1 = never; 6 = very often)",
+                    "prompt": "Q8: How often do you find graphical information to be useful?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (never)",
@@ -251,9 +251,9 @@
                 },
                 {
                     "id": "SGL-item-9",
-                    "prompt": "To what extent do you believe in the saying 'a picture is worth one thousand words'? (1 = not at all; 6 = extremely)",
+                    "prompt": "Q9: To what extent do you believe in the saying 'a picture is worth one thousand words'?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all)",
@@ -267,9 +267,9 @@
                 },
                 {
                     "id": "SGL-item-10",
-                    "prompt": "When reading books or newspapers, how helpful do you find graphs that are part of a story? (1 = not at all; 6 = extremely)",
+                    "prompt": "Q10: When reading books or newspapers, how helpful do you find graphs that are part of a story?",
                     "required": true,
-                    "location": "aboveStimulus",
+                    "location": "belowStimulus",
                     "type": "radio",
                     "options": [
                         "1 (not at all)",

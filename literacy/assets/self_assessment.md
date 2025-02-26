@@ -1,0 +1,1 @@
+## Self-Assessment of Visualization Literacy
