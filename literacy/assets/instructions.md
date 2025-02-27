@@ -4,7 +4,7 @@
 In this task, you’ll answer **27 main questions** by interacting with an image.  
 
 ### ⏳ Time Limit  
-- You have **60 seconds per question**.  
+- You have **90 seconds per question**.  
 
 ### 🖼️ How It Works  
 1. You'll see a **blurry visualization** along with a question.  
