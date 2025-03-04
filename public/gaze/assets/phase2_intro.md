@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this experiment, you will assess the relationship between two variables by estimating correlation values.  
+In this experiment, you will see the scatterplot with two variable's correlation. Each scatterplot contains 20 data points.
 
 
 ## How It Works
@@ -14,15 +14,17 @@ In this experiment, you will assess the relationship between two variables by es
    - Before seeing the scatterplot, estimate the correlation (**-1.0 to +1.0**).  
 
 ### Step 3: **Explore the Scatterplot**  
-   - A **bubble-view scatterplot** appears.  
-   - Click to reveal small portions of the data.  
+   - A **blurred scatterplot** appears.  
+   - Click and drag to reveal part of the data.
+   - Try to memorize the correlation.  
 
 ### Step 4: **Make a Final Estimate**  
    - Adjust your correlation estimate based on the revealed scatterplot.  
 
 ---
 
-## Important Notes
-✅ Do **not refresh the page** during the experiment.
+![ex](../public/gaze/assets/phase2_intro.png)
+
+---
 
 Press **Next** to begin.

@@ -23,10 +23,30 @@
         "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1DEBJ8K](https://app.prolific.com/submissions/complete?cc=C1DEBJ8K)"
     },
     "components": {
+        "phase1_intro": {
+            "type": "markdown",
+            "path": "gaze/assets/phase1_intro.md",
+            "response": []
+        },
+        "phase2_intro": {
+            "type": "markdown",
+            "path": "gaze/assets/phase2_intro.md",
+            "response": []
+        },
+        "phase3_intro": {
+            "type": "markdown",
+            "path": "gaze/assets/phase3_intro.md",
+            "response": []
+        },
         "consent": {
             "type": "markdown",
             "path": "shared/consent.md",
             "nextButtonText": "I agree",
+            "response": []
+        },
+        "introduction": {
+            "type": "markdown",
+            "path": "gaze/assets/introduction.md",
             "response": []
         },
         "demographics": {
@@ -599,7 +619,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_0": {
@@ -614,7 +634,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_0": {
@@ -629,7 +649,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_0": {
@@ -644,7 +664,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_1": {
@@ -659,7 +679,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_1": {
@@ -674,7 +694,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_1": {
@@ -689,7 +709,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_1": {
@@ -704,7 +724,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_2": {
@@ -719,7 +739,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_2": {
@@ -734,7 +754,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_2": {
@@ -749,7 +769,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_2": {
@@ -764,7 +784,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_3": {
@@ -779,7 +799,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_3": {
@@ -794,7 +814,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_3": {
@@ -809,7 +829,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_3": {
@@ -824,7 +844,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_4": {
@@ -839,7 +859,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_4": {
@@ -854,7 +874,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_4": {
@@ -869,7 +889,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_4": {
@@ -884,7 +904,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_5": {
@@ -899,7 +919,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_5": {
@@ -914,7 +934,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_5": {
@@ -929,7 +949,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_5": {
@@ -944,7 +964,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_6": {
@@ -959,7 +979,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_6": {
@@ -974,7 +994,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_6": {
@@ -989,7 +1009,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_6": {
@@ -1004,7 +1024,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_6_pos_7": {
@@ -1019,7 +1039,7 @@
                 "corr": 3,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_3_7_pos_7": {
@@ -1034,7 +1054,7 @@
                 "corr": 3,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_6_pos_7": {
@@ -1049,7 +1069,7 @@
                 "corr": 5,
                 "exp": 6,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         },
         "phase2_5_7_pos_7": {
@@ -1064,7 +1084,7 @@
                 "corr": 5,
                 "exp": 7,
                 "direction": "pos",
-                "seconds": 15
+                "seconds": 5
             }
         }
     },
@@ -1073,6 +1093,8 @@
         "components": [
             "consent",
             "demographics",
+            "introduction",
+            "phase1_intro",
             {
                 "id": "phase1",
                 "order": "latinSquare",
@@ -1128,6 +1150,7 @@
                     "plain_7_6_neg"
                 ]
             },
+            "phase2_intro",
             {
                 "id": "phase2",
                 "order": "latinSquare",
@@ -1135,6 +1158,7 @@
                     {
                         "id": "As the usage of internet incre",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_0",
                             "phase2_3_7_pos_0",
@@ -1145,6 +1169,7 @@
                     {
                         "id": "People who eat more cheese, te",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_1",
                             "phase2_3_7_pos_1",
@@ -1155,6 +1180,7 @@
                     {
                         "id": "The more often students eat br",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_2",
                             "phase2_3_7_pos_2",
@@ -1165,6 +1191,7 @@
                     {
                         "id": "The more students wear glasses",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_3",
                             "phase2_3_7_pos_3",
@@ -1175,6 +1202,7 @@
                     {
                         "id": "A city with more lawyers, tend",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_4",
                             "phase2_3_7_pos_4",
@@ -1185,6 +1213,7 @@
                     {
                         "id": "A worker with a longer commute",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_5",
                             "phase2_3_7_pos_5",
@@ -1195,6 +1224,7 @@
                     {
                         "id": "People who sleep more, tend to",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_6",
                             "phase2_3_7_pos_6",
@@ -1205,6 +1235,7 @@
                     {
                         "id": "As the number of environmental",
                         "order": "latinSquare",
+                        "numSamples": 1,
                         "components": [
                             "phase2_3_6_pos_7",
                             "phase2_3_7_pos_7",
@@ -1214,9 +1245,10 @@
                     }
                 ]
             },
+            "phase3_intro",
             {
                 "id": "phase3",
-                "order": "fixed",
+                "order": "latinSquare",
                 "components": [
                     "phase3_0",
                     "phase3_1",

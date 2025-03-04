@@ -1,4 +1,4 @@
-export default function DivergingSlider({ value, setValue, min = -1, max = 1, step = 0.01, tickInterval = 0.2, center = 0 }) {
+export default function DivergingSlider({ value, setValue, leftLabel = "", rightLabel = "", min = -1, max = 1, step = 0.01, tickInterval = 0.2, center = 0, }) {
   // Normalize value to a percentage [0, 100] within the given min-max range
   const percentage = ((value - min) / (max - min)) * 100;
   const middlePercentage = ((center - min) / (max - min)) * 100; // Normalize center to percentage scale
@@ -85,7 +85,7 @@ export default function DivergingSlider({ value, setValue, min = -1, max = 1, st
           color: "gray",
         }}
       >
-        {tickMarks.map((mark) => (
+        {tickMarks.map((mark, idx) => (
           <span
             key={mark}
             style={{
@@ -94,8 +94,13 @@ export default function DivergingSlider({ value, setValue, min = -1, max = 1, st
               transform: "translateX(-50%)",
               top: "15px",
             }}
-          >
-            {mark.toFixed(1)}
+          > <>
+          {mark.toFixed(1)}
+          <br/>
+          {idx === tickMarks.length - 1 && leftLabel}
+          {idx === 3 && rightLabel}
+          </>
+            
           </span>
         ))}
       </div>

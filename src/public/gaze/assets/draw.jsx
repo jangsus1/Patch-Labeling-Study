@@ -31,13 +31,6 @@ function Draw({ parameters, setAnswer }) {
     return { actions: { clickAction }, trrack: trrackInst };
   }, []);
 
-  useEffect(() => {
-    if (view !== "draw") return;
-    if (clicked.length === 20) {
-      setView("corrafter")
-    }
-  }, [clicked])
-
 
   // Answer callback for the slider in the "corrafter" view
   const answerCallback = useCallback((corrAfter) => {
@@ -95,8 +88,12 @@ function Draw({ parameters, setAnswer }) {
       {view === "draw" && (
         <div>
           <h3>Please draw the scatterplot you recall. You have {20 - clicked.length} points left to draw.</h3>
-          <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%" }}>
-            <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback} style={{ border: "1px solid black" }}>
+          <Box ref={containerRef} className="ImageWrapper" style={{
+            display: "flex",
+            justifyContent: "center",  // Centers horizontally
+            width: "100%",
+          }}>
+            <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height} onClick={clickCallback} style={{ border: "1px solid black", marginRight: 10 }}>
 
               <image
                 href={image}
@@ -114,7 +111,9 @@ function Draw({ parameters, setAnswer }) {
                 />
               ))}
             </svg>
+            <Button disabled={clicked.length < 20} onClick={() => setView("corrafter")}>Done</Button>
           </Box>
+          
         </div>
       )}
 
@@ -137,11 +136,11 @@ function Draw({ parameters, setAnswer }) {
 
       {view === "remember" && (
         <div style={{ width: '50%', margin: '50px auto' }}>
-          <h3>How much do you remember about this scatterplot?</h3>
+          <h3>How much do you remember about this scatterplot that you've seen?</h3>
           <h3>X: {X}</h3>
           <h3>Y: {Y}</h3>
 
-          <div style={{ marginBottom: 30 }}>
+          <div style={{ marginBottom: 30, marginTop: 100 }}>
             <Slider
               value={remember}
               onChange={setRemember}

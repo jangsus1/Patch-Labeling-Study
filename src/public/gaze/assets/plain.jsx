@@ -23,7 +23,7 @@ function Plain({ parameters, setAnswer }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setView("slider")
-    }, seconds*1000)
+    }, seconds * 1000)
     return () => clearTimeout(timer)
   }, [])
 
@@ -80,7 +80,11 @@ function Plain({ parameters, setAnswer }) {
         </div>
       )}
       {view === "scatter" && (
-        <Box ref={containerRef} className="ImageWrapper" style={{ width: "100%" }}>
+        <Box ref={containerRef} className="ImageWrapper" style={{
+          display: "flex",
+          justifyContent: "center",  // Centers horizontally
+          width: "100%",
+        }}>
           <svg id="clickAccuracySvg" ref={ref} width={size.width} height={size.height}>
 
             <image
@@ -104,7 +108,7 @@ function Plain({ parameters, setAnswer }) {
             step={0.01}
             tickInterval={0.2}
           />
-          <Button sx={{mt: 2}} onClick={jobDone}>Done</Button>
+          <Button sx={{ mt: 2 }} onClick={jobDone}>Done</Button>
         </div>
       )}
 

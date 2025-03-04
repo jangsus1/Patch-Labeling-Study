@@ -9,7 +9,6 @@ function bubble({ parameters, setAnswer }) {
   const ref = useRef(null)
   const { image, question, radius } = parameters
   const [clicked, setClicked] = useState(null);
-  const [record, setRecord] = useState([]);
   const [size, setSize] = useState({ width: 0, height: 0 })
   const containerRef = useRef(null);
 
